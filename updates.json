@@ -2,8 +2,52 @@
  "entries": [
   {
    "date": "2026-10-08",
-   "title": "First pull: 12 houses fit",
-   "lede": "First data pull for the Prescott house hunt. I checked 8 listing sources and found 12 whole-house rentals with 5+ bedrooms or 4 bedrooms plus a den/office/loft. The strongest fit right now is 1478 Varsity Dr, Prescott (5 BR, $2,900, about 11 min to campus).",
+   "title": "First pull: 16 houses fit",
+   "lede": "First data pull for the Prescott house hunt. I checked 12 listing sources and found 16 whole-house rentals with 5+ bedrooms or 4 bedrooms plus a den/office/loft. The strongest fit right now is 1478 Varsity Dr, Prescott (5 BR, $2,900, about 11 min to campus). A separate browser pass of Apartments.com, Zumper, HotPads, Trulia (sites that block automated fetching) added 4 more matches and 6 borderline houses (4 bedrooms plus a family room or casita, listed separately, not counted).",
+   "browser": [
+    {
+     "text": "7302 E Night Watch Way, Prescott Valley: 4 + den (office set-up, per listing), $2,400, 23 min to ERAU, Available now",
+     "href": "https://www.trulia.com/home/7302-e-night-watch-way-prescott-valley-az-86314-71341595"
+    },
+    {
+     "text": "7612 E Dusty Boot Rd, Prescott Valley: 4 + den (family room / formal living), $2,394, 16 min to ERAU, Available now",
+     "href": "https://www.apartments.com/7612-dusty-boot-rd-prescott-valley-az/hss5cb0/"
+    },
+    {
+     "text": "6227 E Bower Ln, Prescott Valley: 4 + den (weak: \"4 bedrooms or 3 + office\"), $2,450, 12 min to ERAU, Says available July 1 (likely stale; status Pending) (pending)",
+     "href": "https://www.zumper.com/address/6227-e-bower-ln-prescott-valley-az-86314-usa"
+    },
+    {
+     "text": "2960 Dillon Blvd, Chino Valley: 4 + den (flex / office, per listing), $4,800, 22 min to ERAU, Model home ready first week of Sept (per listing; possibly stale)",
+     "href": "https://www.trulia.com/home/2960-dillon-blvd-chino-valley-az-86323-352290329"
+    }
+   ],
+   "borderline": [
+    {
+     "text": "6882 Gables Trl, Prescott: 4 BR + great room, $2,594, 7 min to ERAU, Available Oct 10, 2026",
+     "href": "https://www.rentable.co/prescott-az/6882-gables-trl"
+    },
+    {
+     "text": "1567 Rycosa Ln, Prescott: 4 BR + family room / upstairs living, $3,500, 12 min to ERAU, Available now",
+     "href": "https://www.zillow.com/homedetails/1567-Rycosa-Ln-Prescott-AZ-86301/64958731_zpid/"
+    },
+    {
+     "text": "1750 S Johnson Ln, Chino Valley: 4 BR + separate family room, $2,400, 15 min to ERAU, Available Oct 12, 2026",
+     "href": "https://www.rentable.co/chino-valley-az/1750-s-johnson-ln"
+    },
+    {
+     "text": "6755 N Double Tree Rd, Prescott: 4 BR + 2nd-floor family room, $3,000, 16 min to ERAU, Available now",
+     "href": "https://www.zillow.com/homedetails/6755-N-Double-Tree-Rd-Prescott-AZ-86305/119081029_zpid/"
+    },
+    {
+     "text": "966 Coyote Cir, Prescott: 4 BR + upper family room, $6,450, 21 min to ERAU, Available now",
+     "href": "https://www.rentable.co/prescott-az/966-coyote-cir"
+    },
+    {
+     "text": "14415 N Sandia Ln, Prescott: 4 BR + detached casita, $5,500, 33 min to ERAU, Available Nov 1 2026 (pending)",
+     "href": "https://www.google.com/search?q=%2214415+N+Sandia+Ln%22+Prescott+AZ+rent+zumper"
+    }
+   ],
    "new": [],
    "changed": [],
    "gone": [],
@@ -21,10 +65,10 @@
      "href": "https://www.zillow.com/homedetails/117-N-Equestrian-Way-Prescott-AZ-86303/8734157_zpid/"
     }
    ],
-   "market": "12 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,544–$8,500, median $3,075; 5 are at or under the $2,900 reference. 10 are within 25 min; 0 list a move-in date in the Dec 1 window.",
+   "market": "16 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,394–$8,500, median $2,950; 8 are at or under the $2,900 reference. 14 are within 25 min; 0 list a move-in date in the Dec 1 window.",
    "counts": {
-    "active": 12,
-    "new": 12,
+    "active": 16,
+    "new": 16,
     "changed": 0,
     "gone": 0
    }

@@ -257,3 +257,10 @@ details summary { cursor: pointer; font-size: 18px; }
 .tip-img { width: 84px; height: 64px; object-fit: cover; border-radius: 4px; flex: none; }
 .tip-rent { font-weight: 700; font-size: 14px; }
 .tip-jump { margin-top: 6px; font-size: 13px; }
+
+.dot.border { background: #8a94a6; border: 1px dashed #4b5566; }
+.badge.bb { background: #e3e7ee; color: #3d4757; }
+.badge.via { background: #e8eefb; color: #2a4a8a; }
+#borderline details > summary { cursor: pointer; }
+#borderline .cards { margin-top: 1rem; }
+.map-legend label.check { margin-left: .5rem; font-size: .85em; }

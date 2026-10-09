@@ -62,6 +62,7 @@
       <span><i class="dot c6"></i>6+ BR</span>
       <span><i class="dot c5"></i>5 BR</span>
       <span><i class="dot c4"></i>4 + den (per listing)</span>
+      <span><i class="dot border"></i>borderline (4 BR + family room / casita, not counted)</span>
       <span><i class="dot gone"></i>gone</span>
       <span class="sep">Size:</span>
       <span><i class="dot sz s1"></i>≤ $2,500</span>
@@ -69,6 +70,7 @@
       <span><i class="dot sz s3"></i>$4,500+</span>
       <span><i class="dot sz s0"></i>rent not listed</span>
       <span><i class="dot erau"></i>Embry-Riddle</span>
+      <label class="check"><input id="f-border" type="checkbox" checked /> show borderline</label>
     </div>
   </section>
 
@@ -126,6 +128,14 @@
     <div class="cards" id="cards"></div>
   </section>
 
+  <section id="borderline">
+    <details class="panel">
+      <summary><strong>Borderline: 4 BR + family room / casita</strong> <span id="border-count"></span></summary>
+      <p class="meta">Four true bedrooms plus a family room, upstairs living room, great room or casita that roommates might convert. Not counted as matches; shown on the map in muted grey-blue. Confirm with the landlord that using the room as a bedroom is allowed.</p>
+      <div class="cards" id="border-cards"></div>
+    </details>
+  </section>
+
   <section id="sources">
     <div class="section-head">
       <h2>Sources</h2>
@@ -141,6 +151,7 @@
     <details class="panel">
       <summary><strong>Checked but excluded</strong> <span id="excl-count"></span></summary>
       <p class="meta">4-bedroom houses whose listing does not mention a den/office/bonus room/loft, listings that refuse students, per-room rentals, and anything over ~35 min from campus.</p>
+      <p class="meta" id="roomshares"></p>
       <table id="excl"></table>
     </details>
   </section>

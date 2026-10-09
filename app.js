@@ -4,12 +4,12 @@
   const esc = (s) => String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
   const money = (n) => (n == null || n === "" ? null : "$" + Number(n).toLocaleString("en-US"));
   const NL = '<span class="nl">not listed</span>';
-  const COLORS = { "6plus": "#6a3d9a", "5": "#1f6f6a", "4den": "#d4a017" };
-  const BCLASS = { "6plus": "b6", "5": "b5", "4den": "b4" };
+  const COLORS = { "6plus": "#6a3d9a", "5": "#1f6f6a", "4den": "#d4a017", border: "#8a94a6" };
+  const BCLASS = { "6plus": "b6", "5": "b5", "4den": "b4", border: "bb" };
   const FIT = { ideal: "Move-in fits (~Dec 1)", early: "Available early (overlap)", late: "Available after mid-Dec", unknown: "Move-in date not listed" };
   const UTIL_ORDER = ["water", "sewer", "trash", "gas", "electric", "internet", "landscaping", "hoa"];
 
-  let DATA = null, ALL = [], map, layer, markers = {};
+  let DATA = null, ALL = [], BORDER = [], map, layer, markers = {};
 
   function loadJSON(url, fallback) {
     return fetch(url, { cache: "no-store" }).then((r) => { if (!r.ok) throw 0; return r.json(); }).catch(() => fallback);
@@ -66,6 +66,8 @@
         ${e.lede ? `<p class="lede">${esc(e.lede)}</p>` : ""}
         ${sec("Best fits right now", e.top)}
         ${sec("New houses that fit", e.new)}
+        ${sec("Added from the browser pass (sites that block automated fetching)", e.browser)}
+        ${sec("Borderline: 4 BR + family room / casita (not counted)", e.borderline)}
         ${sec("Price changes", e.changed)}
         ${sec("Gone", e.gone)}
         ${e.market ? `<p class="market"><strong>Market note.</strong> ${esc(e.market)}</p>` : ""}
@@ -88,6 +90,7 @@
   function priceChanges(l) {
     const out = [];
     (l.priceHistory || []).forEach((p) => out.push(`${p.date}: ${money(p.from)} → ${money(p.to)} (seen by tracker)`));
+    if (l.priceNote) out.push(esc(l.priceNote) + " (browser pass)");
     (l.sourcePriceHistory || []).filter((p) => /price change/i.test(p.event || "")).forEach((p) => out.push(`${p.date}: ${money(p.price)} (${esc(p.event)}, Zillow)`));
     return out.length ? out.join("<br>") : "none seen";
   }
@@ -95,6 +98,7 @@
   function cardHtml(l) {
     const cat = l.bedCategory;
     const gone = l.status === "gone";
+    if (!BCLASS[cat]) return "";
     const drive = l.driveMin != null ? `${Math.round(l.driveMin)} min · ${l.driveMi} mi` : null;
     const far = l.driveMin != null && l.driveMin > DATA.drivePreferred;
     const badges = [
@@ -107,6 +111,10 @@
       (l.studentFlagsSerious || []).length ? '<span class="badge warn">Occupancy limit?</span>' : "",
       l.studentPositive ? '<span class="badge fit-ideal">Students/roommates mentioned OK</span>' : "",
       l.unverified ? '<span class="badge warn">Not re-checked today</span>' : "",
+      l.pending ? '<span class="badge warn">Pending</span>' : "",
+      l.weakDen ? '<span class="badge warn">Den wording weak</span>' : "",
+      l.staleAvail ? '<span class="badge warn">Date may be stale</span>' : "",
+      l.manual ? `<span class="badge via">Browser pass${l.lastVerified ? " " + esc(l.lastVerified) : ""}</span>` : "",
     ].join("");
     const deposit = l.deposit != null ? money(l.deposit) + (l.deposit === 0 ? " (listed as $0)" : "") : l.depositText ? esc(l.depositText) + (l.rent ? ` (≈ ${money(l.rent)})` : "") : NL;
     const contact = [l.manager, l.contact && l.contact !== l.manager ? l.contact : null, l.contactPhone].filter(Boolean).map(esc).join(" · ") || NL;
@@ -115,13 +123,15 @@
       (l.studentFlags || []).length ? "Listing mentions: " + l.studentFlags.map((f) => `"${esc(f)}"`).join("; ") : "",
       l.studentPositive ? `Mentions: "${esc(l.studentPositive)}"` : "",
     ].filter(Boolean).join("<br>") || "No student/roommate policy in listing — ask";
-    const den = cat === "4den" ? `4 + den (per listing): <span class="quote">“…${esc(l.denSnippet)}…”</span>` : l.denSnippet ? `<span class="quote">“…${esc(l.denSnippet)}…”</span>` : "—";
+    const den = l.manual && l.denSnippet ? `${esc(l.bedsLabel)}: <span class="quote">“${esc(l.denSnippet)}”</span>` : cat === "4den" ? `4 + den (per listing): <span class="quote">“…${esc(l.denSnippet)}…”</span>` : l.denSnippet ? `<span class="quote">“…${esc(l.denSnippet)}…”</span>` : "—";
     const dom = l.daysOnMarket != null ? `${l.daysOnMarket} days <span class="meta">(${esc(l.domBasis)})</span>` : NL;
     const avail = l.availableRaw ? `${esc(l.availableRaw)}<br><span class="meta">${esc(l.availNote)}</span>` : NL;
     const notes = [];
     if (l.vacation) notes.push("Advertised as a vacation / short-term rental: confirm a Dec–May (or 12-month) lease and the real monthly price.");
     if (l.undisclosed) notes.push("Address not disclosed by the listing; map position and drive time unavailable or approximate.");
     if (l.coordSource === "craigslist") notes.push("Map pin from Craigslist (approximate).");
+    if (l.coordSource === "census") notes.push("Map pin from US Census address-range interpolation (approximate).");
+    (l.manualNotes || []).forEach((n) => notes.push(n));
     if (l.rentNote) notes.push("Other sources: " + l.rentNote + ".");
     if (l.smoking) notes.push("No smoking.");
     notes.push(`First seen by tracker ${l.firstSeen}; last seen ${l.lastSeen || "—"}.`);
@@ -217,11 +227,13 @@
     bits.push(`<span class="tip-rent">${money(l.rent) || "rent n/a"}</span>${l.rent ? "/mo" : ""} · ${line2}`);
     if (l.availableRaw || l.availableIso) bits.push("Available: " + esc(l.availableRaw || l.availableIso));
     if (l.driveMin != null) bits.push(Math.round(l.driveMin) + " min est. drive to ERAU" + (l.driveMi != null ? ` (${l.driveMi} mi)` : ""));
-    if (l.utilSummary) bits.push("Utilities: " + esc(l.utilSummary));
+    if (l.utilSummary) bits.push((/^utilities/i.test(l.utilSummary) ? "" : "Utilities: ") + esc(l.utilSummary));
     if (l.daysOnMarket != null) bits.push(esc(String(l.daysOnMarket)) + " days on market");
     if (l.denSnippet) bits.push("Den: " + esc(String(l.denSnippet).slice(0, 90)));
     if (l.studentRefusal) bits.push("<em>Student note: " + esc(l.studentRefusal) + "</em>");
     if (gone) bits.push("<em>gone</em>");
+    if (l.bedCategory === "border") bits.push("<em>Borderline (not counted as a match)</em>");
+    if (l.pending) bits.push("<em>Status: pending</em>");
     const img = l.photo ? `<img class="tip-img" src="${esc(l.photo)}" alt="">` : "";
     return `<div class="tip">${img}<div>${bits.join("<br>")}</div></div>`;
   }
@@ -229,12 +241,14 @@
   function paint(list) {
     layer.clearLayers(); markers = {};
     const pts = [[DATA.target.lat, DATA.target.lng]];
-    list.forEach((l) => {
+    const showB = !$("#f-border") || $("#f-border").checked;
+    list.concat(showB ? BORDER : []).forEach((l) => {
       if (l.lat == null || l.lng == null) return;
       const gone = l.status === "gone";
       const m = L.circleMarker([l.lat, l.lng], {
         radius: radius(l.rent), color: gone ? "#9a9a9a" : "#fff", weight: gone ? 2 : 1.5,
-        fillColor: gone ? "#fff" : COLORS[l.bedCategory], fillOpacity: gone ? 0.6 : (l.rent ? 0.85 : 0.35),
+        fillColor: gone ? "#fff" : COLORS[l.bedCategory], fillOpacity: gone ? 0.6 : l.bedCategory === "border" ? 0.55 : (l.rent ? 0.85 : 0.35),
+        dashArray: l.bedCategory === "border" ? "3 3" : null,
       });
       const tip = summaryHtml(l, gone);
       m.bindTooltip(tip, { direction: "top", offset: [0, -6], opacity: 1, className: "hover-tip" });
@@ -258,11 +272,12 @@
   function highlight(id, scroll) {
     document.querySelectorAll(".card.is-hl").forEach((c) => c.classList.remove("is-hl"));
     const el = document.getElementById("card-" + id);
+    if (el && scroll) { const d = el.closest("details"); if (d) d.open = true; }
     if (el) { el.classList.add("is-hl"); if (scroll) el.scrollIntoView({ behavior: "smooth", block: "start" }); }
   }
 
   function flyTo(id) {
-    const l = ALL.find((x) => x.id === id);
+    const l = ALL.concat(BORDER).find((x) => x.id === id);
     if (!l || l.lat == null) return;
     map.flyTo([l.lat, l.lng], 14, { duration: 0.8 });
     if (markers[id]) markers[id].openPopup();
@@ -277,6 +292,11 @@
     $("#src-blocked").innerHTML = "<tr><th>Source</th><th>HTTP</th><th>Result</th></tr>" +
       (DATA.blocked || []).map((b) => `<tr><td><a href="${esc(b.url)}" target="_blank" rel="noopener">${esc(b.source)}</a></td><td>${esc(b.http)}</td><td>${esc(b.verdict)}</td></tr>`).join("") +
       "<tr><td>Facebook Marketplace</td><td>—</td><td>skipped (login wall)</td></tr>";
+    $("#border-count").textContent = `(${BORDER.length})`;
+    $("#border-cards").innerHTML = BORDER.map(cardHtml).join("") || "<p class='meta'>None right now.</p>";
+    const rs = DATA.roomShares || [];
+    $("#roomshares").innerHTML = rs.length ? "<strong>Room shares (not whole-house, so not counted):</strong> " + rs.map((r) =>
+      `<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.address)}, ${esc(r.city)}</a>: ${esc(r.note || "")}${r.contactPhone ? " " + esc(r.contactPhone) : ""}`).join("; ") : "";
     const ex = DATA.excluded || [];
     $("#excl-count").textContent = `(${ex.length})`;
     $("#excl").innerHTML = "<tr><th>Address</th><th>BR</th><th>Rent</th><th>Why excluded</th></tr>" +
@@ -286,13 +306,15 @@
   Promise.all([loadJSON("listings.json", window.LISTINGS_DATA), loadJSON("updates.json", window.UPDATES_DATA || { entries: [] })]).then(([data, upd]) => {
     DATA = data || { listings: [], sources: [], target: { lat: 34.6162, lng: -112.4488 } };
     ALL = DATA.listings || [];
+    BORDER = DATA.borderline || [];
     renderSummary();
     renderLog((upd && upd.entries) || []);
     renderSources();
     initMap();
     apply();
-    ["#f-beds", "#f-drive", "#f-sort", "#f-gone", "#f-vac", "#f-avail"].forEach((s) => $(s).addEventListener("change", apply));
+    ["#f-beds", "#f-drive", "#f-sort", "#f-gone", "#f-vac", "#f-avail", "#f-border"].forEach((s) => $(s).addEventListener("change", apply));
     ["#f-rent", "#q"].forEach((s) => $(s).addEventListener("input", apply));
+    $("#border-cards").addEventListener("click", (e) => { const b = e.target.closest("[data-fly]"); if (b) flyTo(b.dataset.fly); });
     $("#cards").addEventListener("click", (e) => { const b = e.target.closest("[data-fly]"); if (b) flyTo(b.dataset.fly); });
   });
 })();
