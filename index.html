@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prescott house hunt — 5+ BR near Embry-Riddle</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#listings">Skip to listings</a>
+  <header class="nav">
+    <div class="brand">Prescott house hunt<small>ERAU Prescott · Prescott · Prescott Valley · Chino Valley · Williamson Valley</small></div>
+    <nav class="nav-links">
+      <a href="#map-sec">Map</a>
+      <a href="#log">Daily updates</a>
+      <a href="#listings">Houses</a>
+      <a href="#sources">Sources</a>
+      <a href="#excluded">Excluded</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <div class="kicker">Whole-house rental · move-in ~1 Dec 2026</div>
+      <h1>A house for five near Embry-Riddle.</h1>
+      <p class="lede">
+        Whole-house rentals with <strong>5+ bedrooms</strong>, or <strong>4 bedrooms plus a den / office / bonus room / loft</strong>
+        when the listing itself says so. They drive, so anything within <strong>~25 min</strong> of campus is preferred; up to ~35 min is kept and marked far.
+        Budget reference was about <strong>$2,900/mo</strong> for 4–5 BR (shown, never filtered).
+      </p>
+      <p class="lede small" id="as-of">Loading data…</p>
+    </div>
+    <div class="pair">
+      <div class="who">
+        <span class="tag">Campus</span>
+        <strong>Embry-Riddle Aeronautical University, Prescott</strong>
+        3700 Willow Creek Rd, Prescott, AZ 86301
+      </div>
+      <div class="who">
+        <span class="tag">Move-in fit</span>
+        <strong>Ideal: available ~Dec 1 to mid-Dec</strong>
+        <span class="fit-key"><i class="fitdot ideal"></i>ideal <i class="fitdot early"></i>earlier = pay overlap <i class="fitdot late"></i>later <i class="fitdot unknown"></i>not listed</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="reality">
+    <div class="reality-grid" id="summary"></div>
+  </div>
+
+  <section id="map-sec">
+    <div class="section-head">
+      <h2>Map</h2>
+      <p><strong>Color = bedrooms</strong>, <strong>dot size = monthly rent</strong>. Click a dot to jump to its card. Drive times are estimated with the OSRM public router (free-flow, no traffic).</p>
+    </div>
+    <div id="map"></div>
+    <div class="map-legend">
+      <span><i class="dot c6"></i>6+ BR</span>
+      <span><i class="dot c5"></i>5 BR</span>
+      <span><i class="dot c4"></i>4 + den (per listing)</span>
+      <span><i class="dot gone"></i>gone</span>
+      <span class="sep">Size:</span>
+      <span><i class="dot sz s1"></i>≤ $2,500</span>
+      <span><i class="dot sz s2"></i>~$3,000</span>
+      <span><i class="dot sz s3"></i>$4,500+</span>
+      <span><i class="dot sz s0"></i>rent not listed</span>
+      <span><i class="dot erau"></i>Embry-Riddle</span>
+    </div>
+  </section>
+
+  <section id="log">
+    <div class="section-head">
+      <h2>Daily updates</h2>
+      <p>One post per refresh, newest first: new houses that fit, price changes, listings that disappeared, and a short market note.</p>
+    </div>
+    <div id="log-feed"></div>
+  </section>
+
+  <section id="listings">
+    <div class="section-head">
+      <h2>Houses</h2>
+      <p>Everything here comes from the listing text. Anything not stated says <em>not listed</em>. Confirm all of it with the landlord before you apply. <span id="count"></span></p>
+    </div>
+    <div class="controls">
+      <label>Bedrooms
+        <select id="f-beds">
+          <option value="all">All matches</option>
+          <option value="5plus">5+ BR only</option>
+          <option value="6plus">6+ BR only</option>
+          <option value="4den">4 + den only</option>
+        </select>
+      </label>
+      <label>Max rent
+        <input id="f-rent" type="number" step="100" min="0" placeholder="any" />
+      </label>
+      <label>Max drive
+        <select id="f-drive">
+          <option value="">any (≤35 min)</option>
+          <option value="15">≤ 15 min</option>
+          <option value="20">≤ 20 min</option>
+          <option value="25">≤ 25 min</option>
+        </select>
+      </label>
+      <label>Available by
+        <input id="f-avail" type="date" />
+      </label>
+      <label class="check"><input id="f-gone" type="checkbox" checked /> Hide gone</label>
+      <label class="check"><input id="f-vac" type="checkbox" /> Hide vacation rentals</label>
+      <label>Sort
+        <select id="f-sort">
+          <option value="score">Best fit</option>
+          <option value="rent">Rent: low → high</option>
+          <option value="rent-desc">Rent: high → low</option>
+          <option value="drive">Drive: shortest</option>
+          <option value="avail">Available: soonest</option>
+          <option value="beds">Bedrooms: most</option>
+          <option value="new">Newest first seen</option>
+        </select>
+      </label>
+      <input class="search" id="q" type="search" placeholder="Search street, manager, notes…" />
+    </div>
+    <div class="cards" id="cards"></div>
+  </section>
+
+  <section id="sources">
+    <div class="section-head">
+      <h2>Sources</h2>
+      <p>What the daily refresh can read without a browser, and what it can't.</p>
+    </div>
+    <div class="grid-2">
+      <div class="panel"><h3>Read every day</h3><table id="src-ok"></table></div>
+      <div class="panel"><h3>Blocked or needs a real browser</h3><table id="src-blocked"></table></div>
+    </div>
+  </section>
+
+  <section id="excluded">
+    <details class="panel">
+      <summary><strong>Checked but excluded</strong> <span id="excl-count"></span></summary>
+      <p class="meta">4-bedroom houses whose listing does not mention a den/office/bonus room/loft, listings that refuse students, per-room rentals, and anything over ~35 min from campus.</p>
+      <table id="excl"></table>
+    </details>
+  </section>
+
+  <footer>
+    Static site, rebuilt by a daily refresh script. Rents, availability and policies change fast. Check the source listing and get everything in writing.
+    Drive times are estimates from the OSRM public router (OpenStreetMap data, no traffic). Leaflet via unpkg · map tiles © OpenStreetMap contributors.
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="listings-data.js"></script>
+  <script src="updates-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+{
+ "entries": [
+  {
+   "date": "2026-10-08",
+   "title": "First pull: 12 houses fit",
+   "lede": "First data pull for the Prescott house hunt. I checked 8 listing sources and found 12 whole-house rentals with 5+ bedrooms or 4 bedrooms plus a den/office/loft. The strongest fit right now is 1478 Varsity Dr, Prescott (5 BR, $2,900, about 11 min to campus).",
+   "new": [],
+   "changed": [],
+   "gone": [],
+   "top": [
+    {
+     "text": "1478 Varsity Dr, Prescott — 5 BR, $2,900, 11 min to ERAU, available now: ~54 days of rent before dec 1 unless landlord holds it",
+     "href": "https://www.redfin.com/AZ/Prescott/1478-Varsity-Dr-86301/home/145142343"
+    },
+    {
+     "text": "486 Robin Dr, Prescott — 4 + den (per listing), $3,150, 6 min to ERAU, available now: ~54 days of rent before dec 1 unless landlord holds it",
+     "href": "https://www.zillow.com/homedetails/486-Robin-Dr-Prescott-AZ-86305/67819295_zpid/"
+    },
+    {
+     "text": "117 N Equestrian Way, Prescott — 5 BR, $3,250, 17 min to ERAU, available now: ~54 days of rent before dec 1 unless landlord holds it",
+     "href": "https://www.zillow.com/homedetails/117-N-Equestrian-Way-Prescott-AZ-86303/8734157_zpid/"
+    }
+   ],
+   "market": "12 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,544–$8,500, median $3,075; 5 are at or under the $2,900 reference. 10 are within 25 min; 0 list a move-in date in the Dec 1 window.",
+   "counts": {
+    "active": 12,
+    "new": 12,
+    "changed": 0,
+    "gone": 0
+   }
+  }
+ ]
+}
