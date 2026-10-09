@@ -1,6 +1,24 @@
 {
  "entries": [
   {
+   "date": "2026-10-09",
+   "title": "No changes — 16 houses fit",
+   "lede": "Nothing new, no price moves and nothing went off the market today. Top of the list is still 1478 Varsity Dr, Prescott at $2,900.",
+   "browser": [],
+   "borderline": [],
+   "new": [],
+   "changed": [],
+   "gone": [],
+   "top": [],
+   "market": "16 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,394–$8,500, median $2,950; 8 are at or under the $2,900 reference. 14 are within 25 min; 0 list a move-in date in the Dec 1 window.",
+   "counts": {
+    "active": 16,
+    "new": 0,
+    "changed": 0,
+    "gone": 0
+   }
+  },
+  {
    "date": "2026-10-08",
    "title": "First pull: 16 houses fit",
    "lede": "First data pull for the Prescott house hunt. I checked 12 listing sources and found 16 whole-house rentals with 5+ bedrooms or 4 bedrooms plus a den/office/loft. The strongest fit right now is 1478 Varsity Dr, Prescott (5 BR, $2,900, about 11 min to campus). A separate browser pass of Apartments.com, Zumper, HotPads, Trulia (sites that block automated fetching) added 4 more matches and 6 borderline houses (4 bedrooms plus a family room or casita, listed separately, not counted).",
