@@ -210,6 +210,22 @@
     setTimeout(() => map.invalidateSize(), 200);
   }
 
+  function summaryHtml(l, gone) {
+    const bits = [];
+    bits.push(`<strong>${esc(l.address)}</strong>, ${esc(l.city || "")}`);
+    const line2 = [esc(l.bedsLabel || ""), l.baths ? esc(String(l.baths).replace(/\.0$/, "")) + " ba" : "", l.sqft ? Number(l.sqft).toLocaleString() + " sq ft" : ""].filter(Boolean).join(" · ");
+    bits.push(`<span class="tip-rent">${money(l.rent) || "rent n/a"}</span>${l.rent ? "/mo" : ""} · ${line2}`);
+    if (l.availableRaw || l.availableIso) bits.push("Available: " + esc(l.availableRaw || l.availableIso));
+    if (l.driveMin != null) bits.push(Math.round(l.driveMin) + " min est. drive to ERAU" + (l.driveMi != null ? ` (${l.driveMi} mi)` : ""));
+    if (l.utilSummary) bits.push("Utilities: " + esc(l.utilSummary));
+    if (l.daysOnMarket != null) bits.push(esc(String(l.daysOnMarket)) + " days on market");
+    if (l.denSnippet) bits.push("Den: " + esc(String(l.denSnippet).slice(0, 90)));
+    if (l.studentRefusal) bits.push("<em>Student note: " + esc(l.studentRefusal) + "</em>");
+    if (gone) bits.push("<em>gone</em>");
+    const img = l.photo ? `<img class="tip-img" src="${esc(l.photo)}" alt="">` : "";
+    return `<div class="tip">${img}<div>${bits.join("<br>")}</div></div>`;
+  }
+
   function paint(list) {
     layer.clearLayers(); markers = {};
     const pts = [[DATA.target.lat, DATA.target.lng]];
@@ -219,9 +235,13 @@
       const m = L.circleMarker([l.lat, l.lng], {
         radius: radius(l.rent), color: gone ? "#9a9a9a" : "#fff", weight: gone ? 2 : 1.5,
         fillColor: gone ? "#fff" : COLORS[l.bedCategory], fillOpacity: gone ? 0.6 : (l.rent ? 0.85 : 0.35),
-      }).bindPopup(`<strong>${esc(l.address)}</strong>, ${esc(l.city)}<br>${esc(l.bedsLabel)} · ${money(l.rent) || "rent n/a"}<br>` +
-        `${l.driveMin != null ? Math.round(l.driveMin) + " min est. drive" : ""}${gone ? "<br><em>gone</em>" : ""}`);
-      m.on("click", () => highlight(l.id, true));
+      });
+      const tip = summaryHtml(l, gone);
+      m.bindTooltip(tip, { direction: "top", offset: [0, -6], opacity: 1, className: "hover-tip" });
+      m.bindPopup(tip + `<div class="tip-jump"><a href="#card-${esc(l.id)}" data-jump="${esc(l.id)}">Show full card \u2193</a></div>`);
+      m.on("mouseover", () => { m.setStyle({ weight: 3, color: "#1d2433" }); highlight(l.id, false); });
+      m.on("mouseout", () => m.setStyle({ weight: gone ? 2 : 1.5, color: gone ? "#9a9a9a" : "#fff" }));
+      m.on("click", () => { m.closeTooltip(); highlight(l.id, false); });
       m.addTo(layer); markers[l.id] = m; pts.push([l.lat, l.lng]);
     });
     if (pts.length > 1) {
@@ -229,6 +249,11 @@
       setTimeout(() => { map.invalidateSize(); map.fitBounds(pts, { padding: [30, 30], maxZoom: 13 }); }, 300);
     }
   }
+
+  document.addEventListener("click", (e) => {
+    const a = e.target.closest && e.target.closest("[data-jump]");
+    if (!a) return; e.preventDefault(); highlight(a.getAttribute("data-jump"), true);
+  });
 
   function highlight(id, scroll) {
     document.querySelectorAll(".card.is-hl").forEach((c) => c.classList.remove("is-hl"));

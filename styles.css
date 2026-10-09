@@ -251,3 +251,9 @@ details summary { cursor: pointer; font-size: 18px; }
 .erau-pin { background: #0b2a5b; color: #fff; border: 2px solid #fff; border-radius: 50%; width: 30px !important; height: 30px !important;
   display: flex; align-items: center; justify-content: center; font: 700 10px "Source Sans 3", sans-serif; box-shadow: 0 2px 8px rgba(0,0,0,.35); }
 @media (max-width: 880px) { .reality-grid { grid-template-columns: repeat(2, 1fr); } }
+
+.leaflet-tooltip.hover-tip { font-family: "Source Sans 3", sans-serif; font-size: 13px; line-height: 1.35; padding: 8px 10px; border-radius: 8px; box-shadow: 0 4px 14px rgba(0,0,0,.18); white-space: normal; width: 300px; }
+.tip { display: flex; gap: 8px; align-items: flex-start; }
+.tip-img { width: 84px; height: 64px; object-fit: cover; border-radius: 4px; flex: none; }
+.tip-rent { font-weight: 700; font-size: 14px; }
+.tip-jump { margin-top: 6px; font-size: 13px; }
