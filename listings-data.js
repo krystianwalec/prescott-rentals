@@ -1,6 +1,6 @@
 window.LISTINGS_DATA = {
  "asOf": "2026-10-10",
- "generatedAt": "2026-10-10 10:59 PT",
+ "generatedAt": "2026-10-10 11:55 PT",
  "target": {
   "name": "Embry-Riddle Aeronautical University (Prescott campus)",
   "address": "3700 Willow Creek Rd, Prescott, AZ 86301",
@@ -190,76 +190,10 @@ window.LISTINGS_DATA = {
  ],
  "blocked": [
   {
-   "source": "apartments.com",
-   "url": "https://www.apartments.com/houses/prescott-az/4-bedrooms/",
-   "http": 403,
-   "verdict": "plain fetch blocked; read by browser pass 2026-10-10"
-  },
-  {
-   "source": "hotpads",
-   "url": "https://hotpads.com/prescott-az/houses-for-rent",
-   "http": 403,
-   "verdict": "plain fetch blocked; read by browser pass 2026-10-10"
-  },
-  {
-   "source": "trulia",
-   "url": "https://www.trulia.com/for_rent/Prescott,AZ/4p_beds/",
-   "http": 403,
-   "verdict": "plain fetch blocked; read by browser pass 2026-10-10"
-  },
-  {
-   "source": "homes.com",
-   "url": "https://www.homes.com/prescott-az/houses-for-rent/4-bedroom/",
-   "http": 403,
-   "verdict": "blocked"
-  },
-  {
-   "source": "realtor.com",
-   "url": "https://www.realtor.com/apartments/Prescott_AZ/beds-4",
+   "source": "Realtor.com",
    "http": 429,
-   "verdict": "blocked (browser pass too)"
-  },
-  {
-   "source": "zumper",
-   "url": "https://www.zumper.com/houses-for-rent/prescott-az/4-beds",
-   "http": 200,
-   "verdict": "plain fetch blocked; read by browser pass 2026-10-10"
-  },
-  {
-   "source": "padmapper",
-   "url": "https://www.padmapper.com/houses/prescott-az",
-   "http": 200,
-   "verdict": "blocked"
-  },
-  {
-   "source": "rentalsource",
-   "url": "https://www.rentalsource.com/prescott-az/houses/",
-   "http": 429,
-   "verdict": "blocked"
-  },
-  {
-   "source": "craigslist RSS",
-   "url": "https://prescott.craigslist.org/search/apa?min_bedrooms=4&format=rss",
-   "http": 403,
-   "verdict": "blocked"
-  },
-  {
-   "source": "Peak Property Solutions (Duda/AppFolio JS widget)",
-   "url": "https://www.peakprescott.com/availability",
-   "http": 200,
-   "verdict": "needs browser (listings rendered by JavaScript)"
-  },
-  {
-   "source": "Pierce Property Mgmt (Duda/AppFolio JS widget)",
-   "url": "https://www.ppmprescott.com/availability",
-   "http": 200,
-   "verdict": "needs browser (listings rendered by JavaScript)"
-  },
-  {
-   "source": "ERAU College Pads (JS-rendered)",
-   "url": "https://offcampushousingpc.erau.edu/listing",
-   "http": 200,
-   "verdict": "needs browser (listings rendered by JavaScript)"
+   "verdict": "HTTP 429 in the browser pass too",
+   "url": "https://www.realtor.com/apartments/Prescott_AZ/beds-4"
   }
  ],
  "listings": [
