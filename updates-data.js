@@ -1,6 +1,24 @@
 window.UPDATES_DATA = {
  "entries": [
   {
+   "date": "2026-10-10",
+   "title": "No changes — 16 houses fit",
+   "lede": "Nothing new, no price moves and nothing went off the market today. Top of the list is still 1478 Varsity Dr, Prescott at $2,900. Today's browser pass (Apartments.com, Zumper, HotPads, Trulia, Peak, Pierce and the ERAU board) found no new houses that fit. It filled in details for the undisclosed-address 5-bedroom in Prescott Valley ($3,000, tenant pays all utilities, $3,000 deposit). 6227 E Bower Ln was relisted on Zumper at $2,450 and may no longer be pending. 1750 S Johnson Ln (borderline) shows a $100 price drop to $2,400.",
+   "browser": [],
+   "borderline": [],
+   "new": [],
+   "changed": [],
+   "gone": [],
+   "top": [],
+   "market": "16 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,394–$8,500, median $2,950; 8 are at or under the $2,900 reference. 14 are within 25 min; 0 list a move-in date in the Dec 1 window.",
+   "counts": {
+    "active": 16,
+    "new": 0,
+    "changed": 0,
+    "gone": 0
+   }
+  },
+  {
    "date": "2026-10-09",
    "title": "No changes — 16 houses fit",
    "lede": "Nothing new, no price moves and nothing went off the market today. Top of the list is still 1478 Varsity Dr, Prescott at $2,900.",
