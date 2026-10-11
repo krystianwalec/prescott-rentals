@@ -1,6 +1,56 @@
 {
  "entries": [
   {
+   "date": "2026-10-11",
+   "title": "1 gone, 6 reclassified — 9 houses fit",
+   "lede": "Today's refresh found 1 gone, 6 reclassified. Top of the list is still 486 Robin Dr, Prescott at $3,150. Today's browser pass (Apartments.com, Zumper, HotPads, Trulia, Peak, Pierce and the ERAU board) found no new houses that fit; every house it already tracked is still shown at the same rent. It added details for houses already on the list (486 Robin Dr, 117 N Equestrian Way, 7906 E Carbon Ct and the undisclosed-address Hidden Valley Ranch 5-bedroom). Corrections: 1768 Rolling Hills Dr and 1924 Rocky Dells Dr are vacation rentals, 901 Hemlock Ave (3–6 month maximum) and 854 S Granite St are short-term furnished rentals, and 1640 Sherwood Dr lists only a game room (no den or office), so they are now excluded; 342 S Marina St moves to borderline because its \"home office\" wording refers to the four bedrooms themselves, not an extra room.",
+   "browser": [],
+   "borderline": [],
+   "new": [],
+   "changed": [],
+   "gone": [
+    {
+     "text": "1478 Varsity Dr, Prescott (5 BR, last $2,900) no longer shows on Redfin, Rent.com",
+     "href": "https://www.redfin.com/AZ/Prescott/1478-Varsity-Dr-86301/home/145142343"
+    }
+   ],
+   "reclassified": [
+    {
+     "text": "342 S Marina St, Prescott (4 + den (per listing), $2,544): moved to borderline (not counted)",
+     "href": "https://www.zillow.com/homedetails/342-S-Marina-St-Prescott-AZ-86303/8742629_zpid/"
+    },
+    {
+     "text": "1924 Rocky Dells Drive, Prescott (5 BR, $2,850): now excluded: vacation rental (nightly/weekly/monthly, 3-night minimum, per Bear Creek)",
+     "href": "https://bearcreekpmg.managebuilding.com/Resident/public/rentals/66937"
+    },
+    {
+     "text": "901 Hemlock Ave, Prescott (5 BR, $3,400): now excluded: short-term furnished only: \"minimum 3 months and a max of 6 months\" (Apartments.com)",
+     "href": "https://www.rent.com/r/901-hemlock-ave-prescott-az-lc7017292"
+    },
+    {
+     "text": "1768 Rolling Hills Drive, Prescott (4 + den (per listing), $2,700): now excluded: vacation rental (Bear Creek: \"VACATION RENTAL\", call for pricing)",
+     "href": "https://bearcreekpmg.managebuilding.com/Resident/public/rentals/92917"
+    },
+    {
+     "text": "854 S Granite St, Prescott (6 BR, $8,500): now excluded: short-stay furnished rental (\"whether you are staying for 6 months or a week\"); main home is 4 BR + separate 2 BR guest house",
+     "href": "https://www.zillow.com/homedetails/854-S-Granite-St-Prescott-AZ-86303/8743507_zpid/"
+    },
+    {
+     "text": "1640 Sherwood Dr, Prescott (4 + den (per listing), $4,500): now excluded: 4 BR with no den/office stated (extra space is a 300 sf game room); also furnished, month-to-month, available January 3",
+     "href": "https://www.zillow.com/homedetails/1640-Sherwood-Dr-Prescott-AZ-86305/8744657_zpid/"
+    }
+   ],
+   "top": [],
+   "market": "9 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,394–$4,800, median $3,000; 4 are at or under the $2,900 reference. 7 are within 25 min; 0 list a move-in date in the Dec 1 window.",
+   "counts": {
+    "active": 9,
+    "new": 0,
+    "changed": 0,
+    "gone": 1,
+    "reclassified": 6
+   }
+  },
+  {
    "date": "2026-10-10",
    "title": "No changes — 16 houses fit",
    "lede": "Nothing new, no price moves and nothing went off the market today. Top of the list is still 1478 Varsity Dr, Prescott at $2,900. Today's browser pass (Apartments.com, Zumper, HotPads, Trulia, Peak, Pierce and the ERAU board) found no new houses that fit. It filled in details for the undisclosed-address 5-bedroom in Prescott Valley ($3,000, tenant pays all utilities, $3,000 deposit). 6227 E Bower Ln was relisted on Zumper at $2,450 and may no longer be pending. 1750 S Johnson Ln (borderline) shows a $100 price drop to $2,400.",

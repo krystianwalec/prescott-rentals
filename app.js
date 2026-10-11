@@ -70,6 +70,7 @@
         ${sec("Borderline: 4 BR + family room / casita (not counted)", e.borderline)}
         ${sec("Price changes", e.changed)}
         ${sec("Gone", e.gone)}
+        ${sec("Corrections: no longer counted (still listed by the source)", e.reclassified)}
         ${e.market ? `<p class="market"><strong>Market note.</strong> ${esc(e.market)}</p>` : ""}
       </article>`;
     }).join("");
