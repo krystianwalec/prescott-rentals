@@ -1,6 +1,6 @@
 window.LISTINGS_DATA = {
- "asOf": "2026-10-11",
- "generatedAt": "2026-10-11 12:13 PT",
+ "asOf": "2026-10-12",
+ "generatedAt": "2026-10-12 12:16 PT",
  "target": {
   "name": "Embry-Riddle Aeronautical University (Prescott campus)",
   "address": "3700 Willow Creek Rd, Prescott, AZ 86301",
@@ -32,7 +32,7 @@ window.LISTINGS_DATA = {
    "source": "Redfin",
    "ok": true,
    "pages": 6,
-   "candidates": 17,
+   "candidates": 16,
    "http": [
     200,
     200,
@@ -115,7 +115,7 @@ window.LISTINGS_DATA = {
    "ok": true,
    "pages": 0,
    "http": [
-    "browser pass 2026-10-11"
+    "browser pass 2026-10-12"
    ],
    "candidates": 8,
    "matches": 2,
@@ -126,7 +126,7 @@ window.LISTINGS_DATA = {
    "ok": true,
    "pages": 0,
    "http": [
-    "browser pass 2026-10-11"
+    "browser pass 2026-10-12"
    ],
    "candidates": 6,
    "matches": 1,
@@ -137,7 +137,7 @@ window.LISTINGS_DATA = {
    "ok": true,
    "pages": 0,
    "http": [
-    "browser pass 2026-10-11"
+    "browser pass 2026-10-12"
    ],
    "candidates": 6,
    "matches": 1,
@@ -148,7 +148,7 @@ window.LISTINGS_DATA = {
    "ok": true,
    "pages": 0,
    "http": [
-    "browser pass 2026-10-11"
+    "browser pass 2026-10-12"
    ],
    "candidates": 11,
    "matches": 7,
@@ -159,7 +159,7 @@ window.LISTINGS_DATA = {
    "ok": true,
    "pages": 0,
    "http": [
-    "browser pass 2026-10-11"
+    "browser pass 2026-10-12"
    ],
    "candidates": 0,
    "matches": 0,
@@ -170,7 +170,7 @@ window.LISTINGS_DATA = {
    "ok": true,
    "pages": 0,
    "http": [
-    "browser pass 2026-10-11"
+    "browser pass 2026-10-12"
    ],
    "candidates": 0,
    "matches": 0,
@@ -181,9 +181,9 @@ window.LISTINGS_DATA = {
    "ok": true,
    "pages": 0,
    "http": [
-    "browser pass 2026-10-11"
+    "browser pass 2026-10-12"
    ],
-   "candidates": 1,
+   "candidates": 2,
    "matches": 0,
    "via": "browser"
   }
@@ -193,19 +193,19 @@ window.LISTINGS_DATA = {
    "source": "apartments.com",
    "url": "https://www.apartments.com/houses/prescott-az/4-bedrooms/",
    "http": 403,
-   "verdict": "plain fetch blocked; read by browser pass 2026-10-11"
+   "verdict": "plain fetch blocked; read by browser pass 2026-10-12"
   },
   {
    "source": "hotpads",
    "url": "https://hotpads.com/prescott-az/houses-for-rent",
    "http": 403,
-   "verdict": "plain fetch blocked; read by browser pass 2026-10-11"
+   "verdict": "plain fetch blocked; read by browser pass 2026-10-12"
   },
   {
    "source": "trulia",
    "url": "https://www.trulia.com/for_rent/Prescott,AZ/4p_beds/",
    "http": 403,
-   "verdict": "plain fetch blocked; read by browser pass 2026-10-11"
+   "verdict": "plain fetch blocked; read by browser pass 2026-10-12"
   },
   {
    "source": "homes.com",
@@ -223,7 +223,7 @@ window.LISTINGS_DATA = {
    "source": "zumper",
    "url": "https://www.zumper.com/houses-for-rent/prescott-az/4-beds",
    "http": 200,
-   "verdict": "plain fetch blocked; read by browser pass 2026-10-11"
+   "verdict": "plain fetch blocked; read by browser pass 2026-10-12"
   },
   {
    "source": "padmapper",
@@ -303,7 +303,7 @@ window.LISTINGS_DATA = {
    "availableIso": "now",
    "availableRaw": "Available now",
    "availFit": "early",
-   "availNote": "Available now: ~51 days of rent before Dec 1 unless landlord holds it",
+   "availNote": "Available now: ~50 days of rent before Dec 1 unless landlord holds it",
    "deposit": null,
    "depositText": null,
    "fees": [],
@@ -345,7 +345,7 @@ window.LISTINGS_DATA = {
    "descExcerpt": "This spacious house for rent is available for $3,150 per month and features four bedrooms, three full bathrooms, and a dedicated office, perfect for working from home. Designed with comfort and functionality in mind, the home includes a generously sized master bedroom that provides a private retreat, along with ample living space for families or entertaining. With an original layout and plenty of room to spread out, this home combines size, flexibility, and value in one exceptional rental. It is a 2912-square-foot home located at 486 Robin Drive. Call Brett with serious inquiries. There is an ",
    "key": "486 robin",
    "bedsLabel": "4 + den (dedicated office, per listing)",
-   "lastVerified": "2026-10-11",
+   "lastVerified": "2026-10-12",
    "manualNotes": [],
    "manual": true,
    "pending": false,
@@ -361,10 +361,10 @@ window.LISTINGS_DATA = {
    "studentFlagsSerious": [],
    "id": "486-robin",
    "status": "active",
-   "lastSeen": "2026-10-11",
+   "lastSeen": "2026-10-12",
    "firstSeen": "2026-10-08",
    "priceHistory": [],
-   "daysOnMarket": 6,
+   "daysOnMarket": 7,
    "domBasis": "since listed 2026-10-05 (per Zillow)",
    "utilSummary": "Utilities: not listed",
    "score": 5.5
@@ -403,7 +403,7 @@ window.LISTINGS_DATA = {
    "availableIso": "now",
    "availableRaw": "Available now",
    "availFit": "early",
-   "availNote": "Available now: ~51 days of rent before Dec 1 unless landlord holds it",
+   "availNote": "Available now: ~50 days of rent before Dec 1 unless landlord holds it",
    "deposit": 3500,
    "depositText": null,
    "fees": [],
@@ -450,7 +450,7 @@ window.LISTINGS_DATA = {
    "descExcerpt": "Lots of room on 1/2 acre and convenient location on a very quiet street. Walking distance to Costco and Trader Joe's. Only 10 minute drive to downtown Prescott and 5 minutes to Prescott Valley. Walk-in closets in the primary bedroom and gas range. Huge deck with view of the mountains. CAC, refrigerator, and washer dryer. Attached 2-car garage. No smoking inside the property. Renter pays utilities and water, sewer, trash. No pets and no parking on the street.",
    "key": "117 equestrian",
    "priceNote": "Trulia: down from $4,250",
-   "lastVerified": "2026-10-11",
+   "lastVerified": "2026-10-12",
    "manualNotes": [],
    "manual": true,
    "pending": false,
@@ -466,10 +466,10 @@ window.LISTINGS_DATA = {
    "studentFlagsSerious": [],
    "id": "117-equestrian",
    "status": "active",
-   "lastSeen": "2026-10-11",
+   "lastSeen": "2026-10-12",
    "firstSeen": "2026-10-08",
    "priceHistory": [],
-   "daysOnMarket": 13,
+   "daysOnMarket": 14,
    "domBasis": "since listed 2026-09-28 (per Zillow)",
    "utilSummary": "Tenant pays: water, sewer, trash; not listed: gas, electric, internet, landscaping",
    "score": 5.5
@@ -508,7 +508,7 @@ window.LISTINGS_DATA = {
    "availableIso": "now",
    "availableRaw": "Available now",
    "availFit": "early",
-   "availNote": "Available now: ~51 days of rent before Dec 1 unless landlord holds it",
+   "availNote": "Available now: ~50 days of rent before Dec 1 unless landlord holds it",
    "deposit": 2400,
    "depositText": null,
    "fees": [],
@@ -560,7 +560,7 @@ window.LISTINGS_DATA = {
    "descExcerpt": "Fully Finished single family home in the Stoneridge community of Prescott Valley. NO Pets. This beautifully maintained 4-bedroom, 3-bath FURNISHED home offers the perfect blend of comfort, style, and resort-inspired amenities. No access to garage as the owner uses it for storage. Inside, you'll find an inviting and thoughtfully designed floor plan with a spacious living room and a generously sized kitchen and dining area ideal for everyday living or entertaining family and friends. Great set up for office/working from home. Tentant pays utilities. No Pets/No Smoking/No Exceptions. Tenant will ",
    "key": "7302 night watch",
    "bedsLabel": "4 + den (office set-up, per listing)",
-   "lastVerified": "2026-10-11",
+   "lastVerified": "2026-10-12",
    "manualNotes": [
     "Office wording describes a work-from-home set-up; confirm there is a room beyond the 4 bedrooms."
    ],
@@ -577,10 +577,10 @@ window.LISTINGS_DATA = {
    "studentFlagsSerious": [],
    "id": "7302-night-watch",
    "status": "active",
-   "lastSeen": "2026-10-11",
+   "lastSeen": "2026-10-12",
    "firstSeen": "2026-10-08",
    "priceHistory": [],
-   "daysOnMarket": 3,
+   "daysOnMarket": 4,
    "domBasis": "since listed 2026-10-08 (per Trulia)",
    "utilSummary": "Tenant pays: water, sewer, trash, gas, electric; not listed: internet, landscaping",
    "score": 5.5
@@ -592,7 +592,7 @@ window.LISTINGS_DATA = {
    "beds": 4,
    "baths": 2.0,
    "sqft": 1904,
-   "photo": "https://images.rentable.co/122492/75272875/large.jpeg",
+   "photo": "https://images.rentable.co/122492/75272293/large.jpeg",
    "manager": "Southwest Property Sales & Leasing",
    "contact": "Lisa Hugus",
    "contactPhone": "(928) 713-9794",
@@ -640,7 +640,7 @@ window.LISTINGS_DATA = {
    "availableIso": "now",
    "availableRaw": "Available now",
    "availFit": "early",
-   "availNote": "Available now: ~51 days of rent before Dec 1 unless landlord holds it",
+   "availNote": "Available now: ~50 days of rent before Dec 1 unless landlord holds it",
    "deposit": null,
    "depositText": null,
    "fees": [
@@ -690,7 +690,7 @@ window.LISTINGS_DATA = {
    "key": "7612 dusty boot",
    "bedsLabel": "4 + den (family room / formal living)",
    "priceNote": "Trulia: was $2,444, now $2,394",
-   "lastVerified": "2026-10-11",
+   "lastVerified": "2026-10-12",
    "manualNotes": [
     "Strictly, the 'office' is one of the 4 bedrooms, so this is effectively 4 bedrooms plus a family room and formal living/dining (a possible 5th sleeping space). Deposit not stated."
    ],
@@ -708,10 +708,10 @@ window.LISTINGS_DATA = {
    "studentFlagsSerious": [],
    "id": "7612-dusty-boot",
    "status": "active",
-   "lastSeen": "2026-10-11",
+   "lastSeen": "2026-10-12",
    "firstSeen": "2026-10-08",
    "priceHistory": [],
-   "daysOnMarket": 37,
+   "daysOnMarket": 38,
    "domBasis": "since listed 2026-09-04 (per Trulia (34 days on Trulia as of 2026-10-08))",
    "utilSummary": "Utilities: not listed",
    "score": 5.5
@@ -770,7 +770,7 @@ window.LISTINGS_DATA = {
    "availableIso": "2026-08-15",
    "availableRaw": "Available 8/15/2026 (date has passed, so presumably available now)",
    "availFit": "early",
-   "availNote": "Available now: ~51 days of rent before Dec 1 unless landlord holds it",
+   "availNote": "Available now: ~50 days of rent before Dec 1 unless landlord holds it",
    "deposit": 2850,
    "depositText": "same as first month's rent",
    "fees": [
@@ -825,7 +825,7 @@ window.LISTINGS_DATA = {
    "descExcerpt": "View all photos (22) $2,850.00 / month Available 8/15/2026 4 Bed 2.5 Bath 2350 sqft A must see! Open-concept new home – great for entertaining or just for a family. Beautifully designed and gorgeous in Pronghorn Ranch! On one of the most tranquil streets in the neighborhood, this 4 bedroom, 2 1/2 bath home also has an additional ''bonus flex room'' that makes an excellent den, cozy lounge, office space or kids' play area. The large open kitchen features amazing countertops. The kitchen has beautiful cabinets & stainless steel appliances. The formal dining area is spacious and ideal for hosting",
    "key": "7906 carbon",
    "bedsLabel": "4 + den (bonus flex room, per listing)",
-   "lastVerified": "2026-10-11",
+   "lastVerified": "2026-10-12",
    "manualNotes": [
     "Apartments.com: $2,950 deposit, $50 application fee, $250 pet deposit, Pronghorn Ranch HOA, 2,188 sqft, available 8/26/26, utilities listed as \"No Utilities\" (none included). Bear Creek lists a $2,850 deposit, 2,350 sqft and 8/15/2026."
    ],
@@ -842,10 +842,10 @@ window.LISTINGS_DATA = {
    "studentFlagsSerious": [],
    "id": "7906-carbon",
    "status": "active",
-   "lastSeen": "2026-10-11",
+   "lastSeen": "2026-10-12",
    "firstSeen": "2026-10-08",
    "priceHistory": [],
-   "daysOnMarket": 99,
+   "daysOnMarket": 100,
    "domBasis": "since listed 2026-07-04 (per Zillow)",
    "utilSummary": "Utilities: not listed",
    "score": 5.5
@@ -914,7 +914,7 @@ window.LISTINGS_DATA = {
    "bedsLabel": "4 + den (weak: \"4 bedrooms or 3 + office\")",
    "weakDen": true,
    "staleAvail": true,
-   "lastVerified": "2026-10-11",
+   "lastVerified": "2026-10-12",
    "manualNotes": [
     "Granville neighborhood. Washer/dryer included.",
     "Really 4 bedrooms with no extra den (the 'office' is the 4th bedroom).",
@@ -936,10 +936,10 @@ window.LISTINGS_DATA = {
    "studentFlagsSerious": [],
    "id": "6227-bower",
    "status": "active",
-   "lastSeen": "2026-10-11",
+   "lastSeen": "2026-10-12",
    "firstSeen": "2026-10-08",
    "priceHistory": [],
-   "daysOnMarket": 3,
+   "daysOnMarket": 4,
    "domBasis": "since first seen by this tracker (2026-10-08)",
    "utilSummary": "Utilities: not listed",
    "score": 4.0
@@ -975,7 +975,7 @@ window.LISTINGS_DATA = {
    "availableIso": "now",
    "availableRaw": "Available now",
    "availFit": "early",
-   "availNote": "Available now: ~51 days of rent before Dec 1 unless landlord holds it",
+   "availNote": "Available now: ~50 days of rent before Dec 1 unless landlord holds it",
    "deposit": 3000,
    "depositText": null,
    "fees": [],
@@ -1022,7 +1022,7 @@ window.LISTINGS_DATA = {
    "descExcerpt": "Spacious & Updated Home with RV Parking A Perfect Blend of Comfort and Convenience Welcome to this beautifully updated 3,100 sq. ft. home situated on a generous 0.25-acre lot. Freshly painted inside and out, this property offers a clean, comfortable feel throughout. Enjoy cooking in a kitchen equipped with brand-new stovetop w/microwave, dishwasher and refrigerator. Kitchen also equipped with 2 additional electric ovens and an additional electric stovetop. Each bedroom features stylish mirror closet doors, new interior doors, and ceiling fans for added comfort. Stay cool in the summer with bot",
    "key": "zillow-8731564",
    "priceNote": "Trulia: original $3,322, now $3,000",
-   "lastVerified": "2026-10-11",
+   "lastVerified": "2026-10-12",
    "manualNotes": [
     "Tenant also handles pest control and hot tub upkeep. Renter's insurance required.",
     "Same property as the Trulia \"address not disclosed\" listing (Oct 10 browser pass)."
@@ -1038,10 +1038,10 @@ window.LISTINGS_DATA = {
    "studentFlagsSerious": [],
    "id": "zillow-8731564",
    "status": "active",
-   "lastSeen": "2026-10-11",
+   "lastSeen": "2026-10-12",
    "firstSeen": "2026-10-08",
    "priceHistory": [],
-   "daysOnMarket": 51,
+   "daysOnMarket": 52,
    "domBasis": "since listed 2026-08-21 (per Zillow)",
    "utilSummary": "Tenant pays: water, sewer, trash, gas, electric, landscaping; not listed: internet",
    "score": 3.0
@@ -1077,7 +1077,7 @@ window.LISTINGS_DATA = {
    "availableIso": "now",
    "availableRaw": "Available now",
    "availFit": "early",
-   "availNote": "Available now: ~51 days of rent before Dec 1 unless landlord holds it",
+   "availNote": "Available now: ~50 days of rent before Dec 1 unless landlord holds it",
    "deposit": 8400,
    "depositText": null,
    "fees": [],
@@ -1134,7 +1134,7 @@ window.LISTINGS_DATA = {
    "descExcerpt": "Available August 1, 2026 Home is nestled in the pines of Hidden Valley Ranch. Its the very essence of Prescott living. The following amenities are included, tennis courts...the best in Prescott, swimming pools, pickle ball court, racquet ball court , clubhouse and miles of easy trail walks. large outdoor space with built in bbq and synthetic lawn area all gated in. This home provides a landscape services , utilities are not included, This home offers a very comfortable open space feeling. if you have multiple cars or entertain this well design entrance is very accommodating as well. Landscape ",
    "key": "zillow-8739895",
    "priceNote": "Trulia: original $4,250, now $3,600",
-   "lastVerified": "2026-10-11",
+   "lastVerified": "2026-10-12",
    "manualNotes": [
     "Hidden Valley Ranch (address not disclosed). Trulia shows \"available now\"; the listing text also says \"Available August 1, 2026\".",
     "Non-smoking. Same property as Trulia id 8739895 (Oct 11 browser pass)."
@@ -1150,10 +1150,10 @@ window.LISTINGS_DATA = {
    "studentFlagsSerious": [],
    "id": "zillow-8739895",
    "status": "active",
-   "lastSeen": "2026-10-11",
+   "lastSeen": "2026-10-12",
    "firstSeen": "2026-10-08",
    "priceHistory": [],
-   "daysOnMarket": 105,
+   "daysOnMarket": 106,
    "domBasis": "since listed 2026-06-28 (per Zillow)",
    "utilSummary": "Tenant pays: landscaping; not listed: water, sewer, trash, gas, electric, internet",
    "score": 2.0
@@ -1221,7 +1221,7 @@ window.LISTINGS_DATA = {
    "key": "2960 dillon",
    "bedsLabel": "4 + den (flex / office, per listing)",
    "staleAvail": true,
-   "lastVerified": "2026-10-11",
+   "lastVerified": "2026-10-12",
    "manualNotes": [],
    "manual": true,
    "pending": false,
@@ -1239,10 +1239,10 @@ window.LISTINGS_DATA = {
    "studentFlagsSerious": [],
    "id": "2960-dillon",
    "status": "active",
-   "lastSeen": "2026-10-11",
+   "lastSeen": "2026-10-12",
    "firstSeen": "2026-10-08",
    "priceHistory": [],
-   "daysOnMarket": 51,
+   "daysOnMarket": 52,
    "domBasis": "since listed 2026-08-21 (per Trulia (48 days on Trulia as of 2026-10-08))",
    "utilSummary": "Utilities: not listed",
    "score": 0.0
@@ -1405,15 +1405,6 @@ window.LISTINGS_DATA = {
    "reason": "4 BR, no den/office wording (browser pass)"
   },
   {
-   "key": "6529 falon",
-   "address": "6529 E Falon Ln",
-   "city": "Prescott Valley",
-   "beds": 4,
-   "rent": 2695,
-   "url": "https://www.zumper.com/address/6529-e-falon-ln-prescott-valley-az-86314-usa",
-   "reason": "4 BR, no den/office wording (browser pass)"
-  },
-  {
    "key": "1645 thimble",
    "address": "1645 N Thimble Ln",
    "city": "Prescott Valley",
@@ -1427,7 +1418,7 @@ window.LISTINGS_DATA = {
    "address": "6548 E Bay Point Way",
    "city": "Prescott Valley",
    "beds": 4,
-   "rent": null,
+   "rent": 3000,
    "url": "https://www.google.com/search?q=%226548+E+Bay+Point+Way%22+Prescott+Valley+rent",
    "reason": "4 BR, no den/office wording (browser pass)"
   },
@@ -1557,7 +1548,7 @@ window.LISTINGS_DATA = {
    "beds": 4,
    "baths": 2.0,
    "sqft": 2143,
-   "photo": "https://images.rentable.co/122492/99830736/large.jpeg",
+   "photo": "https://images.rentable.co/122492/99830076/large.jpeg",
    "manager": "Desert Wide Properties",
    "contact": "John P Bolstad",
    "contactPhone": "(928) 597-8953",
@@ -1593,7 +1584,7 @@ window.LISTINGS_DATA = {
    "availableIso": "now",
    "availableRaw": "Available now",
    "availFit": "early",
-   "availNote": "Available now: ~51 days of rent before Dec 1 unless landlord holds it",
+   "availNote": "Available now: ~50 days of rent before Dec 1 unless landlord holds it",
    "deposit": 2550,
    "depositText": null,
    "fees": [
@@ -1637,7 +1628,7 @@ window.LISTINGS_DATA = {
    "descExcerpt": "Property details Additional Details Total Unit Count: 1 Last Updated: Updated 14 hours ago Contact Number: (928) 597-8953 Contact 6882 Gables Trl Your Name Email Address Phone Number (optional) Request a Tour Date Ask a Question Hi, I found your property on Rentable and would like to schedule a virtual tour. Please let me know when you are next available. Thank you. Check Availability Email Sent Send me more listings like this. Error! Please try again later. Message Sent. A confirmation email has been sent to your inbox. More Properties Like This $2,444 7612 Dusty Boot Rd Prescott Valley, AZ 4",
    "key": "6882 gables",
    "bedsLabel": "4 BR + great room",
-   "lastVerified": "2026-10-11",
+   "lastVerified": "2026-10-12",
    "manualNotes": [
     "Browser pass saw a listed date of 3/11/25 (stale)."
    ],
@@ -1651,10 +1642,10 @@ window.LISTINGS_DATA = {
    "bedCategory": "border",
    "id": "6882-gables",
    "status": "active",
-   "lastSeen": "2026-10-11",
+   "lastSeen": "2026-10-12",
    "firstSeen": "2026-10-08",
    "utilSummary": "Utilities: not listed",
-   "daysOnMarket": 31,
+   "daysOnMarket": 32,
    "domBasis": "since listed 2026-09-10 (per Zillow)"
   },
   {
@@ -1719,7 +1710,7 @@ window.LISTINGS_DATA = {
    "availableIso": "now",
    "availableRaw": "Available now",
    "availFit": "early",
-   "availNote": "Available now: ~51 days of rent before Dec 1 unless landlord holds it",
+   "availNote": "Available now: ~50 days of rent before Dec 1 unless landlord holds it",
    "deposit": 5250,
    "depositText": null,
    "fees": [],
@@ -1771,7 +1762,7 @@ window.LISTINGS_DATA = {
    "descExcerpt": "Need lots of room? This recently updated home has 2,815 sq ft. 4-bedrooms & 3-bathrooms. Two bedrooms up and 2 downstairs with a spacious family room area and extra storage. The master bedroom has its own gas fireplace and an on-suite with dual vanities. There is a full bath downstairs and is perfect for guests or multi-generational living. Great upgraded Kitchen with an island and lots of counter space. Separate laundry room comes with washer, dryer and extra refrigerator. Upstairs living room is spacious with vaulted ceilings, gas fireplace and a beautiful glass slider that opens to the deck",
    "key": "1567 rycosa",
    "bedsLabel": "4 BR + family room / upstairs living",
-   "lastVerified": "2026-10-11",
+   "lastVerified": "2026-10-12",
    "manualNotes": [],
    "manual": true,
    "pending": false,
@@ -1788,10 +1779,10 @@ window.LISTINGS_DATA = {
    "bedCategory": "border",
    "id": "1567-rycosa",
    "status": "active",
-   "lastSeen": "2026-10-11",
+   "lastSeen": "2026-10-12",
    "firstSeen": "2026-10-08",
    "utilSummary": "Utilities: not listed",
-   "daysOnMarket": 9,
+   "daysOnMarket": 10,
    "domBasis": "since listed 2026-10-02 (per Zillow)"
   },
   {
@@ -1824,10 +1815,10 @@ window.LISTINGS_DATA = {
     }
    ],
    "url": "https://www.rentable.co/chino-valley-az/1750-s-johnson-ln",
-   "availableIso": "2026-10-12",
-   "availableRaw": "Available Oct 12, 2026",
+   "availableIso": "now",
+   "availableRaw": "Available now",
    "availFit": "early",
-   "availNote": "Available 2026-10-12: ~50 days of rent before Dec 1 unless landlord holds it",
+   "availNote": "Available now: ~50 days of rent before Dec 1 unless landlord holds it",
    "deposit": 3600,
    "depositText": null,
    "fees": [
@@ -1868,7 +1859,7 @@ window.LISTINGS_DATA = {
    "key": "1750 johnson",
    "bedsLabel": "4 BR + separate family room",
    "priceNote": "Zumper/Trulia show a 'price dropped $100' badge; now $2,400",
-   "lastVerified": "2026-10-11",
+   "lastVerified": "2026-10-12",
    "manualNotes": [],
    "manual": true,
    "pending": false,
@@ -1880,7 +1871,7 @@ window.LISTINGS_DATA = {
    "bedCategory": "border",
    "id": "1750-johnson",
    "status": "active",
-   "lastSeen": "2026-10-11",
+   "lastSeen": "2026-10-12",
    "firstSeen": "2026-10-08",
    "utilSummary": "Included: internet; not listed: water, sewer, trash, gas, electric, landscaping",
    "daysOnMarket": null,
@@ -1924,7 +1915,7 @@ window.LISTINGS_DATA = {
    "availableIso": "now",
    "availableRaw": "Available now",
    "availFit": "early",
-   "availNote": "Available now: ~51 days of rent before Dec 1 unless landlord holds it",
+   "availNote": "Available now: ~50 days of rent before Dec 1 unless landlord holds it",
    "deposit": null,
    "depositText": null,
    "fees": [],
@@ -1971,7 +1962,7 @@ window.LISTINGS_DATA = {
    "descExcerpt": "Outstanding home in lovely Williamson Valley. 4 bedroom, 2.5 bath, 2 car garage Lots of upgrades. New carpet Home is onits own well. Family room on second floor with 3 bedrooms and full bath.",
    "key": "6755 double tree",
    "bedsLabel": "4 BR + 2nd-floor family room",
-   "lastVerified": "2026-10-11",
+   "lastVerified": "2026-10-12",
    "manualNotes": [],
    "manual": true,
    "pending": false,
@@ -1983,10 +1974,10 @@ window.LISTINGS_DATA = {
    "bedCategory": "border",
    "id": "6755-double-tree",
    "status": "active",
-   "lastSeen": "2026-10-11",
+   "lastSeen": "2026-10-12",
    "firstSeen": "2026-10-08",
    "utilSummary": "Utilities: not listed",
-   "daysOnMarket": 90,
+   "daysOnMarket": 91,
    "domBasis": "since listed 2026-07-13 (per Zillow)"
   },
   {
@@ -2033,7 +2024,7 @@ window.LISTINGS_DATA = {
    "availableIso": "now",
    "availableRaw": "Available now",
    "availFit": "early",
-   "availNote": "Available now: ~51 days of rent before Dec 1 unless landlord holds it",
+   "availNote": "Available now: ~50 days of rent before Dec 1 unless landlord holds it",
    "deposit": null,
    "depositText": "equal to one month's rent",
    "fees": [],
@@ -2077,7 +2068,7 @@ window.LISTINGS_DATA = {
    "descExcerpt": "Welcome to 342 S Marina Street, a spacious 4-bedroom, 2-bath home offering comfortable living in the heart of Prescott. Inside, you'll find a functional layout with plenty of room to spread out, along with granite countertops, a gas stove, gas water heater, and a dedicated laundry room. Fresh interior paint is coming, giving the home a clean, refreshed feel for its next residents.Enjoy Prescott's beautiful weather from the covered front porch or relax and entertain on the side deck. With four bedrooms, there's plenty of flexibility for additional sleeping space, a home office, hobby room, or g",
    "key": "342 marina",
    "bedsLabel": "4 BR + basement (per HotPads; no den stated)",
-   "lastVerified": "2026-10-11",
+   "lastVerified": "2026-10-12",
    "manualNotes": [
     "Moved from match to borderline on Oct 11: the office/sleeping-space wording refers to the four bedrooms themselves, not an extra room. HotPads lists a basement."
    ],
@@ -2093,10 +2084,10 @@ window.LISTINGS_DATA = {
    "bedCategory": "border",
    "id": "342-marina",
    "status": "active",
-   "lastSeen": "2026-10-11",
+   "lastSeen": "2026-10-12",
    "firstSeen": "2026-10-08",
    "utilSummary": "Utilities: not listed",
-   "daysOnMarket": 10,
+   "daysOnMarket": 11,
    "domBasis": "since listed 2026-10-01 (per Zillow)"
   },
   {
@@ -2143,7 +2134,7 @@ window.LISTINGS_DATA = {
    "availableIso": "now",
    "availableRaw": "Available now",
    "availFit": "early",
-   "availNote": "Available now: ~51 days of rent before Dec 1 unless landlord holds it",
+   "availNote": "Available now: ~50 days of rent before Dec 1 unless landlord holds it",
    "deposit": null,
    "depositText": null,
    "fees": [],
@@ -2179,7 +2170,7 @@ window.LISTINGS_DATA = {
    "descExcerpt": "Fully Furnished 4 bedroom 3-bath Luxury Home is located in the most sought-after Timber Ridge mountain community with easy access to shopping, medical facilities, golf, and plenty of outdoor recreation opportunities. Main level living with eat-in-kitchen, granite counters, granite island with built in cooktop and custom alder cabinetry. Open living and dining room with gas stone fireplace, plush carpet, entertainment niche and cathedral ceilings. Main level Master Suite (!) features a spacious downstairs bedroom, separate shower and tub and large master closet. Upper level features 3 spacious ",
    "key": "966 coyote",
    "bedsLabel": "4 BR + upper family room",
-   "lastVerified": "2026-10-11",
+   "lastVerified": "2026-10-12",
    "manualNotes": [],
    "manual": true,
    "pending": false,
@@ -2193,10 +2184,10 @@ window.LISTINGS_DATA = {
    "bedCategory": "border",
    "id": "966-coyote",
    "status": "active",
-   "lastSeen": "2026-10-11",
+   "lastSeen": "2026-10-12",
    "firstSeen": "2026-10-08",
    "utilSummary": "Utilities: not listed",
-   "daysOnMarket": 983,
+   "daysOnMarket": 984,
    "domBasis": "since listed 2024-02-01 (per Redfin)"
   },
   {
@@ -2261,9 +2252,10 @@ window.LISTINGS_DATA = {
    "descExcerpt": "",
    "key": "14415 sandia",
    "bedsLabel": "4 BR + detached casita",
-   "lastVerified": "2026-10-11",
+   "lastVerified": "2026-10-12",
    "manualNotes": [
-    "Seen on Zumper, MLS 1083980. Status Pending."
+    "Seen on Zumper, MLS 1083980. Status Pending.",
+    "Oct 12 browser pass: Zumper still shows $5,500 with no pending label; pending status could not be verified, so left as pending."
    ],
    "manual": true,
    "pending": true,
@@ -2280,7 +2272,7 @@ window.LISTINGS_DATA = {
    "bedCategory": "border",
    "id": "14415-sandia",
    "status": "active",
-   "lastSeen": "2026-10-11",
+   "lastSeen": "2026-10-12",
    "firstSeen": "2026-10-08",
    "utilSummary": "Utilities: not listed",
    "daysOnMarket": null,
@@ -2300,11 +2292,6 @@ window.LISTINGS_DATA = {
      "key": "browser",
      "url": "https://www.apartments.com/1204-tranquil-ln-prescott-az/zt0fhez/",
      "kind": "listing"
-    },
-    {
-     "name": "Redfin",
-     "key": "redfin",
-     "url": "https://www.redfin.com/AZ/Prescott/1204-Tranquil-Ln-86305/home/192861982"
     },
     {
      "name": "Craigslist",
@@ -2329,10 +2316,26 @@ window.LISTINGS_DATA = {
     }
    ],
    "url": "https://offcampushousingpc.erau.edu/listing"
+  },
+  {
+   "address": "6163 Goldfinch Dr",
+   "city": "Prescott",
+   "note": "Room share: 'Per Person Only' (ERAU off-campus board); rooms $850–$1,950 per person, available now; gas, internet and trash included.",
+   "rent": null,
+   "contactPhone": null,
+   "sources": [
+    {
+     "name": "ERAU off-campus board",
+     "key": "browser",
+     "url": "https://offcampushousingpc.erau.edu/listing?property=237459",
+     "kind": "listing"
+    }
+   ],
+   "url": "https://offcampushousingpc.erau.edu/listing?property=237459"
   }
  ],
  "browserPass": {
-  "date": "2026-10-11",
+  "date": "2026-10-12",
   "worked": [
    "Apartments.com",
    "Zumper",
@@ -2345,15 +2348,14 @@ window.LISTINGS_DATA = {
   "blocked": [
    {
     "source": "Realtor.com",
-    "http": 429,
-    "verdict": "HTTP 429 in the browser pass too",
+    "http": "error page",
+    "verdict": "Error page \"This is taking longer than usual\" in the browser pass (same block as before)",
     "url": "https://www.realtor.com/apartments/Prescott_AZ/beds-4"
    }
   ],
   "notes": [
-   "Zumper beds filter not applied; filtered by card.",
-   "HotPads and Trulia press-and-hold checks passed."
+   "HotPads and Trulia Prescott Valley press-and-hold checks passed."
   ],
-  "summary": "Today's browser pass (Apartments.com, Zumper, HotPads, Trulia, Peak, Pierce and the ERAU board) found no new houses that fit; every house it already tracked is still shown at the same rent. It added details for houses already on the list (486 Robin Dr, 117 N Equestrian Way, 7906 E Carbon Ct and the undisclosed-address Hidden Valley Ranch 5-bedroom). Corrections: 1768 Rolling Hills Dr and 1924 Rocky Dells Dr are vacation rentals, 901 Hemlock Ave (3–6 month maximum) and 854 S Granite St are short-term furnished rentals, and 1640 Sherwood Dr lists only a game room (no den or office), so they are now excluded; 342 S Marina St moves to borderline because its \"home office\" wording refers to the four bedrooms themselves, not an extra room."
+  "summary": "Today's browser pass (Apartments.com, Zumper, HotPads, Trulia, Peak, Pierce and the ERAU board) found no new houses that fit; every house it already tracked is still listed at the same rent. 6529 E Falon Ln (already excluded) no longer shows a rent and is off the search results, so it is marked gone; 6548 E Bay Point Way (already excluded) now shows $3,000 on Zumper. A new per-room listing at 6163 Goldfinch Dr on the ERAU off-campus board (likely 5 bedrooms; the card label is unclear) was added under room shares. Realtor.com was still blocked."
  }
 };

@@ -1,6 +1,26 @@
 window.UPDATES_DATA = {
  "entries": [
   {
+   "date": "2026-10-12",
+   "title": "No changes — 9 houses fit",
+   "lede": "Nothing new, no price moves and nothing went off the market today. Top of the list is still 486 Robin Dr, Prescott at $3,150. Today's browser pass (Apartments.com, Zumper, HotPads, Trulia, Peak, Pierce and the ERAU board) found no new houses that fit; every house it already tracked is still listed at the same rent. 6529 E Falon Ln (already excluded) no longer shows a rent and is off the search results, so it is marked gone; 6548 E Bay Point Way (already excluded) now shows $3,000 on Zumper. A new per-room listing at 6163 Goldfinch Dr on the ERAU off-campus board (likely 5 bedrooms; the card label is unclear) was added under room shares. Realtor.com was still blocked.",
+   "browser": [],
+   "borderline": [],
+   "new": [],
+   "changed": [],
+   "gone": [],
+   "reclassified": [],
+   "top": [],
+   "market": "9 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,394–$4,800, median $3,000; 4 are at or under the $2,900 reference. 7 are within 25 min; 0 list a move-in date in the Dec 1 window.",
+   "counts": {
+    "active": 9,
+    "new": 0,
+    "changed": 0,
+    "gone": 0,
+    "reclassified": 0
+   }
+  },
+  {
    "date": "2026-10-11",
    "title": "1 gone, 6 reclassified — 9 houses fit",
    "lede": "Today's refresh found 1 gone, 6 reclassified. Top of the list is still 486 Robin Dr, Prescott at $3,150. Today's browser pass (Apartments.com, Zumper, HotPads, Trulia, Peak, Pierce and the ERAU board) found no new houses that fit; every house it already tracked is still shown at the same rent. It added details for houses already on the list (486 Robin Dr, 117 N Equestrian Way, 7906 E Carbon Ct and the undisclosed-address Hidden Valley Ranch 5-bedroom). Corrections: 1768 Rolling Hills Dr and 1924 Rocky Dells Dr are vacation rentals, 901 Hemlock Ave (3–6 month maximum) and 854 S Granite St are short-term furnished rentals, and 1640 Sherwood Dr lists only a game room (no den or office), so they are now excluded; 342 S Marina St moves to borderline because its \"home office\" wording refers to the four bedrooms themselves, not an extra room.",
