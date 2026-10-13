@@ -1,6 +1,31 @@
 window.UPDATES_DATA = {
  "entries": [
   {
+   "date": "2026-10-13",
+   "title": "1 price change — 9 houses fit",
+   "lede": "Today's refresh found 1 price change. Top of the list is still 486 Robin Dr, Prescott at $3,150. Today's browser pass (Apartments.com, Zumper, HotPads, Trulia, Peak, Pierce and the ERAU board) found no new houses that fit. 7906 E Carbon Ct shows $2,850 on Apartments.com and Zumper but $2,700 on HotPads and Trulia, so the sources disagree; 6529 E Falon Ln (excluded, 4 BR without a den) is back on Zumper at $2,695, and five excluded listings that had no rent now show one. Realtor.com was still blocked (HTTP 429).",
+   "browser": [],
+   "borderline": [],
+   "new": [],
+   "changed": [
+    {
+     "text": "7906 E Carbon Ct, Prescott Valley: $2,850 → $2,700 (down $150)",
+     "href": "https://www.apartments.com/7906-e-carbon-ct-prescott-valley-az/x0wespn/"
+    }
+   ],
+   "gone": [],
+   "reclassified": [],
+   "top": [],
+   "market": "9 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,394–$4,800, median $3,000; 4 are at or under the $2,900 reference. 7 are within 25 min; 0 list a move-in date in the Dec 1 window.",
+   "counts": {
+    "active": 9,
+    "new": 0,
+    "changed": 1,
+    "gone": 0,
+    "reclassified": 0
+   }
+  },
+  {
    "date": "2026-10-12",
    "title": "No changes — 9 houses fit",
    "lede": "Nothing new, no price moves and nothing went off the market today. Top of the list is still 486 Robin Dr, Prescott at $3,150. Today's browser pass (Apartments.com, Zumper, HotPads, Trulia, Peak, Pierce and the ERAU board) found no new houses that fit; every house it already tracked is still listed at the same rent. 6529 E Falon Ln (already excluded) no longer shows a rent and is off the search results, so it is marked gone; 6548 E Bay Point Way (already excluded) now shows $3,000 on Zumper. A new per-room listing at 6163 Goldfinch Dr on the ERAU off-campus board (likely 5 bedrooms; the card label is unclear) was added under room shares. Realtor.com was still blocked.",
