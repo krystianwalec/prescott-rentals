@@ -1,6 +1,26 @@
 window.UPDATES_DATA = {
  "entries": [
   {
+   "date": "2026-10-15",
+   "title": "No changes — 9 houses fit",
+   "lede": "Nothing new, no price moves and nothing went off the market today. Top of the list is still 486 Robin Dr, Prescott at $3,150. Covered Apartments.com, Zumper, HotPads, Trulia, Peak, Pierce and ERAU; Realtor.com was rate-limited (429). Seen 42 houses, 3 new candidates (2 outside target towns), no priority addresses missing, and one rent conflict on 7906 E Carbon Ct.",
+   "browser": [],
+   "borderline": [],
+   "new": [],
+   "changed": [],
+   "gone": [],
+   "reclassified": [],
+   "top": [],
+   "market": "9 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,394–$4,800, median $3,000; 4 are at or under the $2,900 reference. 7 are within 25 min; 0 list a move-in date in the Dec 1 window.",
+   "counts": {
+    "active": 9,
+    "new": 0,
+    "changed": 0,
+    "gone": 0,
+    "reclassified": 0
+   }
+  },
+  {
    "date": "2026-10-14",
    "title": "No changes — 9 houses fit",
    "lede": "Nothing new, no price moves and nothing went off the market today. Top of the list is still 486 Robin Dr, Prescott at $3,150. Browser pass worked on Apartments.com, Zumper, HotPads, Trulia, Peak, Pierce and ERAU; only Realtor.com was blocked (HTTP 429). No new 4+ BR houses in the three target cities; 342 S Marina St dropped to $2,344 and 7906 E Carbon Ct's rent is still in conflict, while 9450 E Whipsaw Ln and 6529 E Falon Ln were not found today.",
