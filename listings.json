@@ -1,6 +1,6 @@
 {
  "asOf": "2026-10-16",
- "generatedAt": "2026-10-16 12:05 PT",
+ "generatedAt": "2026-10-16 12:07 PT",
  "target": {
   "name": "Embry-Riddle Aeronautical University (Prescott campus)",
   "address": "3700 Willow Creek Rd, Prescott, AZ 86301",
@@ -234,7 +234,7 @@
   {
    "source": "rentalsource",
    "url": "https://www.rentalsource.com/prescott-az/houses/",
-   "http": 429,
+   "http": null,
    "verdict": "blocked"
   },
   {
@@ -2541,6 +2541,6 @@
    "1204 Tranquil Ln on the ERAU board: 'Available 12-18-2026, Per Person Only', $1,100.",
    "Out-of-area only: 1870 E Donner Trl Cottonwood (4 BR, $4,999), 1015 W Que Paso Dr Camp Verde (4 BR, $2,450), plus the Clarkdale/Jerome/Mayer/Dewey listings seen on earlier passes."
   ],
-  "summary": "Covered Apartments.com, Zumper, HotPads, Trulia, Peak, Pierce and ERAU; Realtor.com was rate-limited (429). Two new 4 BR houses: 14850 N Jay Morrish Dr in Talking Rock ($4,270, really 3 BR + attached casita, borderline) and 2425 N Navajo Pl in Chino Valley ($2,300, no den, excluded); no known listing is gone, and the 7906 E Carbon Ct rent conflict persists."
+  "summary": "Covered Apartments.com, Zumper, HotPads, Trulia, Peak, Pierce and ERAU; Realtor.com was rate-limited (429). Two new 4 BR listings, neither counted: 14850 N Jay Morrish Dr in Talking Rock ($4,270, listed as 4 BR but described as 3 BR + attached casita, borderline) and 2425 N Navajo Pl in Chino Valley ($2,300, no den wording, excluded); no known listing is gone, and the 7906 E Carbon Ct rent conflict persists."
  }
 }
