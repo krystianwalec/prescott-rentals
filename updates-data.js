@@ -1,6 +1,31 @@
 window.UPDATES_DATA = {
  "entries": [
   {
+   "date": "2026-10-16",
+   "title": "No changes — 9 houses fit",
+   "lede": "Nothing new, no price moves and nothing went off the market today. Top of the list is still 486 Robin Dr, Prescott at $3,150. A separate browser pass of Apartments.com, Zumper, HotPads, Trulia, Peak Prescott, Pierce (ppmprescott), ERAU off-campus board (sites that block automated fetching) added 0 more matches and 1 borderline house (4 bedrooms plus a family room or casita, listed separately, not counted). Covered Apartments.com, Zumper, HotPads, Trulia, Peak, Pierce and ERAU; Realtor.com was rate-limited (429). Two new 4 BR houses: 14850 N Jay Morrish Dr in Talking Rock ($4,270, really 3 BR + attached casita, borderline) and 2425 N Navajo Pl in Chino Valley ($2,300, no den, excluded); no known listing is gone, and the 7906 E Carbon Ct rent conflict persists.",
+   "browser": [],
+   "borderline": [
+    {
+     "text": "14850 N Jay Morrish Dr, Prescott: 3 BR + attached casita (listed as 4 BR), $4,270, 34 min to ERAU, Available 11/5/26",
+     "href": "https://www.apartments.com/14850-jay-morrish-dr-prescott-az/7esk48z/"
+    }
+   ],
+   "new": [],
+   "changed": [],
+   "gone": [],
+   "reclassified": [],
+   "top": [],
+   "market": "9 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,394–$4,800, median $3,000; 4 are at or under the $2,900 reference. 7 are within 25 min; 0 list a move-in date in the Dec 1 window.",
+   "counts": {
+    "active": 9,
+    "new": 0,
+    "changed": 0,
+    "gone": 0,
+    "reclassified": 0
+   }
+  },
+  {
    "date": "2026-10-15",
    "title": "No changes — 9 houses fit",
    "lede": "Nothing new, no price moves and nothing went off the market today. Top of the list is still 486 Robin Dr, Prescott at $3,150. Covered Apartments.com, Zumper, HotPads, Trulia, Peak, Pierce and ERAU; Realtor.com was rate-limited (429). Seen 42 houses, 3 new candidates (2 outside target towns), no priority addresses missing, and one rent conflict on 7906 E Carbon Ct.",
