@@ -1,6 +1,36 @@
 window.UPDATES_DATA = {
  "entries": [
   {
+   "date": "2026-10-17",
+   "title": "1 new house — 10 houses fit",
+   "lede": "Today's refresh found 1 new house. Top of the list is still 486 Robin Dr, Prescott at $3,150. A separate browser pass of Apartments.com, Zumper, HotPads, Trulia, Peak Prescott, Pierce (ppmprescott), ERAU off-campus board (sites that block automated fetching) added 1 more match. Covered Apartments.com, Zumper, HotPads, Trulia, Peak, Pierce and ERAU; Realtor.com was rate-limited (429). One new 5 BR house: 1635 Kaibab Loop in Prescott ($4,000 total monthly, 3,364 sqft, available Nov 1, by owner); no known listing is gone, and the rent conflicts at 7906 E Carbon Ct and 1567 Rycosa Ln persist.",
+   "browser": [
+    {
+     "text": "1635 Kaibab Loop, Prescott: 5 BR (5th bedroom in independent lower level, per listing), $4,000, 21 min to ERAU, Available Nov 1",
+     "href": "https://www.apartments.com/1635-kaibab-loop-prescott-az/v9ndn9f/"
+    }
+   ],
+   "borderline": [],
+   "new": [
+    {
+     "text": "1635 Kaibab Loop, Prescott — 5 BR (5th bedroom in independent lower level, per listing), $4,000, 21 min to ERAU, available 2026-11-01: ~30 days of rent before dec 1 unless landlord holds it",
+     "href": "https://www.apartments.com/1635-kaibab-loop-prescott-az/v9ndn9f/"
+    }
+   ],
+   "changed": [],
+   "gone": [],
+   "reclassified": [],
+   "top": [],
+   "market": "10 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,394–$4,800, median $3,075; 4 are at or under the $2,900 reference. 8 are within 25 min; 0 list a move-in date in the Dec 1 window.",
+   "counts": {
+    "active": 10,
+    "new": 1,
+    "changed": 0,
+    "gone": 0,
+    "reclassified": 0
+   }
+  },
+  {
    "date": "2026-10-16",
    "title": "No changes — 9 houses fit",
    "lede": "No new matching houses, no price moves and nothing went off the market today. Top of the list is still 486 Robin Dr, Prescott at $3,150. A separate browser pass of Apartments.com, Zumper, HotPads, Trulia, Peak Prescott, Pierce (ppmprescott), ERAU off-campus board (sites that block automated fetching) found no new matches but 1 borderline house (4 bedrooms plus a family room or casita, listed separately, not counted). Covered Apartments.com, Zumper, HotPads, Trulia, Peak, Pierce and ERAU; Realtor.com was rate-limited (429). Two new 4 BR listings, neither counted: 14850 N Jay Morrish Dr in Talking Rock ($4,270, listed as 4 BR but described as 3 BR + attached casita, borderline) and 2425 N Navajo Pl in Chino Valley ($2,300, no den wording, excluded); no known listing is gone, and the 7906 E Carbon Ct rent conflict persists.",
