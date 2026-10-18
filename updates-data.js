@@ -1,6 +1,49 @@
 window.UPDATES_DATA = {
  "entries": [
   {
+   "date": "2026-10-18",
+   "title": "2 price changes, 2 gone, 1 now pending — 8 houses fit",
+   "lede": "Today's refresh found 2 price changes, 2 gone, 1 now pending. Top of the list is still 7906 E Carbon Ct, Prescott Valley at $2,700. Browser pass covered Apartments.com, Zumper, HotPads, Trulia, Peak, Pierce, ERAU and, for the first time, Realtor.com: 1567 Rycosa Ln (borderline) dropped from $3,500 to $3,200 on four sites, Realtor.com shows 6227 E Bower Ln and several excluded houses as Pending while other sites still list them, 6529 E Falon Ln (4 BR, no den, excluded) is back, and no known listing is gone.",
+   "browser": [],
+   "borderline": [],
+   "new": [],
+   "changed": [
+    {
+     "text": "1635 Kaibab Loop, Prescott: $4,000 → $3,999 (down $1)",
+     "href": "https://www.apartments.com/1635-kaibab-loop-prescott-az/v9ndn9f/"
+    },
+    {
+     "text": "1567 Rycosa Ln, Prescott (borderline, not counted): $3,500 → $3,200 (down $300)",
+     "href": "https://www.redfin.com/AZ/Prescott/1567-Rycosa-Ln-86301/home/123295214"
+    },
+    {
+     "text": "6227 E Bower Ln, Prescott Valley ($2,450): now marked pending (application likely in progress)",
+     "href": "https://www.zumper.com/address/6227-e-bower-ln-prescott-valley-az-86314-usa"
+    }
+   ],
+   "gone": [
+    {
+     "text": "(Undisclosed Address), Prescott Valley (5 BR, last $3,000) no longer shows on Trulia, Zillow",
+     "href": "https://www.trulia.com/home/address-not-disclosed-prescott-valley-az-86314-8731564"
+    },
+    {
+     "text": "(Undisclosed Address), Prescott (5 BR, last $3,600) no longer shows on Trulia, Zillow",
+     "href": "https://www.trulia.com/home/address-not-disclosed-prescott-az-86303-8739895"
+    }
+   ],
+   "reclassified": [],
+   "top": [],
+   "market": "8 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,394–$4,800, median $2,925; 4 are at or under the $2,900 reference. 8 are within 25 min; 0 list a move-in date in the Dec 1 window.",
+   "counts": {
+    "active": 8,
+    "new": 0,
+    "changed": 2,
+    "gone": 2,
+    "reclassified": 0,
+    "pending": 1
+   }
+  },
+  {
    "date": "2026-10-17",
    "title": "1 new house — 10 houses fit",
    "lede": "Today's refresh found 1 new house. Top of the list is still 486 Robin Dr, Prescott at $3,150. A separate browser pass of Apartments.com, Zumper, HotPads, Trulia, Peak Prescott, Pierce (ppmprescott), ERAU off-campus board (sites that block automated fetching) added 1 more match. Covered Apartments.com, Zumper, HotPads, Trulia, Peak, Pierce and ERAU; Realtor.com was rate-limited (429). One new 5 BR house: 1635 Kaibab Loop in Prescott ($4,000 total monthly, 3,364 sqft, available Nov 1, by owner); no known listing is gone, and the rent conflicts at 7906 E Carbon Ct and 1567 Rycosa Ln persist.",
