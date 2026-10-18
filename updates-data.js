@@ -2,8 +2,8 @@ window.UPDATES_DATA = {
  "entries": [
   {
    "date": "2026-10-18",
-   "title": "2 price changes, 2 gone, 1 now pending — 8 houses fit",
-   "lede": "Today's refresh found 2 price changes, 2 gone, 1 now pending. Top of the list is still 7906 E Carbon Ct, Prescott Valley at $2,700. Browser pass covered Apartments.com, Zumper, HotPads, Trulia, Peak, Pierce, ERAU and, for the first time, Realtor.com: 1567 Rycosa Ln (borderline) dropped from $3,500 to $3,200 on four sites, Realtor.com shows 6227 E Bower Ln and several excluded houses as Pending while other sites still list them, 6529 E Falon Ln (4 BR, no den, excluded) is back, and no known listing is gone.",
+   "title": "2 price changes, 1 now pending — 10 houses fit",
+   "lede": "Today's refresh found 2 price changes, 1 now pending. Top of the list is now 7906 E Carbon Ct, Prescott Valley at $2,700. Browser pass covered Apartments.com, Zumper, HotPads, Trulia, Peak, Pierce, ERAU and, for the first time, Realtor.com: 1567 Rycosa Ln (borderline) dropped from $3,500 to $3,200 on four sites, Realtor.com shows 6227 E Bower Ln and several excluded houses as Pending while other sites still list them, 6529 E Falon Ln (4 BR, no den, excluded) is back, and no known listing is gone.",
    "browser": [],
    "borderline": [],
    "new": [],
@@ -21,24 +21,15 @@ window.UPDATES_DATA = {
      "href": "https://www.zumper.com/address/6227-e-bower-ln-prescott-valley-az-86314-usa"
     }
    ],
-   "gone": [
-    {
-     "text": "(Undisclosed Address), Prescott Valley (5 BR, last $3,000) no longer shows on Trulia, Zillow",
-     "href": "https://www.trulia.com/home/address-not-disclosed-prescott-valley-az-86314-8731564"
-    },
-    {
-     "text": "(Undisclosed Address), Prescott (5 BR, last $3,600) no longer shows on Trulia, Zillow",
-     "href": "https://www.trulia.com/home/address-not-disclosed-prescott-az-86303-8739895"
-    }
-   ],
+   "gone": [],
    "reclassified": [],
    "top": [],
-   "market": "8 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,394–$4,800, median $2,925; 4 are at or under the $2,900 reference. 8 are within 25 min; 0 list a move-in date in the Dec 1 window.",
+   "market": "10 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,394–$4,800, median $3,075; 4 are at or under the $2,900 reference. 8 are within 25 min; 0 list a move-in date in the Dec 1 window.",
    "counts": {
-    "active": 8,
+    "active": 10,
     "new": 0,
     "changed": 2,
-    "gone": 2,
+    "gone": 0,
     "reclassified": 0,
     "pending": 1
    }
