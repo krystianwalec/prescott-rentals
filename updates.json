@@ -1,6 +1,37 @@
 {
  "entries": [
   {
+   "date": "2026-10-19",
+   "title": "1 price change, 1 gone — 9 houses fit",
+   "lede": "Today's refresh found 1 price change, 1 gone. Top of the list is still 7906 E Carbon Ct, Prescott Valley at $2,700. Browser pass covered Apartments.com, Zumper, HotPads, Trulia, Realtor.com, Zillow (in a browser), Peak, Pierce and ERAU: no new in-area houses; the undisclosed-address 5 BR in Hidden Valley Ranch went up from $3,600 to $4,500 on Zillow; 117 N Equestrian Way (5 BR, $3,250) no longer shows on any site; two excluded 4 BR listings (4611 E Cheshire Loop, 3851 Serenity Cliff Ct) are also gone; the six Realtor.com pending listings are unchanged.",
+   "browser": [],
+   "borderline": [],
+   "new": [],
+   "changed": [
+    {
+     "text": "(Undisclosed Address), Prescott: $3,600 → $4,500 (up $900)",
+     "href": "https://www.zillow.com/homedetails/Prescott-AZ-86303/8739895_zpid/"
+    }
+   ],
+   "gone": [
+    {
+     "text": "117 N Equestrian Way, Prescott (5 BR, last $3,250) no longer shows on Trulia, Zillow",
+     "href": "https://www.trulia.com/home/117-n-equestrian-way-prescott-az-86303-8734157"
+    }
+   ],
+   "reclassified": [],
+   "top": [],
+   "market": "9 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,394–$4,800, median $3,000; 4 are at or under the $2,900 reference. 7 are within 25 min; 0 list a move-in date in the Dec 1 window.",
+   "counts": {
+    "active": 9,
+    "new": 0,
+    "changed": 1,
+    "gone": 1,
+    "reclassified": 0,
+    "pending": 0
+   }
+  },
+  {
    "date": "2026-10-18",
    "title": "2 price changes, 1 now pending — 10 houses fit",
    "lede": "Today's refresh found 2 price changes, 1 now pending. Top of the list is now 7906 E Carbon Ct, Prescott Valley at $2,700. Browser pass covered Apartments.com, Zumper, HotPads, Trulia, Peak, Pierce, ERAU and, for the first time, Realtor.com: 1567 Rycosa Ln (borderline) dropped from $3,500 to $3,200 on four sites, Realtor.com shows 6227 E Bower Ln and several excluded houses as Pending while other sites still list them, 6529 E Falon Ln (4 BR, no den, excluded) is back, and no known listing is gone.",
