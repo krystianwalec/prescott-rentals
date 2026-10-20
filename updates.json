@@ -1,6 +1,27 @@
 {
  "entries": [
   {
+   "date": "2026-10-20",
+   "title": "No changes — 9 houses fit",
+   "lede": "Nothing new, no price moves and nothing went off the market today. Top of the list is now 7302 E Night Watch Way, Prescott Valley at $2,400. Browser pass covered Zillow, Apartments.com, Zumper, HotPads, Peak, Pierce and the ERAU board fully, Trulia and Realtor.com in part: no new in-area houses and no rent changes; 1645 N Thimble Ln (excluded) now also shows as for sale on Realtor.com.",
+   "browser": [],
+   "borderline": [],
+   "new": [],
+   "changed": [],
+   "gone": [],
+   "reclassified": [],
+   "top": [],
+   "market": "9 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,394–$4,800, median $3,000; 4 are at or under the $2,900 reference. 7 are within 25 min; 0 list a move-in date in the Dec 1 window.",
+   "counts": {
+    "active": 9,
+    "new": 0,
+    "changed": 0,
+    "gone": 0,
+    "reclassified": 0,
+    "pending": 0
+   }
+  },
+  {
    "date": "2026-10-19",
    "title": "1 price change, 1 gone — 9 houses fit",
    "lede": "Today's refresh found 1 price change, 1 gone. Top of the list is still 7906 E Carbon Ct, Prescott Valley at $2,700. Browser pass covered Apartments.com, Zumper, HotPads, Trulia, Realtor.com, Zillow (in a browser), Peak, Pierce and ERAU: no new in-area houses; the undisclosed-address 5 BR in Hidden Valley Ranch went up from $3,600 to $4,500 on Zillow; 117 N Equestrian Way (5 BR, $3,250) no longer shows on any site; two excluded 4 BR listings (4611 E Cheshire Loop, 3851 Serenity Cliff Ct) are also gone; the six Realtor.com pending listings are unchanged.",
