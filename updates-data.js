@@ -1,6 +1,27 @@
 window.UPDATES_DATA = {
  "entries": [
   {
+   "date": "2026-10-22",
+   "title": "No changes — 9 houses fit",
+   "lede": "Nothing new, no price moves and nothing went off the market today. Top of the list is still 7302 E Night Watch Way, Prescott Valley at $2,400. Browser pass covered Apartments.com, HotPads, Trulia, Zumper, Realtor.com, Peak and Pierce, with Zillow and the ERAU board in part: no new in-area houses, no rent or status changes.",
+   "browser": [],
+   "borderline": [],
+   "new": [],
+   "changed": [],
+   "gone": [],
+   "reclassified": [],
+   "top": [],
+   "market": "9 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,394–$4,800, median $3,000; 4 are at or under the $2,900 reference. 7 are within 25 min; 0 list a move-in date in the Dec 1 window.",
+   "counts": {
+    "active": 9,
+    "new": 0,
+    "changed": 0,
+    "gone": 0,
+    "reclassified": 0,
+    "pending": 0
+   }
+  },
+  {
    "date": "2026-10-21",
    "title": "1 price change — 9 houses fit",
    "lede": "Today's refresh found 1 price change. Top of the list is still 7302 E Night Watch Way, Prescott Valley at $2,400. Browser pass covered Zillow, Apartments.com, HotPads, Trulia, Zumper, Peak, Pierce and the ERAU board, Realtor.com in part: no new in-area houses; 7906 E Carbon Ct is now $2,850 everywhere and 901 Hemlock Ave (excluded) is $4,500.",
