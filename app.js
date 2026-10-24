@@ -4,12 +4,13 @@
   const esc = (s) => String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
   const money = (n) => (n == null || n === "" ? null : "$" + Number(n).toLocaleString("en-US"));
   const NL = '<span class="nl">not listed</span>';
-  const COLORS = { "6plus": "#6a3d9a", "5": "#1f6f6a", "4den": "#d4a017", border: "#8a94a6" };
-  const BCLASS = { "6plus": "b6", "5": "b5", "4den": "b4", border: "bb" };
+  const COLORS = { "6plus": "#6a3d9a", "5": "#1f6f6a", "4den": "#d4a017", border: "#8a94a6", "3flex": "#e8743b" };
+  const BCLASS = { "6plus": "b6", "5": "b5", "4den": "b4", border: "bb", "3flex": "b3" };
+  const P3_STROKE = "#7a2e0e"; // 3 + extra rooms: orange dot with a dark ring
   const FIT = { ideal: "Move-in fits (~Dec 1)", early: "Available early (overlap)", late: "Available after mid-Dec", unknown: "Move-in date not listed" };
   const UTIL_ORDER = ["water", "sewer", "trash", "gas", "electric", "internet", "landscaping", "hoa"];
 
-  let DATA = null, ALL = [], BORDER = [], map, layer, markers = {};
+  let DATA = null, ALL = [], BORDER = [], PLUS3 = [], map, layer, markers = {};
 
   function loadJSON(url, fallback) {
     return fetch(url, { cache: "no-store" }).then((r) => { if (!r.ok) throw 0; return r.json(); }).catch(() => fallback);
@@ -43,6 +44,7 @@
       [under, `asking ≤ ${money(DATA.budgetRef)}/mo (reference only)`],
       [newToday, `new on ${today}`],
       [gone, "gone (kept below, flagged)"],
+      [PLUS3.filter((l) => l.status === "active" && !l.flexWeak).length, "3 BR + extra room (separate list, not counted; plus borderline)"],
     ];
     $("#summary").innerHTML = stats.map(([b, s]) => `<div class="stat"><b>${b}</b><span>${esc(s)}</span></div>`).join("");
     $("#as-of").innerHTML = `Data as of <strong>${esc(DATA.asOf)}</strong> (refreshed ${esc(DATA.generatedAt || "")}). ` +
@@ -68,6 +70,7 @@
         ${sec("New houses that fit", e.new)}
         ${sec("Added from the browser pass (sites that block automated fetching)", e.browser)}
         ${sec("Borderline: 4 BR + family room / casita (not counted)", e.borderline)}
+        ${sec("New: 3 bedrooms + extra room (separate list, not counted)", e.plus3)}
         ${sec("Price changes", e.changed)}
         ${sec("Gone", e.gone)}
         ${sec("Corrections: no longer counted (still listed by the source)", e.reclassified)}
@@ -82,8 +85,8 @@
     const anyKnown = UTIL_ORDER.some((k) => u[k]);
     const chips = UTIL_ORDER.map((k) => {
       const v = u[k];
-      const lbl = v === "included" ? "included" : v === "tenant" ? "tenant pays" : "not listed";
-      return `<span class="u ${v || ""}" title="${k}: ${lbl}">${k}${v === "included" ? " ✓" : v === "tenant" ? " $" : " ?"}</span>`;
+      const lbl = v === "included" ? "included" : v === "tenant" ? "tenant pays" : v === "optional" ? "included only in the higher all-utilities price" : "not listed";
+      return `<span class="u ${v || ""}" title="${k}: ${lbl}">${k}${v === "included" ? " ✓" : v === "tenant" ? " $" : v === "optional" ? " (opt)" : " ?"}</span>`;
     }).join("");
     return `<div class="utils">${chips}</div>${anyKnown ? "" : '<div class="meta">Listing does not say which utilities are included.</div>'}`;
   }
@@ -114,6 +117,8 @@
       l.unverified ? '<span class="badge warn">Not re-checked today</span>' : "",
       l.pending ? '<span class="badge warn">Pending</span>' : "",
       l.weakDen ? '<span class="badge warn">Den wording weak</span>' : "",
+      cat === "3flex" ? '<span class="badge b3">Not counted · 3 BR + extra room</span>' : "",
+      cat === "3flex" && l.flexWeak ? '<span class="badge warn">Borderline: extra room only tagged, or it may be the 3rd bedroom</span>' : "",
       l.staleAvail ? '<span class="badge warn">Date may be stale</span>' : "",
       l.manual ? `<span class="badge via">Browser pass${l.lastVerified ? " " + esc(l.lastVerified) : ""}</span>` : "",
     ].join("");
@@ -124,7 +129,7 @@
       (l.studentFlags || []).length ? "Listing mentions: " + l.studentFlags.map((f) => `"${esc(f)}"`).join("; ") : "",
       l.studentPositive ? `Mentions: "${esc(l.studentPositive)}"` : "",
     ].filter(Boolean).join("<br>") || "No student/roommate policy in listing — ask";
-    const den = l.manual && l.denSnippet ? `${esc(l.bedsLabel)}: <span class="quote">“${esc(l.denSnippet)}”</span>` : cat === "4den" ? `4 + den (per listing): <span class="quote">“…${esc(l.denSnippet)}…”</span>` : l.denSnippet ? `<span class="quote">“…${esc(l.denSnippet)}…”</span>` : "—";
+    const den = cat === "3flex" ? (l.flexQuote ? `${esc(l.bedsLabel)}: <span class="quote">“${esc(l.flexQuote)}”</span>` : NL) : l.manual && l.denSnippet ? `${esc(l.bedsLabel)}: <span class="quote">“${esc(l.denSnippet)}”</span>` : cat === "4den" ? `4 + den (per listing): <span class="quote">“…${esc(l.denSnippet)}…”</span>` : l.denSnippet ? `<span class="quote">“…${esc(l.denSnippet)}…”</span>` : "—";
     const dom = l.daysOnMarket != null ? `${l.daysOnMarket} days <span class="meta">(${esc(l.domBasis)})</span>` : NL;
     const avail = l.availableRaw ? `${esc(l.availableRaw)}<br><span class="meta">${esc(l.availNote)}</span>` : NL;
     const notes = [];
@@ -148,7 +153,7 @@
       <dl class="facts">
         <dt>Beds / baths</dt><dd>${l.beds || "?"} bd / ${l.baths || "?"} ba</dd>
         <dt>Size / lot</dt><dd>${l.sqft ? Number(l.sqft).toLocaleString() + " sq ft" : "sq ft " + NL} · ${l.lot ? esc(l.lot) : "lot " + NL}</dd>
-        <dt>Den / office</dt><dd>${den}</dd>
+        <dt>${cat === "3flex" ? "Extra room" : "Den / office"}</dt><dd>${den}</dd>
         <dt>Available</dt><dd>${avail}</dd>
         <dt>Drive to ERAU</dt><dd>${drive ? `${drive} <span class="meta">(estimated, OSRM, no traffic)</span>` : NL}</dd>
         <dt>Deposit</dt><dd>${deposit}</dd>
@@ -230,10 +235,12 @@
     if (l.driveMin != null) bits.push(Math.round(l.driveMin) + " min est. drive to ERAU" + (l.driveMi != null ? ` (${l.driveMi} mi)` : ""));
     if (l.utilSummary) bits.push((/^utilities/i.test(l.utilSummary) ? "" : "Utilities: ") + esc(l.utilSummary));
     if (l.daysOnMarket != null) bits.push(esc(String(l.daysOnMarket)) + " days on market");
-    if (l.denSnippet) bits.push("Den: " + esc(String(l.denSnippet).slice(0, 90)));
+    if (l.bedCategory === "3flex" && l.flexQuote) bits.push("Extra room: “" + esc(String(l.flexQuote).slice(0, 110)) + "”");
+    else if (l.denSnippet) bits.push("Den: " + esc(String(l.denSnippet).slice(0, 90)));
     if (l.studentRefusal) bits.push("<em>Student note: " + esc(l.studentRefusal) + "</em>");
     if (gone) bits.push("<em>gone</em>");
     if (l.bedCategory === "border") bits.push("<em>Borderline (not counted as a match)</em>");
+    if (l.bedCategory === "3flex") bits.push("<em>3 + extra rooms (separate list, not counted)" + (l.flexWeak ? "; borderline wording" : "") + "</em>");
     if (l.pending) bits.push("<em>Status: pending</em>");
     const img = l.photo ? `<img class="tip-img" src="${esc(l.photo)}" alt="">` : "";
     return `<div class="tip">${img}<div>${bits.join("<br>")}</div></div>`;
@@ -243,11 +250,15 @@
     layer.clearLayers(); markers = {};
     const pts = [[DATA.target.lat, DATA.target.lng]];
     const showB = !$("#f-border") || $("#f-border").checked;
-    list.concat(showB ? BORDER : []).forEach((l) => {
+    const showP3 = !$("#f-plus3") || $("#f-plus3").checked;
+    const hideGone = $("#f-gone") && $("#f-gone").checked;
+    list.concat(showB ? BORDER : [], showP3 ? PLUS3.filter((l) => !(hideGone && l.status === "gone")) : []).forEach((l) => {
       if (l.lat == null || l.lng == null) return;
       const gone = l.status === "gone";
+      const p3 = l.bedCategory === "3flex";
+      const stroke = gone ? "#9a9a9a" : p3 ? P3_STROKE : "#fff", sw = gone ? 2 : p3 ? 2.5 : 1.5;
       const m = L.circleMarker([l.lat, l.lng], {
-        radius: radius(l.rent), color: gone ? "#9a9a9a" : "#fff", weight: gone ? 2 : 1.5,
+        radius: radius(l.rent), color: stroke, weight: sw,
         fillColor: gone ? "#fff" : COLORS[l.bedCategory], fillOpacity: gone ? 0.6 : l.bedCategory === "border" ? 0.55 : (l.rent ? 0.85 : 0.35),
         dashArray: l.bedCategory === "border" ? "3 3" : null,
       });
@@ -255,7 +266,7 @@
       m.bindTooltip(tip, { direction: "top", offset: [0, -6], opacity: 1, className: "hover-tip" });
       m.bindPopup(tip + `<div class="tip-jump"><a href="#card-${esc(l.id)}" data-jump="${esc(l.id)}">Show full card \u2193</a></div>`);
       m.on("mouseover", () => { m.setStyle({ weight: 3, color: "#1d2433" }); highlight(l.id, false); });
-      m.on("mouseout", () => m.setStyle({ weight: gone ? 2 : 1.5, color: gone ? "#9a9a9a" : "#fff" }));
+      m.on("mouseout", () => m.setStyle({ weight: sw, color: stroke }));
       m.on("click", () => { m.closeTooltip(); highlight(l.id, false); });
       m.addTo(layer); markers[l.id] = m; pts.push([l.lat, l.lng]);
     });
@@ -278,7 +289,7 @@
   }
 
   function flyTo(id) {
-    const l = ALL.concat(BORDER).find((x) => x.id === id);
+    const l = ALL.concat(BORDER, PLUS3).find((x) => x.id === id);
     if (!l || l.lat == null) return;
     map.flyTo([l.lat, l.lng], 14, { duration: 0.8 });
     if (markers[id]) markers[id].openPopup();
@@ -295,6 +306,12 @@
       "<tr><td>Facebook Marketplace</td><td>—</td><td>skipped (login wall)</td></tr>";
     $("#border-count").textContent = `(${BORDER.length})`;
     $("#border-cards").innerHTML = BORDER.map(cardHtml).join("") || "<p class='meta'>None right now.</p>";
+    if ($("#plus3-cards")) {
+      const p3a = PLUS3.filter((l) => l.status === "active");
+      const weak = p3a.filter((l) => l.flexWeak).length;
+      $("#plus3-count").textContent = `${p3a.length - weak} with clear extra-room wording, ${weak} borderline${PLUS3.length > p3a.length ? `, ${PLUS3.length - p3a.length} gone` : ""}.`;
+      $("#plus3-cards").innerHTML = PLUS3.map(cardHtml).join("") || "<p class='meta'>None found yet.</p>";
+    }
     const rs = DATA.roomShares || [];
     $("#roomshares").innerHTML = rs.length ? "<strong>Room shares (not whole-house, so not counted):</strong> " + rs.map((r) =>
       `<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.address)}, ${esc(r.city)}</a>: ${esc(r.note || "")}${r.contactPhone ? " " + esc(r.contactPhone) : ""}`).join("; ") : "";
@@ -308,14 +325,16 @@
     DATA = data || { listings: [], sources: [], target: { lat: 34.6162, lng: -112.4488 } };
     ALL = DATA.listings || [];
     BORDER = DATA.borderline || [];
+    PLUS3 = DATA.plus3 || [];
     renderSummary();
     renderLog((upd && upd.entries) || []);
     renderSources();
     initMap();
     apply();
-    ["#f-beds", "#f-drive", "#f-sort", "#f-gone", "#f-vac", "#f-avail", "#f-border"].forEach((s) => $(s).addEventListener("change", apply));
+    ["#f-beds", "#f-drive", "#f-sort", "#f-gone", "#f-vac", "#f-avail", "#f-border", "#f-plus3"].forEach((s) => $(s).addEventListener("change", apply));
     ["#f-rent", "#q"].forEach((s) => $(s).addEventListener("input", apply));
     $("#border-cards").addEventListener("click", (e) => { const b = e.target.closest("[data-fly]"); if (b) flyTo(b.dataset.fly); });
+    if ($("#plus3-cards")) $("#plus3-cards").addEventListener("click", (e) => { const b = e.target.closest("[data-fly]"); if (b) flyTo(b.dataset.fly); });
     $("#cards").addEventListener("click", (e) => { const b = e.target.closest("[data-fly]"); if (b) flyTo(b.dataset.fly); });
   });
 })();

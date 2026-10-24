@@ -18,6 +18,7 @@
       <a href="#map-sec">Map</a>
       <a href="#log">Daily updates</a>
       <a href="#listings">Houses</a>
+      <a href="#plus3">3 + extra rooms</a>
       <a href="#sources">Sources</a>
       <a href="#excluded">Excluded</a>
     </nav>
@@ -29,7 +30,8 @@
       <h1>A house for five near Embry-Riddle.</h1>
       <p class="lede">
         Whole-house rentals with <strong>5+ bedrooms</strong>, or <strong>4 bedrooms plus a den / office / bonus room / loft</strong>
-        when the listing itself says so. They drive, so anything within <strong>~25 min</strong> of campus is preferred; up to ~35 min is kept and marked far.
+        when the listing itself says so. A separate list (not counted) shows <strong>3-bedroom houses whose listing names an extra room</strong>
+        (den, office, study, loft, bonus room, casita, finished basement, second family room). They drive, so anything within <strong>~25 min</strong> of campus is preferred; up to ~35 min is kept and marked far.
         Budget reference was about <strong>$2,900/mo</strong> for 4–5 BR (shown, never filtered).
       </p>
       <p class="lede small" id="as-of">Loading data…</p>
@@ -55,7 +57,7 @@
   <section id="map-sec">
     <div class="section-head">
       <h2>Map</h2>
-      <p><strong>Color = bedrooms</strong>, <strong>dot size = monthly rent</strong>. Hover a dot for a summary; click it for a link to the full card. Drive times are estimated with the OSRM public router (free-flow, no traffic).</p>
+      <p><strong>Color = bedrooms</strong>, <strong>dot size = monthly rent</strong>. Orange dots with a dark ring are the separate 3 BR + extra room list. Hover a dot for a summary; click it for a link to the full card. Drive times are estimated with the OSRM public router (free-flow, no traffic).</p>
     </div>
     <div id="map"></div>
     <div class="map-legend">
@@ -63,6 +65,7 @@
       <span><i class="dot c5"></i>5 BR</span>
       <span><i class="dot c4"></i>4 + den (per listing)</span>
       <span><i class="dot border"></i>borderline (4 BR + family room / casita, not counted)</span>
+      <span><i class="dot p3"></i>3 + extra room (per listing, not counted)</span>
       <span><i class="dot gone"></i>gone</span>
       <span class="sep">Size:</span>
       <span><i class="dot sz s1"></i>≤ $2,500</span>
@@ -71,6 +74,7 @@
       <span><i class="dot sz s0"></i>rent not listed</span>
       <span><i class="dot erau"></i>Embry-Riddle</span>
       <label class="check"><input id="f-border" type="checkbox" checked /> show borderline</label>
+      <label class="check"><input id="f-plus3" type="checkbox" checked /> show 3 + extra rooms</label>
     </div>
   </section>
 
@@ -128,6 +132,17 @@
     <div class="cards" id="cards"></div>
   </section>
 
+  <section id="plus3">
+    <div class="section-head">
+      <h2>3 bedrooms + extra room</h2>
+      <p>Whole houses with 3 true bedrooms where the listing itself names an extra room (den, office, study, loft, bonus/flex room, casita or guest house,
+        finished basement, second family room, rec/game room). The quoted listing text is on each card. These are a separate list: they are
+        <strong>not counted</strong> in the matches or the top picks. Same rules otherwise: students/roommates OK, no vacation or short-term rentals,
+        ≤ 25 min preferred and up to ~35 min kept and marked far. Confirm with the landlord that the room can be used as a bedroom. <span id="plus3-count"></span></p>
+    </div>
+    <div class="cards" id="plus3-cards"></div>
+  </section>
+
   <section id="borderline">
     <details class="panel">
       <summary><strong>Borderline: 4 BR + family room / casita</strong> <span id="border-count"></span></summary>
@@ -150,7 +165,7 @@
   <section id="excluded">
     <details class="panel">
       <summary><strong>Checked but excluded</strong> <span id="excl-count"></span></summary>
-      <p class="meta">4-bedroom houses whose listing does not mention a den/office/bonus room/loft, listings that refuse students, per-room rentals, and anything over ~35 min from campus.</p>
+      <p class="meta">3-bedroom houses are only shown when the listing names an extra room (others are skipped, not listed here). 4-bedroom houses whose listing does not mention a den/office/bonus room/loft, listings that refuse students, per-room rentals, and anything over ~35 min from campus.</p>
       <p class="meta" id="roomshares"></p>
       <table id="excl"></table>
     </details>

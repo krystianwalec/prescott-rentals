@@ -264,3 +264,8 @@ details summary { cursor: pointer; font-size: 18px; }
 #borderline details > summary { cursor: pointer; }
 #borderline .cards { margin-top: 1rem; }
 .map-legend label.check { margin-left: .5rem; font-size: .85em; }
+
+/* 3 + extra rooms (separate list) */
+.dot.p3 { background: #e8743b; border: 2px solid #7a2e0e; }
+.badge.b3 { background: #fbe1d2; color: #7a2e0e; }
+#plus3 .cards { margin-top: 1rem; }

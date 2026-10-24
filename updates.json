@@ -2,10 +2,96 @@
  "entries": [
   {
    "date": "2026-10-24",
-   "title": "No changes — 9 houses fit",
-   "lede": "Nothing new, no price moves and nothing went off the market today. Top of the list is still 486 Robin Dr, Prescott at $3,150. Browser pass covered Zillow, Apartments.com, Zumper, HotPads, Trulia, Realtor.com, Peak, Pierce and the ERAU board with no blocks: no new in-area houses and no rent or status changes.",
+   "title": "Search extended to 3 bedrooms + extra rooms",
+   "lede": "No changes — 9 houses fit. Nothing new, no price moves and nothing went off the market today. Top of the list is still 486 Robin Dr, Prescott at $3,150. Browser pass covered Zillow, Apartments.com, Zumper, HotPads, Trulia, Realtor.com, Peak, Pierce and the ERAU board with no blocks: no new in-area houses and no rent or status changes. A second browser pass searched 3-bedroom houses with an extra room (Apartments.com, plus a partial Zillow pass and Realtor.com, Trulia, HotPads, Zumper); coverage was partial and the daily refresh will keep adding to it. The search now also covers 3-bedroom houses whose listing names an extra room (den, office, loft, bonus room, casita and similar): 14 new ones plus 7 borderline (room only tagged, or it is the 3rd bedroom), listed separately and not counted in the 9.",
    "browser": [],
    "borderline": [],
+   "plus3": [
+    {
+     "text": "835 W Rosser St, Prescott: 3 BR + large den, $2,100, 10 min to ERAU; listing says: \"3-bedrooms with a large den and 2 full bathrooms\"",
+     "href": "https://www.zillow.com/homedetails/835-W-Rosser-St-Prescott-AZ-86301/8749317_zpid/"
+    },
+    {
+     "text": "5707 Cilantro Ct, Prescott: 3 BR + office/den, $3,000, 8 min to ERAU; listing says: \"split 3 bedroom single level home plus an office/den\"",
+     "href": "https://www.apartments.com/5707-cilantro-ct-prescott-az/eyp3d4q/"
+    },
+    {
+     "text": "6103 Old Mountain Way, Prescott: 3 BR + study, $2,850, 6 min to ERAU; listing says: \"The main level offers a dedicated study\"",
+     "href": "https://www.zillow.com/homedetails/6103-Old-Mountain-Way-Prescott-AZ-86305/453585620_zpid/"
+    },
+    {
+     "text": "1267 Deadwood Ln, Prescott: 3 BR + den, $2,750, 6 min to ERAU; listing says: \"a spacious den ideal for home office or flex space\"",
+     "href": "https://www.zillow.com/homedetails/1267-Deadwood-Ln-Prescott-AZ-86305/448599183_zpid/"
+    },
+    {
+     "text": "809 Coronado Ave, Prescott: 3 BR + loft, $2,375, 15 min to ERAU; listing says: \"a loft with its own half bath, connected by a spiral staircase\"",
+     "href": "https://www.apartments.com/809-coronado-ave-prescott-az/4cxepgl/"
+    },
+    {
+     "text": "8642 E Apache Dr, Prescott Valley: 3 BR + bonus room, $2,100, 17 min to ERAU; listing says: \"has a bonus room/family and new flooring\"",
+     "href": "https://www.apartments.com/8642-e-apache-dr-prescott-valley-az/4cpjvsl/"
+    },
+    {
+     "text": "7025 Lynx Wagon Rd, Prescott Valley: 3 BR + den, $2,300, 23 min to ERAU; listing says: \"A dedicated den provides flexible space for a home office or hobby area\"",
+     "href": "https://www.apartments.com/7025-lynx-wagon-rd-prescott-valley-az/ymm99cs/"
+    },
+    {
+     "text": "4558 N Miner Rd, Prescott Valley: 3 BR + separate outbuilding, $2,400, 16 min to ERAU; listing says: \"80 sq. ft. structure with 2 bedrooms offers flexible space for a home office, gym, den…\"",
+     "href": "https://www.apartments.com/4558-n-miner-rd-prescott-valley-az/hly0pq3/"
+    },
+    {
+     "text": "8160 N Command Point Dr, Prescott Valley: 3 BR + den/office, $1,900, 16 min to ERAU; listing says: \"the den/office or possible bedroom with beautiful barn doors\"",
+     "href": "https://www.apartments.com/8160-n-command-point-dr-prescott-valley-az/fxhxjjr/"
+    },
+    {
+     "text": "6234 N Little Papoose Dr, Prescott Valley: 3 BR + bonus, $1,800, 13 min to ERAU; listing says: \"Additional Bonus: An approximately 800-square-foot building is also located on the property and may be available to rent for an additional fee, offering extra space for your needs\"",
+     "href": "https://www.zillow.com/homedetails/6234-N-Little-Papoose-Dr-Prescott-Valley-AZ-86314/8731875_zpid/"
+    },
+    {
+     "text": "1896 N Bluff Top Dr, Prescott Valley: 3 BR + bonus room, $3,000, 23 min to ERAU; listing says: \"A versatile bonus room offers additional space for an office, craft room, media room or h…\"",
+     "href": "https://www.apartments.com/1896-bluff-top-dr-prescott-valley-az/egf7trp/"
+    },
+    {
+     "text": "7239 E Barefoot Ln, Prescott Valley: 3 BR + loft, $3,044, 24 min to ERAU; listing says: \"3 bedrooms + a loft home... Upstairs is a large loft with 2 additional bedrooms\"",
+     "href": "https://www.apartments.com/7239-barefoot-ln-prescott-valley-az/0fb6br2/"
+    },
+    {
+     "text": "2330 W Gambels Ridge Dr, Chino Valley: 3 BR + bonus room, $2,400, 25 min (far) to ERAU; listing says: \"fering a center island and the living room featuring a cozy fireplace.A versatile bonus room provides additional space that can be used as an office, sunroom, pla\"",
+     "href": "https://www.zillow.com/homedetails/2330-W-Gambels-Ridge-Dr-Chino-Valley-AZ-86323/71338061_zpid/"
+    },
+    {
+     "text": "5790 W Three Forks Rd, Prescott: 3 BR + bonus/flex room, $4,800, 32 min (far) to ERAU; listing says: \"a flexible bonus room... The additional flex room is ideal for a home office, media room, gym, or guest space\"",
+     "href": "https://www.apartments.com/5790-w-three-forks-rd-prescott-az/hxkssz3/"
+    },
+    {
+     "text": "6543 E Brighton Dr, Prescott Valley (borderline): 3 BR + den, $2,399, 13 min to ERAU; listing says: \"Den (amenity tag only)\"",
+     "href": "https://www.apartments.com/6543-e-brighton-dr-prescott-valley-az/ypxwcmr/"
+    },
+    {
+     "text": "5935 N Talbot Dr, Prescott Valley (borderline): 3 BR + den, $2,100, 12 min to ERAU; listing says: \"Family Room Den (amenity tag only)\"",
+     "href": "https://www.apartments.com/5935-n-talbot-dr-prescott-valley-az/gxhq0pz/"
+    },
+    {
+     "text": "8049 E Jacque Dr, Prescott Valley (borderline): 3 BR + den, $2,350, 16 min to ERAU; listing says: \"Den (amenity tag only)\"",
+     "href": "https://www.apartments.com/8049-e-jacque-dr-prescott-valley-az/5qsxk1p/"
+    },
+    {
+     "text": "11545 E Manzanita Trl, Dewey (borderline): 3 BR + large office, $2,900, 22 min to ERAU; listing says: \"2 Bedrooms, 3 bathrooms and a large office\"",
+     "href": "https://bearcreekpmg.managebuilding.com/Resident/public/rentals/94400"
+    },
+    {
+     "text": "7551 E Dusty Boot Rd, Prescott Valley (borderline): 3 BR + den, $2,200, 16 min to ERAU; listing says: \"Family Room Den (amenity tag only)\"",
+     "href": "https://www.apartments.com/7551-dusty-boot-rd-prescott-valley-az/25k08n9/"
+    },
+    {
+     "text": "4850 N Edgemont Rd, Prescott Valley (borderline): 3 BR + separate living room, $2,500, 15 min to ERAU; listing says: \"separate living room besides the family room (per browser pass)\"",
+     "href": "https://www.zillow.com/homedetails/4850-N-Edgemont-Rd-Prescott-Valley-AZ-86314/71342086_zpid/"
+    },
+    {
+     "text": "2750 N Date Creek Dr, Prescott Valley (borderline): 3 BR + den, $2,100, 19 min to ERAU; listing says: \"den is the 3rd bedroom (per browser pass)\"",
+     "href": "https://hotpads.com/2750-n-date-creek-dr-prescott-valley-az-86314-u091ym/pad"
+    }
+   ],
    "new": [],
    "changed": [],
    "gone": [],
@@ -18,7 +104,10 @@
     "changed": 0,
     "gone": 0,
     "reclassified": 0,
-    "pending": 0
+    "pending": 0,
+    "plus3": 21,
+    "plus3Strong": 14,
+    "plus3New": 21
    }
   },
   {
