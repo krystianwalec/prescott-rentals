@@ -1,6 +1,53 @@
 {
  "entries": [
   {
+   "date": "2026-10-25",
+   "title": "3 price changes, 1 gone — 8 houses fit",
+   "lede": "Today's refresh found 3 price changes, 1 gone. Top of the list is still 486 Robin Dr, Prescott at $3,150. Meixner excluded (4BR no den); Marina + zillow-8731564 gone; 3 price drops on 3+extra (Old Mountain, Deadwood, Little Papoose — scripted); no new 3+extra flex houses; Realtor 429.",
+   "browser": [],
+   "borderline": [],
+   "plus3": [],
+   "new": [],
+   "changed": [
+    {
+     "text": "6103 Old Mountain Way, Prescott (3 + extra rooms, not counted): $2,850 → $2,800 (down $50)",
+     "href": "https://www.zillow.com/homedetails/6103-Old-Mountain-Way-Prescott-AZ-86305/453585620_zpid/"
+    },
+    {
+     "text": "1267 Deadwood Ln, Prescott (3 + extra rooms, not counted): $2,750 → $2,700 (down $50)",
+     "href": "https://www.zillow.com/homedetails/1267-Deadwood-Ln-Prescott-AZ-86305/448599183_zpid/"
+    },
+    {
+     "text": "6234 N Little Papoose Dr, Prescott Valley (3 + extra rooms, not counted): $1,800 → $2,100 (up $300)",
+     "href": "https://www.zillow.com/homedetails/6234-N-Little-Papoose-Dr-Prescott-Valley-AZ-86314/8731875_zpid/"
+    }
+   ],
+   "gone": [
+    {
+     "text": "(Undisclosed Address), Prescott Valley (5 BR, last $3,000) no longer shows on Trulia, Zillow",
+     "href": "https://www.trulia.com/home/address-not-disclosed-prescott-valley-az-86314-8731564"
+    },
+    {
+     "text": "809 Coronado Ave, Prescott (3 + extra rooms, not counted) (3 + loft (per listing), last $2,375) no longer shows on Apartments.com, Rentable, Zillow, Redfin, Rent.com, Uloop ERAU off-campus",
+     "href": "https://www.apartments.com/809-coronado-ave-prescott-az/4cxepgl/"
+    }
+   ],
+   "reclassified": [],
+   "top": [],
+   "market": "8 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,394–$4,800, median $3,000; 4 are at or under the $2,900 reference. 7 are within 25 min; 0 list a move-in date in the Dec 1 window.",
+   "counts": {
+    "active": 8,
+    "new": 0,
+    "changed": 3,
+    "gone": 1,
+    "reclassified": 0,
+    "pending": 0,
+    "plus3": 20,
+    "plus3Strong": 13,
+    "plus3New": 0
+   }
+  },
+  {
    "date": "2026-10-24",
    "title": "Search extended to 3 bedrooms + extra rooms",
    "lede": "No changes — 9 houses fit. Nothing new, no price moves and nothing went off the market today. Top of the list is still 486 Robin Dr, Prescott at $3,150. Browser pass covered Zillow, Apartments.com, Zumper, HotPads, Trulia, Realtor.com, Peak, Pierce and the ERAU board with no blocks: no new in-area houses and no rent or status changes. A second browser pass searched 3-bedroom houses with an extra room (Apartments.com, plus a partial Zillow pass and Realtor.com, Trulia, HotPads, Zumper); coverage was partial and the daily refresh will keep adding to it. The search now also covers 3-bedroom houses whose listing names an extra room (den, office, loft, bonus room, casita and similar): 14 new ones plus 7 borderline (room only tagged, or it is the 3rd bedroom), listed separately and not counted in the 9.",
