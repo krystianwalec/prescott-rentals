@@ -1,6 +1,41 @@
 {
  "entries": [
   {
+   "date": "2026-10-26",
+   "title": "1 price change — 8 houses fit",
+   "lede": "Today's refresh found 1 price change. Top of the list is still 486 Robin Dr, Prescott at $3,150. Dusty Boot rent $2,394→$2,319 (Zillow/HotPads/Trulia/Realtor; Apartments.com/Zumper still $2,394); no new in-area 4+; zillow-8731564 still off market; Realtor 429; 3BR: Three Forks rent blank→$4800; all 22 plus3 still listed; no new plus3.",
+   "browser": [],
+   "borderline": [],
+   "plus3": [],
+   "new": [],
+   "changed": [
+    {
+     "text": "7612 E Dusty Boot Rd, Prescott Valley: $2,394 → $2,319 (down $75)",
+     "href": "https://www.apartments.com/7612-dusty-boot-rd-prescott-valley-az/hss5cb0/"
+    }
+   ],
+   "gone": [
+    {
+     "text": "7239 E Barefoot Ln, Prescott Valley (3 + extra rooms, not counted) (3 + loft (per listing), last $3,044) no longer shows on Apartments.com, Rentable, Redfin, Rent.com",
+     "href": "https://www.apartments.com/7239-barefoot-ln-prescott-valley-az/0fb6br2/"
+    }
+   ],
+   "reclassified": [],
+   "top": [],
+   "market": "8 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,319–$4,800, median $3,000; 4 are at or under the $2,900 reference. 7 are within 25 min; 0 list a move-in date in the Dec 1 window.",
+   "counts": {
+    "active": 8,
+    "new": 0,
+    "changed": 1,
+    "gone": 0,
+    "reclassified": 0,
+    "pending": 0,
+    "plus3": 19,
+    "plus3Strong": 12,
+    "plus3New": 0
+   }
+  },
+  {
    "date": "2026-10-25",
    "title": "3 price changes, 1 gone — 8 houses fit",
    "lede": "Today's refresh found 3 price changes, 1 gone. Top of the list is still 486 Robin Dr, Prescott at $3,150. Meixner excluded (4BR no den); Marina + zillow-8731564 gone; 3 price drops on 3+extra (Old Mountain, Deadwood, Little Papoose — scripted); no new 3+extra flex houses; Realtor 429.",
