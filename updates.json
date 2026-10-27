@@ -1,6 +1,41 @@
 {
  "entries": [
   {
+   "date": "2026-10-27",
+   "title": "1 gone — 7 houses fit",
+   "lede": "Today's refresh found 1 gone. Top of the list is now 7302 E Night Watch Way, Prescott Valley at $2,400. 486 Robin Dr gone (Zillow off market / HotPads unavailable / Trulia removed Oct 26); no new in-area 4+; no rent changes; Dusty Boot $2,319 now agreed on Apartments.com/Zumper; Realtor.com 200; 3BR: all 24 plus3 still listed, no rent changes, no new plus3. The search now also covers 3-bedroom houses whose listing names an extra room (den, office, loft, bonus room, casita and similar): 1 new one, listed separately and not counted in the 7.",
+   "browser": [],
+   "borderline": [],
+   "plus3": [
+    {
+     "text": "350 Hidden Valley Dr, Prescott: 3 BR + loft, $3,200, 20 min to ERAU; listing says: \"Large loft area above garage carpeted and with heat and AC\"",
+     "href": "https://www.zillow.com/homedetails/350-Hidden-Valley-Dr-Prescott-AZ-86303/8739830_zpid/"
+    }
+   ],
+   "new": [],
+   "changed": [],
+   "gone": [
+    {
+     "text": "486 Robin Dr, Prescott (4 + den (dedicated office, per listing), last $3,150) no longer shows on HotPads, Trulia, Zillow",
+     "href": "https://hotpads.com/486-robin-dr-prescott-az-86305-1m1fjeq/pad?beds=4"
+    }
+   ],
+   "reclassified": [],
+   "top": [],
+   "market": "7 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,319–$4,800, median $2,850; 4 are at or under the $2,900 reference. 6 are within 25 min; 0 list a move-in date in the Dec 1 window.",
+   "counts": {
+    "active": 7,
+    "new": 0,
+    "changed": 0,
+    "gone": 1,
+    "reclassified": 0,
+    "pending": 0,
+    "plus3": 20,
+    "plus3Strong": 13,
+    "plus3New": 1
+   }
+  },
+  {
    "date": "2026-10-26",
    "title": "1 price change — 8 houses fit",
    "lede": "Today's refresh found 1 price change. Top of the list is still 486 Robin Dr, Prescott at $3,150. Dusty Boot rent $2,394→$2,319 (Zillow/HotPads/Trulia/Realtor; Apartments.com/Zumper still $2,394); no new in-area 4+; zillow-8731564 still off market; Realtor 429; 3BR: Three Forks rent blank→$4800; all 22 plus3 still listed; no new plus3.",
