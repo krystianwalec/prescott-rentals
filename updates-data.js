@@ -1,6 +1,46 @@
 window.UPDATES_DATA = {
  "entries": [
   {
+   "date": "2026-10-28",
+   "title": "1 new house — 8 houses fit",
+   "lede": "Today's refresh found 1 new house. Top of the list is now 360 Chestnut Dr, Prescott at $2,350. A separate browser pass of Zillow, Apartments.com, Zumper, HotPads, Trulia, Realtor.com, Peak Prescott, Pierce (ppmprescott), ERAU off-campus board (sites that block automated fetching) added 1 more match. New match: 360 Chestnut Dr Prescott $2,350 4BR+bonus/office (Avail Nov 1). New plus3: 8983 E Volcano Dr PV $2,399 (Den/Arizona room). Gone: 8160 N Command Point Dr (rental removed 10/27, now for sale). Barefoot still $3,044; no other plus3 rent changes; Robin/8731564/Equestrian still gone. The search now also covers 3-bedroom houses whose listing names an extra room (den, office, loft, bonus room, casita and similar): 1 new one, listed separately and not counted in the 8.",
+   "browser": [
+    {
+     "text": "360 Chestnut Dr, Prescott: 4 + bonus / home office (per listing), $2,350, 12 min to ERAU, Available 11/01/2026",
+     "href": "https://www.zillow.com/homedetails/360-Chestnut-Dr-Prescott-AZ-86301/8748930_zpid/"
+    }
+   ],
+   "borderline": [],
+   "plus3": [
+    {
+     "text": "8983 E Volcano Dr, Prescott Valley: 3 BR + den / Arizona room, $2,399, 17 min to ERAU; listing says: \"Sliding glass doors lead to a spacious Arizona room, providing additional living space and seamless access to the private backyard, complete with a covered patio that's ideal for outdoor dining, entertaining, or simply enjoying Arizona's beautiful weather.\"",
+     "href": "https://www.apartments.com/8983-e-volcano-dr-prescott-valley-az/2e87t1b/"
+    }
+   ],
+   "new": [
+    {
+     "text": "360 Chestnut Dr, Prescott — 4 + bonus / home office (per listing), $2,350, 12 min to ERAU, available 2026-11-01: ~30 days of rent before dec 1 unless landlord holds it",
+     "href": "https://www.zillow.com/homedetails/360-Chestnut-Dr-Prescott-AZ-86301/8748930_zpid/"
+    }
+   ],
+   "changed": [],
+   "gone": [],
+   "reclassified": [],
+   "top": [],
+   "market": "8 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,319–$4,800, median $2,650; 5 are at or under the $2,900 reference. 7 are within 25 min; 0 list a move-in date in the Dec 1 window.",
+   "counts": {
+    "active": 8,
+    "new": 1,
+    "changed": 0,
+    "gone": 0,
+    "reclassified": 0,
+    "pending": 0,
+    "plus3": 22,
+    "plus3Strong": 15,
+    "plus3New": 1
+   }
+  },
+  {
    "date": "2026-10-27",
    "title": "1 gone — 7 houses fit",
    "lede": "Today's refresh found 1 gone. Top of the list is now 7302 E Night Watch Way, Prescott Valley at $2,400. 486 Robin Dr gone (Zillow off market / HotPads unavailable / Trulia removed Oct 26); no new in-area 4+; no rent changes; Dusty Boot $2,319 now agreed on Apartments.com/Zumper; Realtor.com 200; 3BR: all 24 plus3 still listed, no rent changes, no new plus3. The search now also covers 3-bedroom houses whose listing names an extra room (den, office, loft, bonus room, casita and similar): 1 new one, listed separately and not counted in the 7.",
