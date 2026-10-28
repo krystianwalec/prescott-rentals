@@ -24,7 +24,12 @@ window.UPDATES_DATA = {
     }
    ],
    "changed": [],
-   "gone": [],
+   "gone": [
+    {
+     "text": "8160 N Command Point Dr, Prescott Valley (3 + extra rooms, not counted) (3 + den/office (per listing), last $1,900) no longer shows on Apartments.com, Rent.com",
+     "href": "https://www.apartments.com/8160-n-command-point-dr-prescott-valley-az/fxhxjjr/"
+    }
+   ],
    "reclassified": [],
    "top": [],
    "market": "8 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,319–$4,800, median $2,650; 5 are at or under the $2,900 reference. 7 are within 25 min; 0 list a move-in date in the Dec 1 window.",
@@ -35,8 +40,8 @@ window.UPDATES_DATA = {
     "gone": 0,
     "reclassified": 0,
     "pending": 0,
-    "plus3": 22,
-    "plus3Strong": 15,
+    "plus3": 21,
+    "plus3Strong": 14,
     "plus3New": 1
    }
   },
