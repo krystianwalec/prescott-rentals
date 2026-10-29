@@ -1,6 +1,41 @@
 window.UPDATES_DATA = {
  "entries": [
   {
+   "date": "2026-10-29",
+   "title": "1 new house — 9 houses fit",
+   "lede": "Today's refresh found 1 new house. Top of the list is still 360 Chestnut Dr, Prescott at $2,350. A separate browser pass of Zillow (Prescott, Prescott Valley, Chino Valley; Beds 4+ set in UI), Apartments.com (Prescott, Prescott Valley, Chino Valley), Zumper (Prescott and Prescott Valley 4+ House lists; Chino Valley list did not render cards), HotPads (3 cities), Trulia (3 cities), Realtor.com Prescott beds-4 (rendered, 18 rentals), Peak availability, PPM availability, ERAU off-campus board (sites that block automated fetching) added 1 more match. New match: 4443 N Kirkwood Ave, Prescott Valley $4,895 (4 BR + dedicated office), no price changes on known 4+ listings, and nothing newly gone; 3BR pass: no new 3+extra houses or rent changes, Grandview Dr needs recheck.",
+   "browser": [
+    {
+     "text": "4443 N Kirkwood Ave, Prescott Valley: 4 + dedicated office (per listing), $4,895, 15 min to ERAU, availability not listed",
+     "href": "https://www.zillow.com/homedetails/4443-N-Kirkwood-Ave-Prescott-Valley-AZ-86314/112361310_zpid/"
+    }
+   ],
+   "borderline": [],
+   "plus3": [],
+   "new": [
+    {
+     "text": "4443 N Kirkwood Ave, Prescott Valley — 4 + dedicated office (per listing), $4,895, 15 min to ERAU, availability not listed",
+     "href": "https://www.zillow.com/homedetails/4443-N-Kirkwood-Ave-Prescott-Valley-AZ-86314/112361310_zpid/"
+    }
+   ],
+   "changed": [],
+   "gone": [],
+   "reclassified": [],
+   "top": [],
+   "market": "9 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,319–$4,895, median $2,850; 5 are at or under the $2,900 reference. 8 are within 25 min; 0 list a move-in date in the Dec 1 window.",
+   "counts": {
+    "active": 9,
+    "new": 1,
+    "changed": 0,
+    "gone": 0,
+    "reclassified": 0,
+    "pending": 0,
+    "plus3": 21,
+    "plus3Strong": 14,
+    "plus3New": 0
+   }
+  },
+  {
    "date": "2026-10-28",
    "title": "1 new house — 8 houses fit",
    "lede": "Today's refresh found 1 new house. Top of the list is now 360 Chestnut Dr, Prescott at $2,350. A separate browser pass of Zillow, Apartments.com, Zumper, HotPads, Trulia, Realtor.com, Peak Prescott, Pierce (ppmprescott), ERAU off-campus board (sites that block automated fetching) added 1 more match. New match: 360 Chestnut Dr Prescott $2,350 4BR+bonus/office (Avail Nov 1). New plus3: 8983 E Volcano Dr PV $2,399 (Den/Arizona room). Gone: 8160 N Command Point Dr (rental removed 10/27, now for sale). Barefoot still $3,044; no other plus3 rent changes; Robin/8731564/Equestrian still gone. The search now also covers 3-bedroom houses whose listing names an extra room (den, office, loft, bonus room, casita and similar): 1 new one, listed separately and not counted in the 8.",
