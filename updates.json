@@ -1,6 +1,55 @@
 {
  "entries": [
   {
+   "date": "2026-10-30",
+   "title": "1 new house, 1 price change — 10 houses fit",
+   "lede": "Today's refresh found 1 new house, 1 price change. Top of the list is still 360 Chestnut Dr, Prescott at $2,350. A separate browser pass of Zillow (Prescott, Prescott Valley, Chino Valley 4+ houses; 3-bed lists partially loaded), Apartments.com (4BR, 3 cities), Zumper (4+, 3 cities), Trulia (Prescott 4+), HotPads (Prescott 4+), Realtor.com Prescott beds-4 (19 rentals, not blocked), Peak availability (9), PPM availability (16), ERAU off-campus board (page 1) (sites that block automated fetching) added 1 more match. New match: 1522 Varsity Dr, Prescott $4,000 (4 BR + office, available Dec 1); Johnson Ln dropped to $2,300 and Allerton Way to $2,200; 7216 E Grandview Dr (sold) and 14415 N Sandia Ln are gone; 7152 E Encampment Dr excluded (no college students).",
+   "browser": [
+    {
+     "text": "1522 Varsity Dr, Prescott: 4 + office (per listing), $4,000, 10 min to ERAU, availability not listed",
+     "href": "https://www.zillow.com/homedetails/1522-Varsity-Dr-Prescott-AZ-86301/191240188_zpid/"
+    }
+   ],
+   "borderline": [],
+   "plus3": [],
+   "new": [
+    {
+     "text": "1522 Varsity Dr, Prescott — 4 + office (per listing), $4,000, 10 min to ERAU, availability not listed",
+     "href": "https://www.zillow.com/homedetails/1522-Varsity-Dr-Prescott-AZ-86301/191240188_zpid/"
+    }
+   ],
+   "changed": [
+    {
+     "text": "1750 S Johnson Ln, Chino Valley (borderline, not counted): $2,400 → $2,300 (down $100)",
+     "href": "https://www.zillow.com/homedetails/1750-S-Johnson-Ln-Chino-Valley-AZ-86323/445725889_zpid/"
+    }
+   ],
+   "gone": [
+    {
+     "text": "6234 N Little Papoose Dr, Prescott Valley (3 + extra rooms, not counted) (3 + bonus (per listing), last $2,100) no longer shows on Zillow",
+     "href": "https://www.zillow.com/homedetails/6234-N-Little-Papoose-Dr-Prescott-Valley-AZ-86314/8731875_zpid/"
+    },
+    {
+     "text": "350 Hidden Valley Dr, Prescott (3 + extra rooms, not counted) (3 + loft (per listing), last $3,200) no longer shows on Zillow",
+     "href": "https://www.zillow.com/homedetails/350-Hidden-Valley-Dr-Prescott-AZ-86303/8739830_zpid/"
+    }
+   ],
+   "reclassified": [],
+   "top": [],
+   "market": "10 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,319–$4,895, median $3,424; 5 are at or under the $2,900 reference. 9 are within 25 min; 0 list a move-in date in the Dec 1 window.",
+   "counts": {
+    "active": 10,
+    "new": 1,
+    "changed": 1,
+    "gone": 0,
+    "reclassified": 0,
+    "pending": 0,
+    "plus3": 19,
+    "plus3Strong": 12,
+    "plus3New": 0
+   }
+  },
+  {
    "date": "2026-10-29",
    "title": "1 new house — 9 houses fit",
    "lede": "Today's refresh found 1 new house. Top of the list is still 360 Chestnut Dr, Prescott at $2,350. A separate browser pass of Zillow (Prescott, Prescott Valley, Chino Valley; Beds 4+ set in UI), Apartments.com (Prescott, Prescott Valley, Chino Valley), Zumper (Prescott and Prescott Valley 4+ House lists; Chino Valley list did not render cards), HotPads (3 cities), Trulia (3 cities), Realtor.com Prescott beds-4 (rendered, 18 rentals), Peak availability, PPM availability, ERAU off-campus board (sites that block automated fetching) added 1 more match. New match: 4443 N Kirkwood Ave, Prescott Valley $4,895 (4 BR + dedicated office), no price changes on known 4+ listings, and nothing newly gone; 3BR pass: no new 3+extra houses or rent changes, Grandview Dr needs recheck.",
