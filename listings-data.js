@@ -1,6 +1,6 @@
 window.LISTINGS_DATA = {
  "asOf": "2026-10-30",
- "generatedAt": "2026-10-30 12:22 PT",
+ "generatedAt": "2026-10-30 12:27 PT",
  "target": {
   "name": "Embry-Riddle Aeronautical University (Prescott campus)",
   "address": "3700 Willow Creek Rd, Prescott, AZ 86301",
@@ -228,80 +228,7 @@ window.LISTINGS_DATA = {
    "via": "browser"
   }
  ],
- "blocked": [
-  {
-   "source": "apartments.com",
-   "url": "https://www.apartments.com/houses/prescott-az/4-bedrooms/",
-   "http": 403,
-   "verdict": "blocked"
-  },
-  {
-   "source": "hotpads",
-   "url": "https://hotpads.com/prescott-az/houses-for-rent",
-   "http": 403,
-   "verdict": "blocked"
-  },
-  {
-   "source": "trulia",
-   "url": "https://www.trulia.com/for_rent/Prescott,AZ/4p_beds/",
-   "http": 403,
-   "verdict": "blocked"
-  },
-  {
-   "source": "homes.com",
-   "url": "https://www.homes.com/prescott-az/houses-for-rent/4-bedroom/",
-   "http": 403,
-   "verdict": "blocked"
-  },
-  {
-   "source": "realtor.com",
-   "url": "https://www.realtor.com/apartments/Prescott_AZ/beds-4",
-   "http": 200,
-   "verdict": "fetchable (not parsed yet)"
-  },
-  {
-   "source": "zumper",
-   "url": "https://www.zumper.com/houses-for-rent/prescott-az/4-beds",
-   "http": 200,
-   "verdict": "blocked"
-  },
-  {
-   "source": "padmapper",
-   "url": "https://www.padmapper.com/houses/prescott-az",
-   "http": 200,
-   "verdict": "blocked"
-  },
-  {
-   "source": "rentalsource",
-   "url": "https://www.rentalsource.com/prescott-az/houses/",
-   "http": 403,
-   "verdict": "blocked"
-  },
-  {
-   "source": "craigslist RSS",
-   "url": "https://prescott.craigslist.org/search/apa?min_bedrooms=4&format=rss",
-   "http": 403,
-   "verdict": "blocked"
-  },
-  {
-   "source": "Peak Property Solutions (Duda/AppFolio JS widget)",
-   "url": "https://www.peakprescott.com/availability",
-   "http": 200,
-   "verdict": "needs browser (listings rendered by JavaScript)"
-  },
-  {
-   "source": "Pierce Property Mgmt (Duda/AppFolio JS widget)",
-   "url": "https://www.ppmprescott.com/availability",
-   "http": 200,
-   "verdict": "needs browser (listings rendered by JavaScript)"
-  },
-  {
-   "source": "ERAU College Pads (JS-rendered)",
-   "url": "https://offcampushousingpc.erau.edu/listing",
-   "http": 200,
-   "verdict": "needs browser (listings rendered by JavaScript)"
-  }
- ],
+ "blocked": [],
  "listings": [
   {
    "address": "360 Chestnut Dr",

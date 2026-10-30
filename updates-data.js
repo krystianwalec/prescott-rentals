@@ -24,7 +24,12 @@ window.UPDATES_DATA = {
      "href": "https://www.zillow.com/homedetails/1750-S-Johnson-Ln-Chino-Valley-AZ-86323/445725889_zpid/"
     }
    ],
-   "gone": [],
+   "gone": [
+    {
+     "text": "14415 N Sandia Ln, Prescott (borderline, not counted) (4 BR + detached casita, last $5,500) is gone (no longer listed per the 2026-10-30 browser pass)",
+     "href": "https://www.redfin.com/AZ/Prescott/14415-N-Sandia-Ln-86305/home/28608358"
+    }
+   ],
    "reclassified": [],
    "top": [],
    "market": "10 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,319–$4,895, median $3,424; 5 are at or under the $2,900 reference. 9 are within 25 min; 1 list a move-in date in the Dec 1 window.",
