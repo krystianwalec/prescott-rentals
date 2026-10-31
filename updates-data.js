@@ -1,6 +1,36 @@
 window.UPDATES_DATA = {
  "entries": [
   {
+   "date": "2026-10-31",
+   "title": "1 gone — 9 houses fit",
+   "lede": "Today's refresh found 1 gone. Top of the list is still 360 Chestnut Dr, Prescott at $2,350. 1635 Kaibab Loop (5 BR, $3,999) is now listed for sale rather than for rent and is marked gone; no new houses or price changes; 1921 Pinnacle Ln and 484 S McCormick St excluded (no college students).",
+   "browser": [],
+   "borderline": [],
+   "plus3": [],
+   "new": [],
+   "changed": [],
+   "gone": [
+    {
+     "text": "1635 Kaibab Loop, Prescott (5 BR (5th bedroom in independent lower level, per listing), last $3,999) no longer shows on Apartments.com",
+     "href": "https://www.apartments.com/1635-kaibab-loop-prescott-az/v9ndn9f/"
+    }
+   ],
+   "reclassified": [],
+   "top": [],
+   "market": "9 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,319–$4,895, median $2,850; 5 are at or under the $2,900 reference. 8 are within 25 min; 1 list a move-in date in the Dec 1 window.",
+   "counts": {
+    "active": 9,
+    "new": 0,
+    "changed": 0,
+    "gone": 1,
+    "reclassified": 0,
+    "pending": 0,
+    "plus3": 21,
+    "plus3Strong": 14,
+    "plus3New": 0
+   }
+  },
+  {
    "date": "2026-10-30",
    "title": "1 new house, 1 price change — 10 houses fit",
    "lede": "Today's refresh found 1 new house, 1 price change. Top of the list is still 360 Chestnut Dr, Prescott at $2,350. A separate browser pass of Zillow (Prescott, Prescott Valley, Chino Valley 4+ houses; 3-bed lists partially loaded), Apartments.com (4BR, 3 cities), Zumper (4+, 3 cities), Trulia (Prescott 4+), HotPads (Prescott 4+), Realtor.com Prescott beds-4 (19 rentals, not blocked), Peak availability (9), PPM availability (16), ERAU off-campus board (page 1) (sites that block automated fetching) added 1 more match. New match: 1522 Varsity Dr, Prescott $4,000 (4 BR + office, available Dec 1); Johnson Ln dropped to $2,300 and Allerton Way to $2,200; 7216 E Grandview Dr (sold) and 14415 N Sandia Ln are gone; 7152 E Encampment Dr excluded (no college students).",
