@@ -1,6 +1,54 @@
 {
  "entries": [
   {
+   "date": "2026-11-01",
+   "title": "1 gone — 8 houses fit",
+   "lede": "Today's refresh found 1 gone. Top of the list is still 360 Chestnut Dr, Prescott at $2,350. 7302 E Night Watch Way ($2,400 match) is gone; 642 Sunrise Blvd added as a borderline 3+extra; 4798 N Edgemont Rd excluded (no college students); Bower Ln still $2,450 active on Zumper. The search now also covers 3-bedroom houses whose listing names an extra room (den, office, loft, bonus room, casita and similar): 1 new one, listed separately and not counted in the 8.",
+   "browser": [],
+   "borderline": [],
+   "plus3": [
+    {
+     "text": "642 Sunrise Blvd, Prescott: 3 BR + family room, $2,350, 19 min to ERAU; listing says: \"A unique circular fireplace creates a cozy focal point between the living and family rooms.\"",
+     "href": "https://www.zillow.com/homedetails/642-Sunrise-Blvd-Prescott-AZ-86301/54429289_zpid/"
+    }
+   ],
+   "new": [],
+   "changed": [
+    {
+     "text": "6227 E Bower Ln, Prescott Valley ($2,450): no longer marked pending",
+     "href": "https://www.zumper.com/address/6227-e-bower-ln-prescott-valley-az-86314-usa"
+    }
+   ],
+   "gone": [
+    {
+     "text": "7302 E Night Watch Way, Prescott Valley (4 + den (office set-up, per listing), last $2,400) no longer shows on Trulia, Zillow",
+     "href": "https://www.trulia.com/home/7302-e-night-watch-way-prescott-valley-az-86314-71341595"
+    },
+    {
+     "text": "6234 N Little Papoose Dr, Prescott Valley (3 + extra rooms, not counted) (3 + bonus (per listing), last $2,100) no longer shows on Zillow",
+     "href": "https://www.zillow.com/homedetails/6234-N-Little-Papoose-Dr-Prescott-Valley-AZ-86314/8731875_zpid/"
+    },
+    {
+     "text": "350 Hidden Valley Dr, Prescott (3 + extra rooms, not counted) (3 + loft (per listing), last $3,200) no longer shows on Zillow",
+     "href": "https://www.zillow.com/homedetails/350-Hidden-Valley-Dr-Prescott-AZ-86303/8739830_zpid/"
+    }
+   ],
+   "reclassified": [],
+   "top": [],
+   "market": "8 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,319–$4,895, median $3,425; 4 are at or under the $2,900 reference. 7 are within 25 min; 1 list a move-in date in the Dec 1 window.",
+   "counts": {
+    "active": 8,
+    "new": 0,
+    "changed": 0,
+    "gone": 1,
+    "reclassified": 0,
+    "pending": 1,
+    "plus3": 21,
+    "plus3Strong": 13,
+    "plus3New": 1
+   }
+  },
+  {
    "date": "2026-10-31",
    "title": "1 gone — 9 houses fit",
    "lede": "Today's refresh found 1 gone. Top of the list is still 360 Chestnut Dr, Prescott at $2,350. 1635 Kaibab Loop (5 BR, $3,999) is now listed for sale rather than for rent and is marked gone; no new houses or price changes; 1921 Pinnacle Ln and 484 S McCormick St excluded (no college students).",
