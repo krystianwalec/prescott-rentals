@@ -3,7 +3,7 @@ window.UPDATES_DATA = {
   {
    "date": "2026-11-01",
    "title": "1 gone — 8 houses fit",
-   "lede": "Today's refresh found 1 gone. Top of the list is still 360 Chestnut Dr, Prescott at $2,350. 7302 E Night Watch Way ($2,400 match) is gone; 642 Sunrise Blvd added as a borderline 3+extra; 4798 N Edgemont Rd excluded (no college students); Bower Ln still $2,450 active on Zumper. The search now also covers 3-bedroom houses whose listing names an extra room (den, office, loft, bonus room, casita and similar): 1 new one, listed separately and not counted in the 8.",
+   "lede": "Today's refresh found 1 gone. Top of the list is still 360 Chestnut Dr, Prescott at $2,350. 7302 E Night Watch Way ($2,400 match) is gone; 642 Sunrise Blvd added as a borderline 3+extra; 4798 N Edgemont Rd excluded (no college students); Bower Ln still $2,450 active on Zumper; Little Papoose and Hidden Valley still listed on Zillow (kept). The search now also covers 3-bedroom houses whose listing names an extra room (den, office, loft, bonus room, casita and similar): 1 new one, listed separately and not counted in the 8.",
    "browser": [],
    "borderline": [],
    "plus3": [
@@ -23,14 +23,6 @@ window.UPDATES_DATA = {
     {
      "text": "7302 E Night Watch Way, Prescott Valley (4 + den (office set-up, per listing), last $2,400) no longer shows on Trulia, Zillow",
      "href": "https://www.trulia.com/home/7302-e-night-watch-way-prescott-valley-az-86314-71341595"
-    },
-    {
-     "text": "6234 N Little Papoose Dr, Prescott Valley (3 + extra rooms, not counted) (3 + bonus (per listing), last $2,100) no longer shows on Zillow",
-     "href": "https://www.zillow.com/homedetails/6234-N-Little-Papoose-Dr-Prescott-Valley-AZ-86314/8731875_zpid/"
-    },
-    {
-     "text": "350 Hidden Valley Dr, Prescott (3 + extra rooms, not counted) (3 + loft (per listing), last $3,200) no longer shows on Zillow",
-     "href": "https://www.zillow.com/homedetails/350-Hidden-Valley-Dr-Prescott-AZ-86303/8739830_zpid/"
     }
    ],
    "reclassified": [],
@@ -43,8 +35,8 @@ window.UPDATES_DATA = {
     "gone": 1,
     "reclassified": 0,
     "pending": 1,
-    "plus3": 21,
-    "plus3Strong": 13,
+    "plus3": 23,
+    "plus3Strong": 15,
     "plus3New": 1
    }
   },
