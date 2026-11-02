@@ -1,6 +1,6 @@
 {
  "asOf": "2026-11-02",
- "generatedAt": "2026-11-02 12:13 PT",
+ "generatedAt": "2026-11-02 12:17 PT",
  "target": {
   "name": "Embry-Riddle Aeronautical University (Prescott campus)",
   "address": "3700 Willow Creek Rd, Prescott, AZ 86301",
@@ -196,78 +196,6 @@
   }
  ],
  "blocked": [
-  {
-   "source": "apartments.com",
-   "url": "https://www.apartments.com/houses/prescott-az/4-bedrooms/",
-   "http": 403,
-   "verdict": "blocked"
-  },
-  {
-   "source": "hotpads",
-   "url": "https://hotpads.com/prescott-az/houses-for-rent",
-   "http": 200,
-   "verdict": "fetchable (not parsed yet)"
-  },
-  {
-   "source": "trulia",
-   "url": "https://www.trulia.com/for_rent/Prescott,AZ/4p_beds/",
-   "http": 200,
-   "verdict": "fetchable (not parsed yet)"
-  },
-  {
-   "source": "homes.com",
-   "url": "https://www.homes.com/prescott-az/houses-for-rent/4-bedroom/",
-   "http": 403,
-   "verdict": "blocked"
-  },
-  {
-   "source": "realtor.com",
-   "url": "https://www.realtor.com/apartments/Prescott_AZ/beds-4",
-   "http": 504,
-   "verdict": "blocked"
-  },
-  {
-   "source": "zumper",
-   "url": "https://www.zumper.com/houses-for-rent/prescott-az/4-beds",
-   "http": 200,
-   "verdict": "blocked"
-  },
-  {
-   "source": "padmapper",
-   "url": "https://www.padmapper.com/houses/prescott-az",
-   "http": 200,
-   "verdict": "blocked"
-  },
-  {
-   "source": "rentalsource",
-   "url": "https://www.rentalsource.com/prescott-az/houses/",
-   "http": 403,
-   "verdict": "blocked"
-  },
-  {
-   "source": "craigslist RSS",
-   "url": "https://prescott.craigslist.org/search/apa?min_bedrooms=4&format=rss",
-   "http": 403,
-   "verdict": "blocked"
-  },
-  {
-   "source": "Peak Property Solutions (Duda/AppFolio JS widget)",
-   "url": "https://www.peakprescott.com/availability",
-   "http": 200,
-   "verdict": "needs browser (listings rendered by JavaScript)"
-  },
-  {
-   "source": "Pierce Property Mgmt (Duda/AppFolio JS widget)",
-   "url": "https://www.ppmprescott.com/availability",
-   "http": 200,
-   "verdict": "needs browser (listings rendered by JavaScript)"
-  },
-  {
-   "source": "ERAU College Pads (JS-rendered)",
-   "url": "https://offcampushousingpc.erau.edu/listing",
-   "http": 200,
-   "verdict": "needs browser (listings rendered by JavaScript)"
-  },
   {
    "source": "Realtor.com (navigation never loaded, 2 tries)",
    "http": "browser",
@@ -3804,95 +3732,6 @@
    ],
    "daysOnMarket": 9,
    "domBasis": "since listed 2026-10-24 (per Zillow)",
-   "score": 6.0
-  },
-  {
-   "address": "5226 Meandering Trl",
-   "city": "Prescott",
-   "zip": "86301",
-   "beds": 3,
-   "baths": 2,
-   "sqft": 1781,
-   "photo": "https://photos.zillowstatic.com/fp/5259e4d97b84619fe6f18c3e6aa54bf2-p_h.jpg",
-   "manager": null,
-   "contact": null,
-   "contactPhone": null,
-   "lat": 34.624435,
-   "lng": -112.387764,
-   "coordSource": "zillow",
-   "rent": 2495,
-   "rentSource": "zillow",
-   "rentNote": null,
-   "sources": [
-    {
-     "name": "Zillow",
-     "key": "zillow",
-     "url": "https://www.zillow.com/homedetails/5226-Meandering-Trl-Prescott-AZ-86301/461210494_zpid/"
-    }
-   ],
-   "url": "https://www.zillow.com/homedetails/5226-Meandering-Trl-Prescott-AZ-86301/461210494_zpid/",
-   "availableIso": "now",
-   "availableRaw": "Available now",
-   "availFit": "early",
-   "availNote": "Available now: ~29 days of rent before Dec 1 unless landlord holds it",
-   "deposit": 2495,
-   "depositText": null,
-   "fees": [],
-   "utilities": {
-    "water": null,
-    "sewer": null,
-    "trash": null,
-    "gas": null,
-    "electric": null,
-    "internet": null,
-    "landscaping": null,
-    "hoa": null
-   },
-   "utilitiesText": null,
-   "pets": "No Pets",
-   "furnished": "unfurnished (per listing)",
-   "lease": "12-month minimum lease",
-   "parking": "2-car garage",
-   "lot": null,
-   "denSnippet": "-bathroom home offers 1,781 square feet of bright, open living space, plus a private office with a door perfect as a work-from-home retreat, a reading room, or a",
-   "denStrong": true,
-   "flexQuote": "This nearly new 2025-built home features 2 bedrooms, 2 bathrooms, plus a private office, 1,781 sq ft of living space on a 0.24-acre lot, a 48-inch linear…",
-   "flexRoom": "office",
-   "midTerm": false,
-   "studentRefusal": null,
-   "studentFlags": [],
-   "studentPositive": null,
-   "vacation": false,
-   "perRoom": false,
-   "smoking": null,
-   "listedDate": "2026-10-19",
-   "listedSource": "Zillow",
-   "sourcePriceHistory": [
-    {
-     "date": "2026-10-19",
-     "event": "Listed for rent",
-     "price": 2495
-    }
-   ],
-   "undisclosed": false,
-   "propertyType": "SINGLE_FAMILY",
-   "descExcerpt": "Welcome to 5226 Meandering Trail a nearly new 2025-built home in one of Prescott's most peaceful neighborhoods, where quiet streets wind through open desert skies and every evening ends in golden light. This beautifully finished 2-bedroom, 2-bathroom home offers 1,781 square feet of bright, open living space, plus a private office with a door perfect as a work-from-home retreat, a reading room, or a flexible third bedroom for guests. The heart of the home is the great room, anchored by a stunning 48-inch linear gas fireplace that brings warmth and modern drama to the space. The kitchen is desi",
-   "key": "5226 meandering",
-   "driveMin": 11.5,
-   "driveMi": 5.4,
-   "driveVia": "https://router.project-osrm.org",
-   "bedCategory": "3flex",
-   "bedsLabel": "3 + office (per listing)",
-   "studentFlagsSerious": [],
-   "id": "5226-meandering",
-   "status": "active",
-   "lastSeen": "2026-11-02",
-   "firstSeen": "2026-11-02",
-   "utilSummary": "Utilities: not listed",
-   "far": false,
-   "priceHistory": [],
-   "daysOnMarket": 14,
-   "domBasis": "since listed 2026-10-19 (per Zillow)",
    "score": 6.0
   },
   {
