@@ -1,6 +1,45 @@
 window.UPDATES_DATA = {
  "entries": [
   {
+   "date": "2026-11-02",
+   "title": "No changes — 8 houses fit",
+   "lede": "Nothing new, no price moves and nothing went off the market today. Top of the list is still 360 Chestnut Dr, Prescott at $2,350. New 3 BR + den/office at 5746 E Tyler Rd ($3,490, plus a $165/mo club fee); 3840 W Dove Rd ($2,400, 4 BR manufactured home with no den) is listed as excluded, and every known match is unchanged. The search now also covers 3-bedroom houses whose listing names an extra room (den, office, loft, bonus room, casita and similar): 2 new ones, listed separately and not counted in the 8.",
+   "browser": [],
+   "borderline": [],
+   "plus3": [
+    {
+     "text": "5226 Meandering Trl, Prescott: 3 BR + office, $2,495, 12 min to ERAU; listing says: \"This nearly new 2025-built home features 2 bedrooms, 2 bathrooms, plus a private office, 1,781 sq ft of living space on a 0.24-acre lot, a 48-inch linear…\"",
+     "href": "https://www.zillow.com/homedetails/5226-Meandering-Trl-Prescott-AZ-86301/461210494_zpid/"
+    },
+    {
+     "text": "5746 E Tyler Rd, Prescott Valley: 3 BR + den, $3,490, 18 min to ERAU; listing says: \"Split floorplan with additional den and dedicated office space.\"",
+     "href": "https://www.zillow.com/homedetails/5746-E-Tyler-Rd-Prescott-Valley-AZ-86314/331660218_zpid/"
+    }
+   ],
+   "new": [],
+   "changed": [],
+   "gone": [
+    {
+     "text": "13912 N Grey Bears Trail, Prescott (3 + extra rooms, not counted) (3 BR + loft? (borderline), last $3,675) no longer shows on Apartments.com, Redfin",
+     "href": "https://www.apartments.com/13912-grey-bears-trail-prescott-az/p0x9vst/"
+    }
+   ],
+   "reclassified": [],
+   "top": [],
+   "market": "8 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,319–$4,895, median $3,425; 4 are at or under the $2,900 reference. 7 are within 25 min; 1 list a move-in date in the Dec 1 window.",
+   "counts": {
+    "active": 8,
+    "new": 0,
+    "changed": 0,
+    "gone": 0,
+    "reclassified": 0,
+    "pending": 0,
+    "plus3": 24,
+    "plus3Strong": 17,
+    "plus3New": 2
+   }
+  },
+  {
    "date": "2026-11-01",
    "title": "1 gone — 8 houses fit",
    "lede": "Today's refresh found 1 gone. Top of the list is still 360 Chestnut Dr, Prescott at $2,350. 7302 E Night Watch Way ($2,400 match) is gone; 642 Sunrise Blvd added as a borderline 3+extra; 4798 N Edgemont Rd excluded (no college students); Bower Ln still $2,450 active on Zumper; Little Papoose and Hidden Valley still listed on Zillow (kept). The search now also covers 3-bedroom houses whose listing names an extra room (den, office, loft, bonus room, casita and similar): 1 new one, listed separately and not counted in the 8.",
