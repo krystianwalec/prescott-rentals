@@ -14,12 +14,7 @@
    ],
    "new": [],
    "changed": [],
-   "gone": [
-    {
-     "text": "13912 N Grey Bears Trail, Prescott (3 + extra rooms, not counted) (3 BR + loft? (borderline), last $3,675) no longer shows on Apartments.com, Redfin",
-     "href": "https://www.apartments.com/13912-grey-bears-trail-prescott-az/p0x9vst/"
-    }
-   ],
+   "gone": [],
    "reclassified": [],
    "top": [],
    "market": "8 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,319–$4,895, median $3,425; 4 are at or under the $2,900 reference. 7 are within 25 min; 1 list a move-in date in the Dec 1 window.",
@@ -30,7 +25,7 @@
     "gone": 0,
     "reclassified": 0,
     "pending": 0,
-    "plus3": 23,
+    "plus3": 24,
     "plus3Strong": 16,
     "plus3New": 1
    }
