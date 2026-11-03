@@ -9,12 +9,7 @@ window.UPDATES_DATA = {
    "plus3": [],
    "new": [],
    "changed": [],
-   "gone": [
-    {
-     "text": "7239 E Barefoot Ln, Prescott Valley (3 + extra rooms, not counted) (3 + loft (per listing), last $3,044) no longer shows on Apartments.com, Rentable, Redfin, Rent.com",
-     "href": "https://www.apartments.com/7239-barefoot-ln-prescott-valley-az/0fb6br2/"
-    }
-   ],
+   "gone": [],
    "reclassified": [],
    "top": [],
    "market": "8 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,319–$4,895, median $3,425; 4 are at or under the $2,900 reference. 7 are within 25 min; 1 list a move-in date in the Dec 1 window.",
@@ -25,8 +20,8 @@ window.UPDATES_DATA = {
     "gone": 0,
     "reclassified": 0,
     "pending": 0,
-    "plus3": 23,
-    "plus3Strong": 15,
+    "plus3": 24,
+    "plus3Strong": 16,
     "plus3New": 0
    }
   },
