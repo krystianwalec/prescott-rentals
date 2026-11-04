@@ -1,6 +1,6 @@
 window.LISTINGS_DATA = {
- "asOf": "2026-11-03",
- "generatedAt": "2026-11-03 12:25 PT",
+ "asOf": "2026-11-04",
+ "generatedAt": "2026-11-04 12:09 PT",
  "target": {
   "name": "Embry-Riddle Aeronautical University (Prescott campus)",
   "address": "3700 Willow Creek Rd, Prescott, AZ 86301",
@@ -20,7 +20,7 @@ window.LISTINGS_DATA = {
    "source": "Zillow",
    "ok": true,
    "pages": 8,
-   "candidates": 158,
+   "candidates": 162,
    "http": [
     200,
     200,
@@ -37,7 +37,7 @@ window.LISTINGS_DATA = {
    "source": "Redfin",
    "ok": true,
    "pages": 12,
-   "candidates": 114,
+   "candidates": 118,
    "http": [
     200,
     200,
@@ -58,7 +58,7 @@ window.LISTINGS_DATA = {
    "source": "Craigslist",
    "ok": true,
    "pages": 2,
-   "candidates": 46,
+   "candidates": 49,
    "http": [
     200,
     200
@@ -69,7 +69,7 @@ window.LISTINGS_DATA = {
    "source": "Rentable",
    "ok": true,
    "pages": 6,
-   "candidates": 55,
+   "candidates": 54,
    "http": [
     200,
     200,
@@ -84,7 +84,7 @@ window.LISTINGS_DATA = {
    "source": "Rent Right (AppFolio)",
    "ok": true,
    "pages": 1,
-   "candidates": 27,
+   "candidates": 28,
    "http": [
     200
    ],
@@ -129,55 +129,55 @@ window.LISTINGS_DATA = {
    "matches": 0
   },
   {
-   "source": "Zillow (4+ houses Prescott/PV/Chino; exact-3 Prescott/PV; detail pages) - second try",
+   "source": "Zillow (4+ houses Prescott/PV/Chino; exact-3 page 1 Prescott/PV; detail page)",
    "ok": true,
    "pages": 0,
    "http": [
-    "browser pass 2026-11-03"
+    "browser pass 2026-11-04"
    ],
    "candidates": 0,
    "matches": 0,
    "via": "browser"
   },
   {
-   "source": "Apartments.com (houses: Prescott, PV, Chino) - second try",
+   "source": "Apartments.com (4-bed and 3-bed: Prescott, PV, Chino)",
    "ok": true,
    "pages": 0,
    "http": [
-    "browser pass 2026-11-03"
+    "browser pass 2026-11-04"
    ],
    "candidates": 0,
    "matches": 0,
    "via": "browser"
   },
   {
-   "source": "HotPads (Prescott/PV/Chino cards; Prescott list partial)",
+   "source": "Zumper (4-beds: Prescott, PV, Chino)",
    "ok": true,
    "pages": 0,
    "http": [
-    "browser pass 2026-11-03"
+    "browser pass 2026-11-04"
    ],
    "candidates": 0,
    "matches": 0,
    "via": "browser"
   },
   {
-   "source": "Trulia (4+ single-family)",
+   "source": "HotPads (Prescott 4+ only)",
    "ok": true,
    "pages": 0,
    "http": [
-    "browser pass 2026-11-03"
+    "browser pass 2026-11-04"
    ],
    "candidates": 0,
    "matches": 0,
    "via": "browser"
   },
   {
-   "source": "Zumper (PV + 4-beds filter; second try, list partly rendered)",
+   "source": "Trulia (Prescott 4+ single-family only)",
    "ok": true,
    "pages": 0,
    "http": [
-    "browser pass 2026-11-03"
+    "browser pass 2026-11-04"
    ],
    "candidates": 0,
    "matches": 0,
@@ -188,7 +188,7 @@ window.LISTINGS_DATA = {
    "ok": true,
    "pages": 0,
    "http": [
-    "browser pass 2026-11-03"
+    "browser pass 2026-11-04"
    ],
    "candidates": 0,
    "matches": 0,
@@ -199,7 +199,18 @@ window.LISTINGS_DATA = {
    "ok": true,
    "pages": 0,
    "http": [
-    "browser pass 2026-11-03"
+    "browser pass 2026-11-04"
+   ],
+   "candidates": 0,
+   "matches": 0,
+   "via": "browser"
+  },
+  {
+   "source": "ERAU off-campus board (first ~20 cards)",
+   "ok": true,
+   "pages": 0,
+   "http": [
+    "browser pass 2026-11-04"
    ],
    "candidates": 0,
    "matches": 0,
@@ -208,85 +219,7 @@ window.LISTINGS_DATA = {
  ],
  "blocked": [
   {
-   "source": "apartments.com",
-   "url": "https://www.apartments.com/houses/prescott-az/4-bedrooms/",
-   "http": 403,
-   "verdict": "blocked"
-  },
-  {
-   "source": "hotpads",
-   "url": "https://hotpads.com/prescott-az/houses-for-rent",
-   "http": 200,
-   "verdict": "fetchable (not parsed yet)"
-  },
-  {
-   "source": "trulia",
-   "url": "https://www.trulia.com/for_rent/Prescott,AZ/4p_beds/",
-   "http": 200,
-   "verdict": "fetchable (not parsed yet)"
-  },
-  {
-   "source": "homes.com",
-   "url": "https://www.homes.com/prescott-az/houses-for-rent/4-bedroom/",
-   "http": 403,
-   "verdict": "blocked"
-  },
-  {
-   "source": "realtor.com",
-   "url": "https://www.realtor.com/apartments/Prescott_AZ/beds-4",
-   "http": 200,
-   "verdict": "fetchable (not parsed yet)"
-  },
-  {
-   "source": "zumper",
-   "url": "https://www.zumper.com/houses-for-rent/prescott-az/4-beds",
-   "http": 200,
-   "verdict": "blocked"
-  },
-  {
-   "source": "padmapper",
-   "url": "https://www.padmapper.com/houses/prescott-az",
-   "http": 200,
-   "verdict": "blocked"
-  },
-  {
-   "source": "rentalsource",
-   "url": "https://www.rentalsource.com/prescott-az/houses/",
-   "http": 403,
-   "verdict": "blocked"
-  },
-  {
-   "source": "craigslist RSS",
-   "url": "https://prescott.craigslist.org/search/apa?min_bedrooms=4&format=rss",
-   "http": 403,
-   "verdict": "blocked"
-  },
-  {
-   "source": "Peak Property Solutions (Duda/AppFolio JS widget)",
-   "url": "https://www.peakprescott.com/availability",
-   "http": 200,
-   "verdict": "needs browser (listings rendered by JavaScript)"
-  },
-  {
-   "source": "Pierce Property Mgmt (Duda/AppFolio JS widget)",
-   "url": "https://www.ppmprescott.com/availability",
-   "http": 200,
-   "verdict": "needs browser (listings rendered by JavaScript)"
-  },
-  {
-   "source": "ERAU College Pads (JS-rendered)",
-   "url": "https://offcampushousingpc.erau.edu/listing",
-   "http": 200,
-   "verdict": "needs browser (listings rendered by JavaScript)"
-  },
-  {
-   "source": "Realtor.com (ERR_ABORTED)",
-   "http": "browser",
-   "verdict": "blocked in browser pass",
-   "url": ""
-  },
-  {
-   "source": "ERAU off-campus board (empty page body)",
+   "source": "Realtor.com (tool error on read)",
    "http": "browser",
    "verdict": "blocked in browser pass",
    "url": ""
@@ -367,7 +300,7 @@ window.LISTINGS_DATA = {
    "availableIso": "now",
    "availableRaw": "Available now",
    "availFit": "early",
-   "availNote": "Available now: ~28 days of rent before Dec 1 unless landlord holds it",
+   "availNote": "Available now: ~27 days of rent before Dec 1 unless landlord holds it",
    "deposit": 3525,
    "depositText": null,
    "fees": [
@@ -403,16 +336,22 @@ window.LISTINGS_DATA = {
    "vacation": false,
    "perRoom": false,
    "smoking": false,
-   "listedDate": null,
-   "listedSource": null,
-   "sourcePriceHistory": [],
+   "listedDate": "2026-10-28",
+   "listedSource": "Zillow",
+   "sourcePriceHistory": [
+    {
+     "date": "2026-10-28",
+     "event": "Listed for rent",
+     "price": 2350
+    }
+   ],
    "undisclosed": false,
    "propertyType": "SINGLE_FAMILY",
    "descExcerpt": "Welcome to 360 Chestnut Drive, a spacious 4-bedroom, 2-bath, 2 car garage home offering approximately 2,184 square feet of comfortable and versatile living space in a convenient Prescott location that puts you close to Taylor Hicks Elementary School, shopping, dining, parks, recreation, medical facilities, and downtown Prescott. This spacious home features a desirable floor plan with plenty of room for everyday living, guests, a home office, or additional flex space. The main level offers comfortable living areas, while the walk-out lower level provides even more versatility with a fourth bedr",
    "key": "360 chestnut",
    "bedsLabel": "4 + bonus / home office (per listing)",
    "priceNote": "Peak Security Deposit $3,525; Application Fee $55; deposit may be up to 1.5× rent",
-   "lastVerified": "2026-11-03",
+   "lastVerified": "2026-11-04",
    "manualNotes": [
     "Oct 28 browser pass: NEW. Zillow Listed for rent 10/28/2026 at $2,350. Quote: \"plenty of room for everyday living, guests, a home office, or additional flex space.\" \"the walk-out lower level provides even more versatility with a fourth bedroom, family room, and bonus room\". Peak title: \"Home with Views, Garage and a Flexible Living Space\". No no-students sentence. Same rent/size on Zumper, HotPads, Trulia, Realtor.com, Peak. Not on Apartments.com, Pierce, or ERAU.",
     "Nov 2 browser pass: Peak's listing title now reads 'Home with Views, Garage and a Flexible Living Space'; rent unchanged $2,350, Available now.",
@@ -436,11 +375,11 @@ window.LISTINGS_DATA = {
    "studentFlagsSerious": [],
    "id": "360-chestnut",
    "status": "active",
-   "lastSeen": "2026-11-03",
+   "lastSeen": "2026-11-04",
    "firstSeen": "2026-10-28",
    "priceHistory": [],
-   "daysOnMarket": 6,
-   "domBasis": "since first seen by this tracker (2026-10-28)",
+   "daysOnMarket": 7,
+   "domBasis": "since listed 2026-10-28 (per Zillow)",
    "utilSummary": "Tenant pays: water, trash, gas, electric; not listed: sewer, internet, landscaping",
    "score": 6.5
   },
@@ -451,7 +390,7 @@ window.LISTINGS_DATA = {
    "beds": 4,
    "baths": 3,
    "sqft": 3137,
-   "photo": "https://photos.zillowstatic.com/fp/bca6fd630a0805920e280c1aafd6b878-p_e.jpg",
+   "photo": "https://photos.zillowstatic.com/fp/bca6fd630a0805920e280c1aafd6b878-p_h.jpg",
    "manager": null,
    "contact": null,
    "contactPhone": null,
@@ -482,7 +421,9 @@ window.LISTINGS_DATA = {
    "availNote": "Available around Dec 1 (ideal)",
    "deposit": 4000,
    "depositText": null,
-   "fees": [],
+   "fees": [
+    "application $4,000"
+   ],
    "utilities": {
     "water": "tenant",
     "sewer": "tenant",
@@ -497,12 +438,12 @@ window.LISTINGS_DATA = {
    "pets": "Small dogs OK",
    "furnished": null,
    "lease": "1 year",
-   "parking": null,
+   "parking": "Parking: Attached Garage",
    "lot": null,
    "denSnippet": "The main level boasts 2 bedrooms, an office and 2 baths",
-   "denStrong": false,
-   "flexQuote": null,
-   "flexRoom": null,
+   "denStrong": true,
+   "flexQuote": "The main level boasts 2 bedrooms, an office and 2 baths",
+   "flexRoom": "office",
    "midTerm": false,
    "studentRefusal": null,
    "studentFlags": [],
@@ -510,15 +451,26 @@ window.LISTINGS_DATA = {
    "vacation": false,
    "perRoom": false,
    "smoking": null,
-   "listedDate": "2026-10-30",
-   "listedSource": "Zillow (relisted 10/30/2026 at $4,000; previously listed 12/11/2025 at $3,800, removed 1/9/2026)",
-   "sourcePriceHistory": [],
+   "listedDate": "2026-10-29",
+   "listedSource": "Zillow",
+   "sourcePriceHistory": [
+    {
+     "date": "2026-10-30",
+     "event": "Listed for rent",
+     "price": 4000
+    },
+    {
+     "date": "2026-01-09",
+     "event": "Listing removed",
+     "price": 3800
+    }
+   ],
    "undisclosed": false,
    "propertyType": "SINGLE_FAMILY",
-   "descExcerpt": "",
+   "descExcerpt": "Upgraded home in the gated Astoria neighborhood of Prescott Lakes. The layout works well for multi-generational living with separate access options for the 2 levels. The main level boasts 2 bedrooms, an office and 2 baths. The great room and kitchen have expansive mountain views and a covered deck for entertaining with sunset views. Lower level also contains 2 bedrooms, a shared bath, a full kitchen, spacious family room, storage and outdoor living complete with covered patio and outdoor gas fire pit. Access to clubhouse optional with additional monthly fee. Tenant is responsible for utilities",
    "key": "1522 varsity",
    "bedsLabel": "4 + office (per listing)",
-   "lastVerified": "2026-11-03",
+   "lastVerified": "2026-11-04",
    "manualNotes": [
     "Oct 30 browser pass: NEW. \"The layout works well for multi-generational living with separate access options for the 2 levels. The main level boasts 2 bedrooms, an office and 2 baths… Lower level also contains 2 bedrooms, a shared bath, a full kitchen, spacious family room\".",
     "Gated Astoria neighborhood of Prescott Lakes. \"Access to clubhouse optional with additional monthly fee.\"",
@@ -540,11 +492,11 @@ window.LISTINGS_DATA = {
    "studentFlagsSerious": [],
    "id": "1522-varsity",
    "status": "active",
-   "lastSeen": "2026-11-03",
+   "lastSeen": "2026-11-04",
    "firstSeen": "2026-10-30",
    "priceHistory": [],
-   "daysOnMarket": 4,
-   "domBasis": "since listed 2026-10-30 (per Zillow (relisted 10/30/2026 at $4,000; previously listed 12/11/2025 at $3,800, removed 1/9/2026))",
+   "daysOnMarket": 6,
+   "domBasis": "since listed 2026-10-29 (per Zillow)",
    "utilSummary": "Tenant pays: water, sewer, trash, gas, electric, landscaping; not listed: internet",
    "score": 6.0
   },
@@ -555,9 +507,9 @@ window.LISTINGS_DATA = {
    "beds": 4,
    "baths": 3,
    "sqft": 2188,
-   "photo": "https://photos.zillowstatic.com/fp/7d1710b6179671c9964feffe726bcdea-p_e.jpg",
-   "manager": "Arizona Property Brokerage Brenda Anne Heath",
-   "contact": null,
+   "photo": "https://photos.zillowstatic.com/fp/7d1710b6179671c9964feffe726bcdea-p_h.jpg",
+   "manager": "Bear Creek Real Estate",
+   "contact": "Brenda Anne Heath",
    "contactPhone": "9284991395",
    "lat": 34.67198,
    "lng": -112.32637,
@@ -591,9 +543,9 @@ window.LISTINGS_DATA = {
    ],
    "url": "https://www.apartments.com/7906-e-carbon-ct-prescott-valley-az/x0wespn/",
    "availableIso": "now",
-   "availableRaw": "Available Now",
+   "availableRaw": "Available now",
    "availFit": "early",
-   "availNote": "Available now: ~28 days of rent before Dec 1 unless landlord holds it",
+   "availNote": "Available now: ~27 days of rent before Dec 1 unless landlord holds it",
    "deposit": null,
    "depositText": null,
    "fees": [],
@@ -611,7 +563,7 @@ window.LISTINGS_DATA = {
    "pets": "Pet Friendly",
    "furnished": null,
    "lease": "12 months (Apartments.com)",
-   "parking": null,
+   "parking": "Parking: 1 Garage space",
    "lot": null,
    "denSnippet": "also has an additional ''bonus flex room'' that makes an excellent den, cozy lounge, office space or kids' play area",
    "denStrong": false,
@@ -624,16 +576,47 @@ window.LISTINGS_DATA = {
    "vacation": false,
    "perRoom": false,
    "smoking": null,
-   "listedDate": null,
-   "listedSource": null,
-   "sourcePriceHistory": [],
+   "listedDate": "2026-10-21",
+   "listedSource": "Zillow",
+   "sourcePriceHistory": [
+    {
+     "date": "2026-10-21",
+     "event": "Listed for rent",
+     "price": 2850
+    },
+    {
+     "date": "2026-10-21",
+     "event": "Listing removed",
+     "price": 2700
+    },
+    {
+     "date": "2026-10-12",
+     "event": "Price change",
+     "price": 2700
+    },
+    {
+     "date": "2026-08-31",
+     "event": "Price change",
+     "price": 2850
+    },
+    {
+     "date": "2026-08-27",
+     "event": "Price change",
+     "price": 2950
+    },
+    {
+     "date": "2026-07-04",
+     "event": "Listed for rent",
+     "price": 3100
+    }
+   ],
    "undisclosed": false,
    "propertyType": "SINGLE_FAMILY",
-   "descExcerpt": "7906 E Carbon Court # - Prescott Valley, AZ | Rent. Skip to Content (Press Enter) Search Search for homes by location Search 0 Prescott Valley, AZ Market Trends List a Property Business Solutions Moving Center Log In Sign Up Arizona Prescott Valley Houses 86315 7906 E Carbon Court # Share Save 17 Photos Close Save Photos (17) Street View Map To: 7906 E Carbon Court # To: 7906 E Carbon Court # To: 7906 E Carbon Court # Send Message $2,850 4 Beds 3 Baths 2,188 Sqft 7906 E Carbon Court # Prescott Valley, AZ 86315 Pronghorn Ranch Send Message 7906 E Carbon Court # Property Highlights Washer & Drye",
+   "descExcerpt": "This 2188 square foot single family home has 4 bedrooms and 3.0 bathrooms. This home is located at 7906 E Carbon Ct, Prescott Valley, AZ 86315.",
    "key": "7906 carbon",
    "bedsLabel": "4 + den (bonus flex room, per listing)",
    "priceNote": "Oct 21: Zillow, Apartments.com, HotPads, Trulia, Zumper and Realtor.com all show $2,850",
-   "lastVerified": "2026-11-03",
+   "lastVerified": "2026-11-04",
    "manualNotes": [
     "Apartments.com: $2,950 deposit, $50 application fee, $250 pet deposit, Pronghorn Ranch HOA, 2,188 sqft, available 8/26/26, utilities listed as \"No Utilities\" (none included). Bear Creek lists a $2,850 deposit, 2,350 sqft and 8/15/2026.",
     "Oct 13 browser pass: $2,850 on Apartments.com and Zumper, $2,700 on HotPads and Trulia (sources conflict).",
@@ -659,7 +642,7 @@ window.LISTINGS_DATA = {
    "studentFlagsSerious": [],
    "id": "7906-carbon",
    "status": "active",
-   "lastSeen": "2026-11-03",
+   "lastSeen": "2026-11-04",
    "firstSeen": "2026-10-08",
    "priceHistory": [
     {
@@ -673,8 +656,8 @@ window.LISTINGS_DATA = {
      "to": 2850
     }
    ],
-   "daysOnMarket": 26,
-   "domBasis": "since first seen by this tracker (2026-10-08)",
+   "daysOnMarket": 14,
+   "domBasis": "since listed 2026-10-21 (per Zillow)",
    "utilSummary": "Utilities: not listed",
    "score": 5.5
   },
@@ -685,7 +668,7 @@ window.LISTINGS_DATA = {
    "beds": 4,
    "baths": 2.0,
    "sqft": 1904,
-   "photo": "https://images.rentable.co/122492/75272293/large.jpeg",
+   "photo": "https://images.rentable.co/122492/75272875/large.jpeg",
    "manager": "Southwest Property Sales & Leasing",
    "contact": "Lisa Hugus",
    "contactPhone": "(928) 713-9794",
@@ -734,7 +717,7 @@ window.LISTINGS_DATA = {
    "availableIso": "now",
    "availableRaw": "Available now",
    "availFit": "early",
-   "availNote": "Available now: ~28 days of rent before Dec 1 unless landlord holds it",
+   "availNote": "Available now: ~27 days of rent before Dec 1 unless landlord holds it",
    "deposit": null,
    "depositText": null,
    "fees": [
@@ -769,14 +752,30 @@ window.LISTINGS_DATA = {
    "smoking": null,
    "listedDate": "2026-09-04",
    "listedSource": "Trulia (34 days on Trulia as of 2026-10-08)",
-   "sourcePriceHistory": [],
+   "sourcePriceHistory": [
+    {
+     "date": "2026-10-26",
+     "event": "Price change",
+     "price": 2319
+    },
+    {
+     "date": "2026-09-22",
+     "event": "Price change",
+     "price": 2394
+    },
+    {
+     "date": "2026-09-04",
+     "event": "Listed for rent",
+     "price": 2444
+    }
+   ],
    "undisclosed": false,
    "propertyType": "SINGLE_FAMILY",
    "descExcerpt": "Property details Additional Details Total Unit Count: 1 Last Updated: Updated 15 hours ago Contact Number: (928) 597-8953 Contact 7612 Dusty Boot Rd Your Name Email Address Phone Number (optional) Request a Tour Date Ask a Question Hi, I found your property on Rentable and would like to schedule a virtual tour. Please let me know when you are next available. Thank you. Check Availability Email Sent Send me more listings like this. Error! Please try again later. Message Sent. A confirmation email has been sent to your inbox. ",
    "key": "7612 dusty boot",
    "bedsLabel": "4 + den (family room / formal living)",
    "priceNote": "Oct 26: $2,319 on Zillow/HotPads/Trulia/Realtor (was $2,394); Apartments.com/Zumper still $2,394. Zillow: $44 of rent is $15 admin fee + $29 resident benefit package.",
-   "lastVerified": "2026-11-03",
+   "lastVerified": "2026-11-04",
    "manualNotes": [
     "Strictly, the 'office' is one of the 4 bedrooms, so this is effectively 4 bedrooms plus a family room and formal living/dining (a possible 5th sleeping space). Deposit not stated.",
     "Oct 26 browser pass: rent $2,394 → $2,319 (Zillow/HotPads/Trulia/Realtor); Apartments.com/Zumper still $2,394. Zillow quote: \"$44.00 of rent is $15.00 admin fee & $29.00 resident benefit package.\" Den/office wording unchanged.",
@@ -797,7 +796,7 @@ window.LISTINGS_DATA = {
    "studentFlagsSerious": [],
    "id": "7612-dusty-boot",
    "status": "active",
-   "lastSeen": "2026-11-03",
+   "lastSeen": "2026-11-04",
    "firstSeen": "2026-10-08",
    "priceHistory": [
     {
@@ -806,7 +805,7 @@ window.LISTINGS_DATA = {
      "to": 2319
     }
    ],
-   "daysOnMarket": 60,
+   "daysOnMarket": 61,
    "domBasis": "since listed 2026-09-04 (per Trulia (34 days on Trulia as of 2026-10-08))",
    "utilSummary": "Utilities: not listed",
    "score": 5.5
@@ -884,7 +883,7 @@ window.LISTINGS_DATA = {
    "bedsLabel": "4 + den (weak: \"4 bedrooms or 3 + office\")",
    "weakDen": true,
    "staleAvail": true,
-   "lastVerified": "2026-11-03",
+   "lastVerified": "2026-11-04",
    "manualNotes": [
     "Granville neighborhood. Washer/dryer included.",
     "Really 4 bedrooms with no extra den (the 'office' is the 4th bedroom).",
@@ -915,10 +914,10 @@ window.LISTINGS_DATA = {
    "studentFlagsSerious": [],
    "id": "6227-bower",
    "status": "active",
-   "lastSeen": "2026-11-03",
+   "lastSeen": "2026-11-04",
    "firstSeen": "2026-10-08",
    "priceHistory": [],
-   "daysOnMarket": 26,
+   "daysOnMarket": 27,
    "domBasis": "since first seen by this tracker (2026-10-08)",
    "utilSummary": "Utilities: not listed",
    "score": 4.0
@@ -930,7 +929,7 @@ window.LISTINGS_DATA = {
    "beds": 4,
    "baths": 3,
    "sqft": 2599,
-   "photo": "https://photos.zillowstatic.com/fp/95d1b18c56abfafcf477c3eb1dd08855-p_e.jpg",
+   "photo": "https://photos.zillowstatic.com/fp/95d1b18c56abfafcf477c3eb1dd08855-p_h.jpg",
    "manager": null,
    "contact": null,
    "contactPhone": null,
@@ -954,45 +953,53 @@ window.LISTINGS_DATA = {
    "availFit": "unknown",
    "availNote": "Availability not listed",
    "deposit": 4895,
-   "depositText": null,
-   "fees": [],
+   "depositText": "equal to one month's rent",
+   "fees": [
+    "pet fee $300"
+   ],
    "utilities": {
-    "water": null,
-    "sewer": null,
-    "trash": null,
-    "gas": null,
-    "electric": null,
-    "internet": null,
+    "water": "tenant",
+    "sewer": "tenant",
+    "trash": "tenant",
+    "gas": "tenant",
+    "electric": "tenant",
+    "internet": "tenant",
     "landscaping": null,
     "hoa": null
    },
-   "utilitiesText": null,
+   "utilitiesText": "Utilities: Tenant is responsible for all utilities, including electric, gas, water, sewer, trash and internet",
    "pets": "Case by case",
    "furnished": null,
    "lease": "12 months ($4,895); 6 months ($5,295)",
    "parking": "3-car garage",
    "lot": null,
    "denSnippet": "4 spacious bedrooms PLUS a dedicated office with custom built-ins",
-   "denStrong": false,
-   "flexQuote": null,
-   "flexRoom": null,
+   "denStrong": true,
+   "flexQuote": "4 spacious bedrooms PLUS a dedicated office with custom built-ins, so your work-from-home setup finally gets the room it deserves",
+   "flexRoom": "office",
    "midTerm": false,
    "studentRefusal": null,
    "studentFlags": [],
    "studentPositive": null,
    "vacation": false,
    "perRoom": false,
-   "smoking": null,
+   "smoking": "no smoking",
    "listedDate": "2026-10-29",
    "listedSource": "Zillow",
-   "sourcePriceHistory": [],
+   "sourcePriceHistory": [
+    {
+     "date": "2026-10-29",
+     "event": "Listed for rent",
+     "price": 4895
+    }
+   ],
    "undisclosed": false,
    "propertyType": "SINGLE_FAMILY",
-   "descExcerpt": "",
+   "descExcerpt": "MOUNTAIN VIEWS. HOME OFFICE. 3-CAR GARAGE. NO 7% MORTGAGE. Why buy when you can live like an owner, without the owner's price tag? With mortgage rates above 7%, buying a home like this with a small down payment can easily run $5,500 or more a month once you add taxes and insurance. Here, you get it all with no down payment, no closing costs and no 30-year commitment. SPECIAL MOVE-IN OFFER Sign a 12-month lease by November 30 and get: - A FREE professional deep clean before you move in - FREE professional home cleaning once a month for your first 3 months Move into a spotless home and spend you",
    "key": "4443 kirkwood",
    "bedsLabel": "4 + dedicated office (per listing)",
    "priceNote": "12-month lease $4,895; 6-month lease $5,295",
-   "lastVerified": "2026-11-03",
+   "lastVerified": "2026-11-04",
    "manualNotes": [
     "Oct 29 browser pass: NEW. Zillow listed ~13 hours before the pass; Trulia 'NEW - 13 HRS AGO'; HotPads newest. Zillow: \"4 spacious bedrooms PLUS a dedicated office with custom built-ins\"; \"Flexible move-in date, available soon.\" Deposit one month's rent. No no-students sentence seen. Not on Zumper, Apartments.com, Realtor.com, Peak, PPM or ERAU.",
     "Zillow header says 3 baths; its description text says 2.5 bathrooms.",
@@ -1012,12 +1019,12 @@ window.LISTINGS_DATA = {
    "studentFlagsSerious": [],
    "id": "4443-kirkwood",
    "status": "active",
-   "lastSeen": "2026-11-03",
+   "lastSeen": "2026-11-04",
    "firstSeen": "2026-10-29",
    "priceHistory": [],
-   "daysOnMarket": 5,
+   "daysOnMarket": 6,
    "domBasis": "since listed 2026-10-29 (per Zillow)",
-   "utilSummary": "Utilities: not listed",
+   "utilSummary": "Tenant pays: water, sewer, trash, gas, electric, internet; not listed: landscaping",
    "score": 0.5
   },
   {
@@ -1092,7 +1099,7 @@ window.LISTINGS_DATA = {
    "key": "2960 dillon",
    "bedsLabel": "4 + den (flex / office, per listing)",
    "staleAvail": true,
-   "lastVerified": "2026-11-03",
+   "lastVerified": "2026-11-04",
    "manualNotes": [
     "Oct 24 browser pass: $4,800, Zillow only, listed 63 days.",
     "Nov 1 browser pass: not on Chino Valley Zillow 4+ result list, but address page still House for rent $4,800. Kept.",
@@ -1115,22 +1122,22 @@ window.LISTINGS_DATA = {
    "studentFlagsSerious": [],
    "id": "2960-dillon",
    "status": "active",
-   "lastSeen": "2026-11-03",
+   "lastSeen": "2026-11-04",
    "firstSeen": "2026-10-08",
    "priceHistory": [],
-   "daysOnMarket": 74,
+   "daysOnMarket": 75,
    "domBasis": "since listed 2026-08-21 (per Trulia (48 days on Trulia as of 2026-10-08))",
    "utilSummary": "Utilities: not listed",
    "score": 0.0
   },
   {
-   "address": "(undisclosed Address)",
+   "address": "(Undisclosed Address)",
    "city": "Prescott",
    "zip": "86303",
    "beds": 5,
    "baths": 3,
    "sqft": 2961,
-   "photo": "https://photos.zillowstatic.com/fp/50e5cd22963da5a3aeeddc97dfc9a8dc-p_e.jpg",
+   "photo": "https://photos.zillowstatic.com/fp/50e5cd22963da5a3aeeddc97dfc9a8dc-p_h.jpg",
    "manager": null,
    "contact": null,
    "contactPhone": null,
@@ -1152,10 +1159,10 @@ window.LISTINGS_DATA = {
     }
    ],
    "url": "https://www.zillow.com/homedetails/Prescott-AZ-86303/8739895_zpid/",
-   "availableIso": null,
-   "availableRaw": null,
-   "availFit": "unknown",
-   "availNote": "Availability not listed",
+   "availableIso": "now",
+   "availableRaw": "Available now",
+   "availFit": "early",
+   "availNote": "Available now: ~27 days of rent before Dec 1 unless landlord holds it",
    "deposit": 8400,
    "depositText": null,
    "fees": [],
@@ -1166,14 +1173,14 @@ window.LISTINGS_DATA = {
     "gas": null,
     "electric": null,
     "internet": null,
-    "landscaping": null,
+    "landscaping": "tenant",
     "hoa": null
    },
    "utilitiesText": "Utilities are not included (per listing); landscape services provided",
    "pets": "Small dogs OK (Zillow); dogs allowed (Trulia)",
    "furnished": "Not furnished (per listing)",
    "lease": "1 year",
-   "parking": null,
+   "parking": "Parking: Attached Garage",
    "lot": null,
    "denSnippet": null,
    "denStrong": false,
@@ -1185,16 +1192,42 @@ window.LISTINGS_DATA = {
    "studentPositive": null,
    "vacation": false,
    "perRoom": false,
-   "smoking": null,
-   "listedDate": null,
-   "listedSource": null,
-   "sourcePriceHistory": [],
+   "smoking": "no smoking",
+   "listedDate": "2026-06-28",
+   "listedSource": "Zillow",
+   "sourcePriceHistory": [
+    {
+     "date": "2026-10-19",
+     "event": "Price change",
+     "price": 4500
+    },
+    {
+     "date": "2026-09-25",
+     "event": "Price change",
+     "price": 3600
+    },
+    {
+     "date": "2026-06-28",
+     "event": "Listed for rent",
+     "price": 4250
+    },
+    {
+     "date": "2026-04-20",
+     "event": "Listing removed",
+     "price": 4250
+    },
+    {
+     "date": "2026-01-16",
+     "event": "Listed for rent",
+     "price": 4250
+    }
+   ],
    "undisclosed": true,
    "propertyType": "SINGLE_FAMILY",
-   "descExcerpt": "",
+   "descExcerpt": "Available December 1, 2026 Home is nestled in the pines of Hidden Valley Ranch. Its the very essence of Prescott living. The following amenities are included, tennis courts...the best in Prescott, swimming pools, pickle ball court, racquet ball court , clubhouse and miles of easy trail walks. large outdoor space with built in bbq and synthetic lawn area all gated in. This home provides a landscape services , utilities are not included, This home offers a very comfortable open space feeling. if you have multiple cars or entertain this well design entrance is very accommodating as well. Landscap",
    "key": "zillow-8739895",
    "priceNote": "Zillow: $4,500, price change dated 10/19/2026 (Zillow history: $3,600 on 9/25/2026; originally $4,250)",
-   "lastVerified": "2026-11-03",
+   "lastVerified": "2026-11-04",
    "manualNotes": [
     "Hidden Valley Ranch (address not disclosed). Trulia shows \"available now\"; the listing text also says \"Available August 1, 2026\".",
     "Non-smoking. Same property as Trulia id 8739895 (Oct 11 browser pass).",
@@ -1215,7 +1248,7 @@ window.LISTINGS_DATA = {
    "studentFlagsSerious": [],
    "id": "zillow-8739895",
    "status": "active",
-   "lastSeen": "2026-11-03",
+   "lastSeen": "2026-11-04",
    "firstSeen": "2026-10-08",
    "priceHistory": [
     {
@@ -1224,10 +1257,10 @@ window.LISTINGS_DATA = {
      "to": 4500
     }
    ],
-   "daysOnMarket": 26,
-   "domBasis": "since first seen by this tracker (2026-10-08)",
-   "utilSummary": "Utilities: not listed",
-   "score": -1.0
+   "daysOnMarket": 129,
+   "domBasis": "since listed 2026-06-28 (per Zillow)",
+   "utilSummary": "Tenant pays: landscaping; not listed: water, sewer, trash, gas, electric, internet",
+   "score": 0.0
   },
   {
    "address": "1478 Varsity Dr",
@@ -1857,6 +1890,26 @@ window.LISTINGS_DATA = {
    "reason": "3 BR + bonus/media room, but furnished (browser pass)"
   },
   {
+   "key": "7625 williamson valley",
+   "address": "7625 N Williamson Valley Rd Floor 1-ID1257806P",
+   "city": "Prescott",
+   "beds": 3,
+   "rent": 8091,
+   "url": "https://www.zillow.com/homedetails/7625-N-Williamson-Valley-Rd-FLOOR-1-ID1257806P-Prescott-AZ-86305/460410315_zpid/",
+   "reason": "3 BR + extra room, but an apartment/condo unit, not a whole house",
+   "driveMin": 17.4
+  },
+  {
+   "key": "423 park",
+   "address": "423 Park Ave",
+   "city": "Prescott",
+   "beds": 3,
+   "rent": 3100,
+   "url": "https://www.zillow.com/homedetails/423-Park-Ave-Prescott-AZ-86303/8743066_zpid/",
+   "reason": "3 BR + extra room, but furnished (per listing)",
+   "driveMin": 14.7
+  },
+  {
    "key": "851 prescott heights",
    "address": "851 Prescott Heights Drive",
    "city": "Prescott",
@@ -1976,21 +2029,21 @@ window.LISTINGS_DATA = {
    "reason": "4 BR, no den/office wording (browser pass)"
   },
   {
-   "key": "1921 pinnacle",
-   "address": "1921 Pinnacle Ln",
-   "city": "Prescott",
-   "beds": 3,
-   "rent": 2700,
-   "url": "https://rentrightms.appfolio.com/listings/detail/d3647c16-42f2-42b0-9f6f-ebcce3655893",
-   "reason": "Listing says: Sorry no college students."
-  },
-  {
    "key": "484 mccormick",
    "address": "484 S McCormick St",
    "city": "Prescott",
    "beds": 3,
    "rent": 2400,
    "url": "https://rentrightms.appfolio.com/listings/detail/760cce83-3f38-4f8a-b9df-87c0aad43329",
+   "reason": "Listing says: Sorry no college students."
+  },
+  {
+   "key": "1921 pinnacle",
+   "address": "1921 Pinnacle Ln",
+   "city": "Prescott",
+   "beds": 3,
+   "rent": 2700,
+   "url": "https://rentrightms.appfolio.com/listings/detail/d3647c16-42f2-42b0-9f6f-ebcce3655893",
    "reason": "Listing says: Sorry no college students."
   },
   {
@@ -2132,6 +2185,16 @@ window.LISTINGS_DATA = {
    "driveMin": 15.7
   },
   {
+   "key": "12900 state rte",
+   "address": "12900 E State Rte",
+   "city": "Prescott Valley",
+   "beds": null,
+   "rent": null,
+   "url": "https://www.rentable.co/prescott-valley-az/bungalows-on-village-way",
+   "reason": "unknown BR",
+   "driveMin": 24.9
+  },
+  {
    "key": "3131 main",
    "address": "3131 N Main St",
    "city": "Prescott Valley",
@@ -2152,14 +2215,14 @@ window.LISTINGS_DATA = {
    "driveMin": 15.9
   },
   {
-   "key": "12900 state rte",
-   "address": "12900 E State Rte",
-   "city": "Prescott Valley",
+   "key": "700 white spar",
+   "address": "700 White Spar Rd",
+   "city": "Prescott",
    "beds": null,
-   "rent": null,
-   "url": "https://www.rentable.co/prescott-valley-az/bungalows-on-village-way",
+   "rent": 550,
+   "url": "https://rentrightms.appfolio.com/listings/detail/9db37c4b-ab46-499e-b5dc-6814a4fd1ce9",
    "reason": "unknown BR",
-   "driveMin": 24.9
+   "driveMin": 16.2
   },
   {
    "key": "1768 rolling hills",
@@ -2235,9 +2298,9 @@ window.LISTINGS_DATA = {
    "beds": 4,
    "baths": 2.0,
    "sqft": 2143,
-   "photo": "https://images.rentable.co/122492/99830076/large.jpeg",
+   "photo": "https://images.rentable.co/122492/99830736/large.jpeg",
    "manager": "Desert Wide Properties",
-   "contact": null,
+   "contact": "John P Bolstad",
    "contactPhone": "(928) 597-8953",
    "lat": 34.6452263,
    "lng": -112.4416958,
@@ -2277,7 +2340,7 @@ window.LISTINGS_DATA = {
    "availableIso": "now",
    "availableRaw": "Available now",
    "availFit": "early",
-   "availNote": "Available now: ~28 days of rent before Dec 1 unless landlord holds it",
+   "availNote": "Available now: ~27 days of rent before Dec 1 unless landlord holds it",
    "deposit": 2550,
    "depositText": null,
    "fees": [
@@ -2294,10 +2357,10 @@ window.LISTINGS_DATA = {
     "hoa": null
    },
    "utilitiesText": null,
-   "pets": "Pet Friendly",
+   "pets": "No Pets",
    "furnished": null,
    "lease": "1 year lease",
-   "parking": null,
+   "parking": "Parking: 3 Garage spaces",
    "lot": null,
    "denSnippet": "great room",
    "denStrong": false,
@@ -2310,15 +2373,21 @@ window.LISTINGS_DATA = {
    "vacation": false,
    "perRoom": false,
    "smoking": null,
-   "listedDate": null,
-   "listedSource": null,
-   "sourcePriceHistory": [],
+   "listedDate": "2026-09-10",
+   "listedSource": "Zillow",
+   "sourcePriceHistory": [
+    {
+     "date": "2026-09-10",
+     "event": "Listed for rent",
+     "price": 2594
+    }
+   ],
    "undisclosed": false,
    "propertyType": "SINGLE_FAMILY",
    "descExcerpt": "Property details Additional Details Total Unit Count: 1 Last Updated: Updated 15 hours ago Contact Number: (928) 597-8953 Contact 6882 Gables Trl Your Name Email Address Phone Number (optional) Request a Tour Date Ask a Question Hi, I found your property on Rentable and would like to schedule a virtual tour. Please let me know when you are next available. Thank you. Check Availability Email Sent Send me more listings like this. Error! Please try again later. Message Sent. A confirmation email has been sent to your inbox. ",
    "key": "6882 gables",
    "bedsLabel": "4 BR + great room",
-   "lastVerified": "2026-11-03",
+   "lastVerified": "2026-11-04",
    "manualNotes": [
     "Browser pass saw a listed date of 3/11/25 (stale).",
     "Nov 3 browser pass: Zillow, Apartments.com and Zumper $2,594."
@@ -2335,11 +2404,11 @@ window.LISTINGS_DATA = {
    "bedCategory": "border",
    "id": "6882-gables",
    "status": "active",
-   "lastSeen": "2026-11-03",
+   "lastSeen": "2026-11-04",
    "firstSeen": "2026-10-08",
    "utilSummary": "Utilities: not listed",
-   "daysOnMarket": null,
-   "domBasis": null,
+   "daysOnMarket": 55,
+   "domBasis": "since listed 2026-09-10 (per Zillow)",
    "priceHistory": []
   },
   {
@@ -2349,9 +2418,9 @@ window.LISTINGS_DATA = {
    "beds": 4,
    "baths": 3,
    "sqft": 2815,
-   "photo": "https://photos.zillowstatic.com/fp/ec4e2f66f54f15e0c058770efe1e14d0-p_e.jpg",
-   "manager": null,
-   "contact": null,
+   "photo": "https://photos.zillowstatic.com/fp/ec4e2f66f54f15e0c058770efe1e14d0-p_h.jpg",
+   "manager": "Winn Realty",
+   "contact": "Betty F Badley",
    "contactPhone": "9284997970",
    "lat": 34.57695,
    "lng": -112.43743,
@@ -2402,9 +2471,9 @@ window.LISTINGS_DATA = {
    ],
    "url": "https://www.apartments.com/1567-rycosa-ln-prescott-az/09lz4g2/",
    "availableIso": "now",
-   "availableRaw": "available now",
+   "availableRaw": "Available now",
    "availFit": "early",
-   "availNote": "Available now: ~28 days of rent before Dec 1 unless landlord holds it",
+   "availNote": "Available now: ~27 days of rent before Dec 1 unless landlord holds it",
    "deposit": 5250,
    "depositText": null,
    "fees": [],
@@ -2422,7 +2491,7 @@ window.LISTINGS_DATA = {
    "pets": "No pets",
    "furnished": null,
    "lease": "12-month minimum",
-   "parking": "attached garage",
+   "parking": "Parking: 2 Parking spaces",
    "lot": null,
    "denSnippet": "family room + upstairs living room",
    "denStrong": false,
@@ -2436,15 +2505,36 @@ window.LISTINGS_DATA = {
    "perRoom": false,
    "smoking": null,
    "listedDate": "2026-10-02",
-   "listedSource": "Craigslist",
-   "sourcePriceHistory": [],
+   "listedSource": "Zillow",
+   "sourcePriceHistory": [
+    {
+     "date": "2026-10-17",
+     "event": "Price change",
+     "price": 3200
+    },
+    {
+     "date": "2026-10-02",
+     "event": "Listed for rent",
+     "price": 3500
+    },
+    {
+     "date": "2026-06-23",
+     "event": "Listing removed",
+     "price": 3392
+    },
+    {
+     "date": "2026-02-13",
+     "event": "Listed for rent",
+     "price": 3392
+    }
+   ],
    "undisclosed": false,
    "propertyType": "SINGLE_FAMILY",
-   "descExcerpt": "This recently updated home has 2,815 sq ft. 4-bedrooms & 3-bathrooms. Two bedrooms up and 2 downstairs with a spacious family room area and extra storage. The master bedroom has its own gas fireplace and an on-suite with dual vanities. There is a full bath downstairs and is perfect for guests or multi-generational living. Great upgraded Kitchen with an island and lots of counter space. Separate laundry room comes with washer, dryer and extra refrigerator. Upstairs living room is spacious with vaulted ceilings, gas fireplace and a beautiful glass slider that opens to the deck featuring scenic o",
+   "descExcerpt": "Need lots of room? This recently updated home has 2,815 sq ft. 4-bedrooms & 3-bathrooms. Two bedrooms up and 2 downstairs with a spacious family room area and extra storage. The master bedroom has its own gas fireplace and an on-suite with dual vanities. There is a full bath downstairs and is perfect for guests or multi-generational living. Great upgraded Kitchen with an island and lots of counter space. Separate laundry room comes with washer, dryer and extra refrigerator. Upstairs living room is spacious with vaulted ceilings, gas fireplace and a beautiful glass slider that opens to the deck",
    "key": "1567 rycosa",
    "bedsLabel": "4 BR + family room / upstairs living",
    "priceNote": "Apartments.com, HotPads, Trulia and Realtor.com: $3,200 (was $3,500)",
-   "lastVerified": "2026-11-03",
+   "lastVerified": "2026-11-04",
    "manualNotes": [
     "Oct 17 browser pass: rent conflict — Apartments.com $3,500, HotPads $3,200 (same beds/baths/sqft); rent left at $3,500.",
     "Oct 18 browser pass: rent dropped $3,500 → $3,200 (Apartments.com, HotPads, Trulia and Realtor.com all show $3,200; Realtor tags it \"New\").",
@@ -2465,11 +2555,11 @@ window.LISTINGS_DATA = {
    "bedCategory": "border",
    "id": "1567-rycosa",
    "status": "active",
-   "lastSeen": "2026-11-03",
+   "lastSeen": "2026-11-04",
    "firstSeen": "2026-10-08",
    "utilSummary": "Utilities: not listed",
-   "daysOnMarket": 32,
-   "domBasis": "since listed 2026-10-02 (per Craigslist)",
+   "daysOnMarket": 33,
+   "domBasis": "since listed 2026-10-02 (per Zillow)",
    "priceHistory": [
     {
      "date": "2026-10-18",
@@ -2487,7 +2577,7 @@ window.LISTINGS_DATA = {
    "sqft": 1440,
    "photo": "https://images.rentable.co/100004266/126992451/large.jpeg",
    "manager": "Hello Home Real Estate and Property Management",
-   "contact": null,
+   "contact": "Hello Home Real Estate and Property Management",
    "contactPhone": "(928) 800-0774",
    "lat": 34.72051,
    "lng": -112.47515,
@@ -2538,9 +2628,9 @@ window.LISTINGS_DATA = {
    "utilitiesText": null,
    "pets": "Dogs negotiable",
    "furnished": null,
-   "lease": null,
+   "lease": "leaseTerm: Contact For Details",
    "parking": "2-car garage",
-   "lot": null,
+   "lot": "113,256 sq ft lot",
    "denSnippet": "separate family room",
    "denStrong": false,
    "flexQuote": "The full interior remodel offers a fresh, modern feel throughout, with a separate family room providing additional living space for relaxing or entertaining",
@@ -2552,16 +2642,32 @@ window.LISTINGS_DATA = {
    "vacation": false,
    "perRoom": false,
    "smoking": null,
-   "listedDate": null,
-   "listedSource": null,
-   "sourcePriceHistory": [],
+   "listedDate": "2026-09-11",
+   "listedSource": "Zillow",
+   "sourcePriceHistory": [
+    {
+     "date": "2026-10-30",
+     "event": "Price change",
+     "price": 2300
+    },
+    {
+     "date": "2026-10-06",
+     "event": "Price change",
+     "price": 2400
+    },
+    {
+     "date": "2026-09-11",
+     "event": "Listed for rent",
+     "price": 2500
+    }
+   ],
    "undisclosed": false,
    "propertyType": "SINGLE_FAMILY",
    "descExcerpt": "Property details Additional Details Total Unit Count: 1 Last Updated: Updated 15 hours ago Contact Number: (928) 800-0774 Contact 1750 S Johnson Ln Your Name Email Address Phone Number (optional) Request a Tour Date Ask a Question Hi, I found your property on Rentable and would like to schedule a virtual tour. Please let me know when you are next available. Thank you. Check Availability Email Sent Send me more listings like this. Error! Please try again later. Message Sent. A confirmation email has been sent to your inbox. ",
    "key": "1750 johnson",
    "bedsLabel": "4 BR + separate family room",
    "priceNote": "Oct 30: $2,300 on Zillow, Apartments.com and Realtor.com (was $2,400; Realtor.com showed $2,300 on Oct 29). Earlier: Zumper/Trulia showed a 'price dropped $100' badge",
-   "lastVerified": "2026-11-03",
+   "lastVerified": "2026-11-04",
    "manualNotes": [
     "Oct 29 browser pass: $2,400 on Zillow/Apartments.com/HotPads/Trulia; Realtor.com shows $2,300. Kept $2,400.",
     "Oct 30 browser pass: $2,400 -> $2,300 on Zillow, Apartments.com and Realtor.com.",
@@ -2579,11 +2685,11 @@ window.LISTINGS_DATA = {
    "bedCategory": "border",
    "id": "1750-johnson",
    "status": "active",
-   "lastSeen": "2026-11-03",
+   "lastSeen": "2026-11-04",
    "firstSeen": "2026-10-08",
    "utilSummary": "Included: internet; not listed: water, sewer, trash, gas, electric, landscaping",
-   "daysOnMarket": null,
-   "domBasis": null,
+   "daysOnMarket": 54,
+   "domBasis": "since listed 2026-09-11 (per Zillow)",
    "priceHistory": [
     {
      "date": "2026-10-30",
@@ -2599,8 +2705,8 @@ window.LISTINGS_DATA = {
    "beds": 4,
    "baths": 3,
    "sqft": 2078,
-   "photo": "https://photos.zillowstatic.com/fp/da438b05402cd621dbc678aa6f19c908-p_e.jpg",
-   "manager": "Arizona Property Brokerage Kristine R Nelson",
+   "photo": "https://photos.zillowstatic.com/fp/da438b05402cd621dbc678aa6f19c908-p_h.jpg",
+   "manager": "Hang Ur Hat Realty",
    "contact": "Kristine R Nelson",
    "contactPhone": "(928) 515-1156",
    "lat": 34.639786,
@@ -2628,10 +2734,10 @@ window.LISTINGS_DATA = {
     }
    ],
    "url": "https://www.zillow.com/homedetails/6755-N-Double-Tree-Rd-Prescott-AZ-86305/119081029_zpid/",
-   "availableIso": "2026-07-09",
-   "availableRaw": "available 7/9/26 (date has passed, so presumably available now)",
+   "availableIso": "now",
+   "availableRaw": "Available now",
    "availFit": "early",
-   "availNote": "Available now: ~28 days of rent before Dec 1 unless landlord holds it",
+   "availNote": "Available now: ~27 days of rent before Dec 1 unless landlord holds it",
    "deposit": null,
    "depositText": null,
    "fees": [],
@@ -2648,7 +2754,7 @@ window.LISTINGS_DATA = {
    "utilitiesText": null,
    "pets": "No pets",
    "furnished": null,
-   "lease": null,
+   "lease": "leaseTerm: Contact For Details",
    "parking": "2 car garage",
    "lot": null,
    "denSnippet": "2nd-floor family room",
@@ -2662,15 +2768,26 @@ window.LISTINGS_DATA = {
    "vacation": false,
    "perRoom": false,
    "smoking": "no smoking",
-   "listedDate": null,
-   "listedSource": null,
-   "sourcePriceHistory": [],
+   "listedDate": "2026-07-13",
+   "listedSource": "Zillow",
+   "sourcePriceHistory": [
+    {
+     "date": "2026-09-01",
+     "event": "Price change",
+     "price": 3000
+    },
+    {
+     "date": "2026-07-13",
+     "event": "Listed for rent",
+     "price": 3200
+    }
+   ],
    "undisclosed": false,
    "propertyType": "SINGLE_FAMILY",
-   "descExcerpt": "6755 N Double Tree Road # - Prescott, AZ | Rent. Skip to Content (Press Enter) Search Search for homes by location Search 0 Prescott, AZ Market Trends List a Property Business Solutions Moving Center Log In Sign Up Arizona Prescott Houses 86305 6755 N Double Tree Road # Share Save 41 Photos Close Save Photos (41) Street View Map To: 6755 N Double Tree Road # To: 6755 N Double Tree Road # To: 6755 N Double Tree Road # Send Message $3,000 4 Beds 3 Baths 2,078 Sqft 6755 N Double Tree Road # Prescott, AZ 86305 Send Message 6755 N Double Tree Road # Property Highlights Dishwasher Patio Oversized Cl",
+   "descExcerpt": "Outstanding home in lovely Williamson Valley. 4 bedroom, 2.5 bath, 2 car garage Lots of upgrades. New carpet Home is onits own well. Family room on second floor with 3 bedrooms and full bath.",
    "key": "6755 double tree",
    "bedsLabel": "4 BR + 2nd-floor family room",
-   "lastVerified": "2026-11-03",
+   "lastVerified": "2026-11-04",
    "manualNotes": [
     "Nov 3 browser pass: Zillow and Apartments.com $3,000."
    ],
@@ -2686,11 +2803,11 @@ window.LISTINGS_DATA = {
    "bedCategory": "border",
    "id": "6755-double-tree",
    "status": "active",
-   "lastSeen": "2026-11-03",
+   "lastSeen": "2026-11-04",
    "firstSeen": "2026-10-08",
    "utilSummary": "Utilities: not listed",
-   "daysOnMarket": null,
-   "domBasis": null,
+   "daysOnMarket": 114,
+   "domBasis": "since listed 2026-07-13 (per Zillow)",
    "priceHistory": []
   },
   {
@@ -2743,7 +2860,7 @@ window.LISTINGS_DATA = {
    "availableIso": "now",
    "availableRaw": "Available now",
    "availFit": "early",
-   "availNote": "Available now: ~28 days of rent before Dec 1 unless landlord holds it",
+   "availNote": "Available now: ~27 days of rent before Dec 1 unless landlord holds it",
    "deposit": null,
    "depositText": null,
    "fees": [],
@@ -2782,7 +2899,7 @@ window.LISTINGS_DATA = {
    "descExcerpt": "Fully Furnished 4 bedroom 3-bath Luxury Home is located in the most sought-after Timber Ridge mountain community with easy access to shopping, medical facilities, golf, and plenty of outdoor recreation opportunities. Main level living with eat-in-kitchen, granite counters, granite island with built in cooktop and custom alder cabinetry. Open living and dining room with gas stone fireplace, plush carpet, entertainment niche and cathedral ceilings. Main level Master Suite (!) features a spacious downstairs bedroom, separate shower and tub and large master closet. Upper level features 3 spacious ",
    "key": "966 coyote",
    "bedsLabel": "4 BR + upper family room",
-   "lastVerified": "2026-11-01",
+   "lastVerified": "2026-11-04",
    "manualNotes": [
     "Oct 31 browser pass: Zillow shows it OFF MARKET; Zumper still lists $6,450 fully furnished 4/3 (Redfin and Rent.com also still return it in today's run).",
     "Nov 1 browser pass: Zumper still $6,450 furnished (UPDATED 5+ DAYS AGO). Realtor.com For Rent $6,450 (Peak Property Solutions). Zillow and Trulia off market (Trulia says rental removed May 27, 2025). HotPads not found. Kept active.",
@@ -2802,7 +2919,7 @@ window.LISTINGS_DATA = {
    "bedCategory": "border",
    "id": "966-coyote",
    "status": "active",
-   "lastSeen": "2026-11-03",
+   "lastSeen": "2026-11-04",
    "firstSeen": "2026-10-08",
    "utilSummary": "Utilities: not listed",
    "daysOnMarket": null,
@@ -2816,7 +2933,7 @@ window.LISTINGS_DATA = {
    "beds": 4,
    "baths": 4,
    "sqft": 2745,
-   "photo": "https://photos.zillowstatic.com/fp/10b8720c655dc3d7745f451d8f3f0624-p_e.jpg",
+   "photo": "https://photos.zillowstatic.com/fp/10b8720c655dc3d7745f451d8f3f0624-p_h.jpg",
    "manager": "Symmetry Realty Brokerage",
    "contact": "Jessica Osborn",
    "contactPhone": "(928) 830-4543",
@@ -2863,10 +2980,10 @@ window.LISTINGS_DATA = {
     }
    ],
    "url": "https://www.apartments.com/14850-jay-morrish-dr-prescott-az/7esk48z/",
-   "availableIso": "2026-10-17",
-   "availableRaw": "Available Oct 17 (date has passed, so presumably available now)",
+   "availableIso": "2026-11-05",
+   "availableRaw": "Available 11/5/26",
    "availFit": "early",
-   "availNote": "Available now: ~28 days of rent before Dec 1 unless landlord holds it",
+   "availNote": "Available 2026-11-05: ~26 days of rent before Dec 1 unless landlord holds it",
    "deposit": 4270,
    "depositText": null,
    "fees": [],
@@ -2897,15 +3014,26 @@ window.LISTINGS_DATA = {
    "vacation": false,
    "perRoom": false,
    "smoking": null,
-   "listedDate": null,
-   "listedSource": "Trulia ('NEW - 23 HRS AGO') / Zumper ('10h ago') as of 2026-10-16",
-   "sourcePriceHistory": [],
+   "listedDate": "2026-10-15",
+   "listedSource": "Zillow",
+   "sourcePriceHistory": [
+    {
+     "date": "2026-10-15",
+     "event": "Listed for rent",
+     "price": 4270
+    },
+    {
+     "date": "2026-02-05",
+     "event": "Listing removed",
+     "price": 4270
+    }
+   ],
    "undisclosed": false,
    "propertyType": "SINGLE_FAMILY",
-   "descExcerpt": "14850 N Jay Morrish Drive # - Prescott, AZ | Rent. Skip to Content (Press Enter) Search Search for homes by location Search 0 Prescott, AZ Market Trends List a Property Business Solutions Moving Center Log In Sign Up Arizona Prescott Houses 86305 14850 N Jay Morrish Drive # Share Save 50 Photos Close Save Photos (50) Street View Map To: 14850 N Jay Morrish Drive # To: 14850 N Jay Morrish Drive # To: 14850 N Jay Morrish Drive # Send Message $4,270 4 Beds 4 Baths 2,445 Sqft 14850 N Jay Morrish Drive # Prescott, AZ 86305 Send Message 14850 N Jay Morrish Drive # Property Highlights Near Nature Tal",
+   "descExcerpt": "Available 11/5/26. Former Ranch Cottage Model Home for rent in the exclusive Talking Rock community. This highly upgraded home is located at the end of a cul-de-sac overlooking the Talking Rock Golf Course and offers 3 bedrooms, 2.5 baths, plus an attached casita with a full bath and an oversized 2-car garage. Interior features include stunning wood beams and custom woodwork details throughout, a gourmet kitchen with an island and all appliances included, and a large laundry room with a utility sink. The primary suite includes a walk-in closet with built-in shelving and a luxurious bath with a",
    "key": "14850 jay morrish",
    "bedsLabel": "3 BR + attached casita (listed as 4 BR)",
-   "lastVerified": "2026-11-03",
+   "lastVerified": "2026-11-04",
    "manualNotes": [
     "Talking Rock. \"Former Ranch Cottage Model Home.\" The 4th bedroom is an attached casita with a full bath (description: 3 BR, 2.5 baths + casita).",
     "Availability conflict: Apartments.com header says \"Available Oct 17\"; the description says \"Available 11/5/26\".",
@@ -2931,11 +3059,11 @@ window.LISTINGS_DATA = {
    "bedCategory": "border",
    "id": "14850-jay-morrish",
    "status": "active",
-   "lastSeen": "2026-11-03",
+   "lastSeen": "2026-11-04",
    "firstSeen": "2026-10-16",
    "utilSummary": "Utilities: not listed",
-   "daysOnMarket": null,
-   "domBasis": null,
+   "daysOnMarket": 20,
+   "domBasis": "since listed 2026-10-15 (per Zillow)",
    "priceHistory": []
   }
  ],
@@ -3024,30 +3152,27 @@ window.LISTINGS_DATA = {
   }
  ],
  "browserPass": {
-  "date": "2026-11-03",
+  "date": "2026-11-04",
   "worked": [
-   "Zillow (4+ houses Prescott/PV/Chino; exact-3 Prescott/PV; detail pages) - second try",
-   "Apartments.com (houses: Prescott, PV, Chino) - second try",
-   "HotPads (Prescott/PV/Chino cards; Prescott list partial)",
-   "Trulia (4+ single-family)",
-   "Zumper (PV + 4-beds filter; second try, list partly rendered)",
+   "Zillow (4+ houses Prescott/PV/Chino; exact-3 page 1 Prescott/PV; detail page)",
+   "Apartments.com (4-bed and 3-bed: Prescott, PV, Chino)",
+   "Zumper (4-beds: Prescott, PV, Chino)",
+   "HotPads (Prescott 4+ only)",
+   "Trulia (Prescott 4+ single-family only)",
    "Peak availability",
-   "PPM availability"
+   "PPM availability",
+   "ERAU off-campus board (first ~20 cards)"
   ],
   "blocked": [
-   "Realtor.com (ERR_ABORTED)",
-   "ERAU off-campus board (empty page body)"
+   "Realtor.com (tool error on read)"
   ],
   "notes": [
    "No forms submitted, no landlords contacted, no sign-in.",
-   "First try: Zumper blocked, Apartments.com blank, Zillow filters not applied, Peak/PPM showed 0 results; a second try worked for all of them.",
-   "No new 4+ BR houses; no qualifying new 3 BR + extra room houses.",
-   "5226 Meandering Trl ($2,495) is listed as 3 bd on Zillow but described as 2 BR + private office; not added.",
-   "1507 1st N St, Clarkdale ($2,750, 4 bd) added as excluded (out of area).",
-   "1635 Kaibab Loop: Apartments.com still shows a $3,999 rental (likely stale; Zillow showed it for sale); left gone.",
-   "966 Coyote Cir not seen (lazy-loaded lists, partial coverage), not marked gone."
+   "No new 4+ BR houses; no qualifying new 3 BR + extra room houses; no rent or pending changes on known listings.",
+   "4789 N Edgemont Rd (Zillow, $2,400, \"no college students\") is almost certainly the known excluded 4798 N Edgemont Rd; not added.",
+   "3-bed coverage partial (Zillow page 1 only; HotPads/Trulia Prescott 4+ only), so listings not seen were not marked gone."
   ],
-  "summary": "The Nov 3 browser pass found no new houses, and every known match is unchanged."
+  "summary": "The Nov 4 browser pass found no new houses and no rent or status changes on known listings."
  },
  "plus3": [
   {
@@ -3057,9 +3182,9 @@ window.LISTINGS_DATA = {
    "beds": 3,
    "baths": 2,
    "sqft": 1500,
-   "photo": "https://photos.zillowstatic.com/fp/904bfabb1d0936954700a23a214ba70c-p_e.jpg",
-   "manager": null,
-   "contact": null,
+   "photo": "https://photos.zillowstatic.com/fp/904bfabb1d0936954700a23a214ba70c-p_h.jpg",
+   "manager": "D&M Investment Properties",
+   "contact": "Melissa Cutter",
    "contactPhone": null,
    "lat": 34.570553,
    "lng": -112.4814,
@@ -3107,9 +3232,9 @@ window.LISTINGS_DATA = {
    "pets": "No pets (per listing)",
    "furnished": null,
    "lease": "6 month lease",
-   "parking": null,
+   "parking": "Parking: Carport",
    "lot": null,
-   "denSnippet": "he heart of Prescott, Arizona! This charming home includes 3-bedrooms with a large den and 2 full bathrooms, a dining room, and a laundry room. The home is",
+   "denSnippet": "e heart of Prescott, Arizona! This charming home includes 3-bedrooms with a large den and 2 full bathrooms, a dining room, and a laundry room. The home is",
    "denStrong": true,
    "flexQuote": "3-bedrooms with a large den and 2 full bathrooms",
    "flexRoom": "large den",
@@ -3120,12 +3245,23 @@ window.LISTINGS_DATA = {
    "vacation": false,
    "perRoom": false,
    "smoking": null,
-   "listedDate": "2026-10-15",
-   "listedSource": "Zillow (days on Zillow, browser pass)",
-   "sourcePriceHistory": [],
+   "listedDate": "2026-10-14",
+   "listedSource": "Zillow",
+   "sourcePriceHistory": [
+    {
+     "date": "2026-10-23",
+     "event": "Price change",
+     "price": 2100
+    },
+    {
+     "date": "2026-10-14",
+     "event": "Listed for rent",
+     "price": 2800
+    }
+   ],
    "undisclosed": false,
    "propertyType": "SINGLE_FAMILY",
-   "descExcerpt": "835 W Rosser St - Prescott, AZ | Rent. Skip to Content (Press Enter) Search Search for homes by location Search 0 Prescott, AZ Market Trends List a Property Business Solutions Moving Center Log In Sign Up Arizona Prescott Houses 86301 835 W Rosser St Share Save 19 Photos Close Save Photos (19) Street View Map To: 835 W Rosser St To: 835 W Rosser St To: 835 W Rosser St Send Message $2,100 3 Beds 2 Baths 1,500 Sqft 835 W Rosser St Prescott, AZ 86301 Send Message 835 W Rosser St Property Highlights Great Price in this area Easy Access to Willowcreek Luxury Living Hot Tub Washer & Dryer Hot Tub Ai",
+   "descExcerpt": "$2100 RENT $2700 *ALL UTILITIES INCLUDED* Discover your dream home at 835 West Rosser Street, nestled in the heart of Prescott, Arizona! This charming home includes 3-bedrooms with a large den and 2 full bathrooms, a dining room, and a laundry room. The home is located on a .25 of an acre featuring a large fenced in backyard with and extended patio perfect for entertaining. There is even a 4 seater hot tub that is positioned under string lights providing the perfect ambiance for a Prescott Summer Evening. Step inside to find a well-equipped kitchen featuring modern amenities including a stainl",
    "key": "835 rosser",
    "bedsLabel": "3 + large den (per listing)",
    "lastVerified": "2026-11-03",
@@ -3151,13 +3287,13 @@ window.LISTINGS_DATA = {
    "studentFlagsSerious": [],
    "id": "835-rosser",
    "status": "active",
-   "lastSeen": "2026-11-03",
+   "lastSeen": "2026-11-04",
    "firstSeen": "2026-10-24",
    "utilSummary": "Included only at the higher all-utilities price: water, sewer, trash, gas, electric, internet, landscaping",
    "far": false,
    "priceHistory": [],
-   "daysOnMarket": 19,
-   "domBasis": "since listed 2026-10-15 (per Zillow (days on Zillow, browser pass))",
+   "daysOnMarket": 21,
+   "domBasis": "since listed 2026-10-14 (per Zillow)",
    "score": 7.5
   },
   {
@@ -3257,14 +3393,357 @@ window.LISTINGS_DATA = {
    "studentFlagsSerious": [],
    "id": "5707-cilantro",
    "status": "active",
-   "lastSeen": "2026-11-03",
+   "lastSeen": "2026-11-04",
    "firstSeen": "2026-10-24",
    "utilSummary": "Utilities: not listed",
    "far": false,
    "priceHistory": [],
-   "daysOnMarket": 24,
+   "daysOnMarket": 25,
    "domBasis": "since listed 2026-10-10 (per Craigslist)",
    "score": 6.5
+  },
+  {
+   "address": "1267 Deadwood Ln",
+   "city": "Prescott",
+   "zip": "86305",
+   "beds": 3,
+   "baths": 3,
+   "sqft": 1569,
+   "photo": "https://photos.zillowstatic.com/fp/cad8cb741662dab887c3d9224b064e94-p_h.jpg",
+   "manager": null,
+   "contact": null,
+   "contactPhone": null,
+   "lat": 34.636196,
+   "lng": -112.44133,
+   "coordSource": "zillow",
+   "rent": 2700,
+   "rentSource": "zillow",
+   "rentNote": null,
+   "sources": [
+    {
+     "name": "Zillow",
+     "key": "browser",
+     "url": "https://www.zillow.com/homedetails/1267-Deadwood-Ln-Prescott-AZ-86305/448599183_zpid/",
+     "kind": "listing"
+    }
+   ],
+   "url": "https://www.zillow.com/homedetails/1267-Deadwood-Ln-Prescott-AZ-86305/448599183_zpid/",
+   "availableIso": "now",
+   "availableRaw": "Available now",
+   "availFit": "early",
+   "availNote": "Available now: ~27 days of rent before Dec 1 unless landlord holds it",
+   "deposit": 2700,
+   "depositText": null,
+   "fees": [],
+   "utilities": {
+    "water": "tenant",
+    "sewer": "tenant",
+    "trash": "tenant",
+    "gas": "tenant",
+    "electric": "tenant",
+    "internet": null,
+    "landscaping": null,
+    "hoa": null
+   },
+   "utilitiesText": "utilities and maintaining renters insurance throughout the lease term",
+   "pets": "No Pets",
+   "furnished": null,
+   "lease": "12 month lease",
+   "parking": "2-car garage",
+   "lot": null,
+   "denSnippet": "ce, and breathtaking views. This home features 3 bedrooms, 2.5 baths, a spacious den ideal for home office or flex space, and a 2-car garage. The open-con",
+   "denStrong": true,
+   "flexQuote": "a spacious den ideal for home office or flex space",
+   "flexRoom": "den",
+   "midTerm": false,
+   "studentRefusal": null,
+   "studentFlags": [],
+   "studentPositive": null,
+   "vacation": false,
+   "perRoom": false,
+   "smoking": "no smoking",
+   "listedDate": "2026-09-13",
+   "listedSource": "Zillow",
+   "sourcePriceHistory": [
+    {
+     "date": "2026-10-24",
+     "event": "Price change",
+     "price": 2700
+    },
+    {
+     "date": "2026-09-13",
+     "event": "Listed for rent",
+     "price": 2750
+    }
+   ],
+   "undisclosed": false,
+   "propertyType": "SINGLE_FAMILY",
+   "descExcerpt": "Discover this brand-new two-story home in South Ranch, offering a blend of modern style, convenience, and breathtaking views. This home features 3 bedrooms, 2.5 baths, a spacious den ideal for home office or flex space, and a 2-car garage. The open-concept floor plan is enhanced with luxury vinyl plank flooring throughout the living, dining and kitchen areas creating both beauty and durability. Upstairs, the primary suite and 2 additional bedrooms provide plenty of room for families and guests. Large windows throughout the home capture stunning views of the Granite Dells and surrounding scener",
+   "key": "1267 deadwood",
+   "bedsLabel": "3 + den (per listing)",
+   "lastVerified": "2026-11-02",
+   "manualNotes": [
+    "Oct 24 browser pass (3 BR + extra room search).",
+    "Oct 25 3BR browser pass: rent $2,700 (was $2750).",
+    "Oct 26 3BR browser pass: still listed at $2700."
+   ],
+   "manual": true,
+   "pending": false,
+   "manualFirstSeen": "2026-10-24",
+   "viaBrowser": [
+    "Zillow"
+   ],
+   "driveMin": 5.7,
+   "driveMi": 2.0,
+   "driveVia": "https://router.project-osrm.org",
+   "bedCategory": "3flex",
+   "studentFlagsSerious": [],
+   "id": "1267-deadwood",
+   "status": "active",
+   "lastSeen": "2026-11-04",
+   "firstSeen": "2026-10-24",
+   "utilSummary": "Tenant pays: water, sewer, trash, gas, electric; not listed: internet, landscaping",
+   "far": false,
+   "priceHistory": [
+    {
+     "date": "2026-10-25",
+     "from": 2750,
+     "to": 2700
+    }
+   ],
+   "daysOnMarket": 52,
+   "domBasis": "since listed 2026-09-13 (per Zillow)",
+   "score": 6.0
+  },
+  {
+   "address": "6103 Old Mountain Way",
+   "city": "Prescott",
+   "zip": "86305",
+   "beds": 3,
+   "baths": 3,
+   "sqft": 1569,
+   "photo": "https://photos.zillowstatic.com/fp/0b68bd43ba71320e1ea4ca38b6ae238b-p_h.jpg",
+   "manager": null,
+   "contact": null,
+   "contactPhone": null,
+   "lat": 34.637547,
+   "lng": -112.44014,
+   "coordSource": "zillow",
+   "rent": 2800,
+   "rentSource": "zillow",
+   "rentNote": null,
+   "sources": [
+    {
+     "name": "Zillow",
+     "key": "browser",
+     "url": "https://www.zillow.com/homedetails/6103-Old-Mountain-Way-Prescott-AZ-86305/453585620_zpid/",
+     "kind": "listing"
+    }
+   ],
+   "url": "https://www.zillow.com/homedetails/6103-Old-Mountain-Way-Prescott-AZ-86305/453585620_zpid/",
+   "availableIso": "now",
+   "availableRaw": "Available now",
+   "availFit": "early",
+   "availNote": "Available now: ~27 days of rent before Dec 1 unless landlord holds it",
+   "deposit": 2800,
+   "depositText": null,
+   "fees": [],
+   "utilities": {
+    "water": "tenant",
+    "sewer": "tenant",
+    "trash": "tenant",
+    "gas": "tenant",
+    "electric": "tenant",
+    "internet": null,
+    "landscaping": null,
+    "hoa": null
+   },
+   "utilitiesText": "utilities and maintaining renters insurance throughout the lease term",
+   "pets": "No Pets",
+   "furnished": null,
+   "lease": "12 month lease",
+   "parking": "3-car garage",
+   "lot": null,
+   "denSnippet": "rfect for every day, living and entertaining. The main level offers a dedicated study, and a spacious kitchen which flows seamlessly into the dining and li",
+   "denStrong": true,
+   "flexQuote": "The main level offers a dedicated study",
+   "flexRoom": "study",
+   "midTerm": false,
+   "studentRefusal": null,
+   "studentFlags": [],
+   "studentPositive": null,
+   "vacation": false,
+   "perRoom": false,
+   "smoking": "no smoking",
+   "listedDate": "2026-07-31",
+   "listedSource": "Zillow",
+   "sourcePriceHistory": [
+    {
+     "date": "2026-10-24",
+     "event": "Price change",
+     "price": 2800
+    },
+    {
+     "date": "2026-09-13",
+     "event": "Price change",
+     "price": 2850
+    },
+    {
+     "date": "2026-09-11",
+     "event": "Price change",
+     "price": 2999
+    },
+    {
+     "date": "2026-07-31",
+     "event": "Listed for rent",
+     "price": 3000
+    }
+   ],
+   "undisclosed": false,
+   "propertyType": "SINGLE_FAMILY",
+   "descExcerpt": "Welcome to a brand new home! This beautiful three bedroom, 2.5 bath, 3- car garage residence is situated on a corner lot with stunning Mountain views. Designed with both comfort and functionality in mind. This smart home features an open concept floor plan that's perfect for every day, living and entertaining. The main level offers a dedicated study, and a spacious kitchen which flows seamlessly into the dining and living areas creating a bright and inviting space. Upstairs, you'll find a versatile loft that provides additional living space along with the primary suite, two additional bedrooms",
+   "key": "6103 old mountain",
+   "bedsLabel": "3 + study (per listing)",
+   "lastVerified": "2026-11-01",
+   "manualNotes": [
+    "Oct 24 browser pass (3 BR + extra room search).",
+    "Oct 25 3BR browser pass: rent $2,800 total monthly (was $2850); Zillow includes required monthly fees.",
+    "Oct 26 3BR browser pass: still listed at $2800."
+   ],
+   "manual": true,
+   "pending": false,
+   "manualFirstSeen": "2026-10-24",
+   "viaBrowser": [
+    "Zillow"
+   ],
+   "driveMin": 6.1,
+   "driveMi": 2.2,
+   "driveVia": "https://router.project-osrm.org",
+   "bedCategory": "3flex",
+   "studentFlagsSerious": [],
+   "id": "6103-old-mountain",
+   "status": "active",
+   "lastSeen": "2026-11-04",
+   "firstSeen": "2026-10-24",
+   "utilSummary": "Tenant pays: water, sewer, trash, gas, electric; not listed: internet, landscaping",
+   "far": false,
+   "priceHistory": [
+    {
+     "date": "2026-10-25",
+     "from": 2850,
+     "to": 2800
+    }
+   ],
+   "daysOnMarket": 96,
+   "domBasis": "since listed 2026-07-31 (per Zillow)",
+   "score": 6.0
+  },
+  {
+   "address": "6234 N Little Papoose Dr",
+   "city": "Prescott Valley",
+   "zip": "86314",
+   "beds": 3,
+   "baths": 2,
+   "sqft": 1257,
+   "photo": "https://photos.zillowstatic.com/fp/da5fdc45523c7cccabf4166de47a2c9a-p_h.jpg",
+   "manager": null,
+   "contact": null,
+   "contactPhone": null,
+   "lat": 34.632034,
+   "lng": -112.3328,
+   "coordSource": "zillow",
+   "rent": 2100,
+   "rentSource": "zillow",
+   "rentNote": null,
+   "sources": [
+    {
+     "name": "Zillow",
+     "key": "browser",
+     "url": "https://www.zillow.com/homedetails/6234-N-Little-Papoose-Dr-Prescott-Valley-AZ-86314/8731875_zpid/",
+     "kind": "listing"
+    }
+   ],
+   "url": "https://www.zillow.com/homedetails/6234-N-Little-Papoose-Dr-Prescott-Valley-AZ-86314/8731875_zpid/",
+   "availableIso": "now",
+   "availableRaw": "Available now",
+   "availFit": "early",
+   "availNote": "Available now: ~27 days of rent before Dec 1 unless landlord holds it",
+   "deposit": 3150,
+   "depositText": null,
+   "fees": [],
+   "utilities": {
+    "water": "tenant",
+    "sewer": "tenant",
+    "trash": "tenant",
+    "gas": "tenant",
+    "electric": "tenant",
+    "internet": null,
+    "landscaping": null,
+    "hoa": null
+   },
+   "utilitiesText": "Tenant pays: water, sewer, trash, gas, electric; not listed: internet, landscaping",
+   "pets": null,
+   "furnished": null,
+   "lease": "1-year Lease",
+   "parking": "two-car garage",
+   "lot": null,
+   "denSnippet": "with two exit gates, offering plenty of room to enjoy the outdoors. Additional Bonus: An approximately 800-square-foot building is also located on the pro",
+   "denStrong": true,
+   "flexQuote": "Additional Bonus: An approximately 800-square-foot building is also located on the property and may be available to rent for an additional fee, offering extra space for your needs",
+   "flexRoom": "bonus",
+   "midTerm": false,
+   "studentRefusal": null,
+   "studentFlags": [],
+   "studentPositive": null,
+   "vacation": false,
+   "perRoom": false,
+   "smoking": "no smoking",
+   "listedDate": "2026-10-24",
+   "listedSource": "Zillow",
+   "sourcePriceHistory": [
+    {
+     "date": "2026-10-25",
+     "event": "Listed for rent",
+     "price": 2100
+    }
+   ],
+   "undisclosed": false,
+   "propertyType": "SINGLE_FAMILY",
+   "descExcerpt": "Spacious 3-Bedroom, 2-Bath Home in a Quiet Prescott Valley Neighborhood Enjoy comfortable living in this 3-bedroom, 2-bath single-family home located in a quiet Prescott Valley neighborhood. The open floor plan creates a welcoming flow between the living room, dining area, and kitchen, making it easy to relax or entertain. The home features newly carpeted floors in all three bedrooms and easy-to-maintain tile flooring throughout the main living areas. The kitchen is equipped with a side-by-side refrigerator and a gas oven and stovetop. A dedicated laundry niche includes a washer and gas dryer ",
+   "key": "6234 little papoose",
+   "bedsLabel": "3 + bonus (per listing)",
+   "lastVerified": "2026-11-03",
+   "manualNotes": [
+    "Nov 1 browser pass: still on Zillow exact-3 house search cards at $2,100. Detail fetch was blocked earlier; kept active from browser search sighting (not gone).",
+    "Nov 3 browser pass: HotPads and Zillow $2,100."
+   ],
+   "manual": true,
+   "pending": false,
+   "manualFirstSeen": "2026-10-24",
+   "viaBrowser": [
+    "Zillow"
+   ],
+   "driveMin": 13.4,
+   "driveMi": 8.0,
+   "driveVia": "https://router.project-osrm.org",
+   "bedCategory": "3flex",
+   "studentFlagsSerious": [],
+   "id": "6234-little-papoose",
+   "status": "active",
+   "lastSeen": "2026-11-04",
+   "firstSeen": "2026-10-24",
+   "utilSummary": "Tenant pays: water, sewer, trash, gas, electric; not listed: internet, landscaping",
+   "far": false,
+   "priceHistory": [
+    {
+     "date": "2026-10-25",
+     "from": 1800,
+     "to": 2100
+    }
+   ],
+   "daysOnMarket": 11,
+   "domBasis": "since listed 2026-10-24 (per Zillow)",
+   "score": 6.0
   },
   {
    "address": "642 Sunrise Blvd",
@@ -3273,9 +3752,9 @@ window.LISTINGS_DATA = {
    "beds": 3,
    "baths": 2,
    "sqft": 1523,
-   "photo": "https://photos.zillowstatic.com/fp/574bbc1b53e276b8a86949a0e6bbcfd7-p_e.jpg",
-   "manager": null,
-   "contact": null,
+   "photo": "https://photos.zillowstatic.com/fp/574bbc1b53e276b8a86949a0e6bbcfd7-p_h.jpg",
+   "manager": "Garden Brook Realty",
+   "contact": "Heather Erceg",
    "contactPhone": "9285336966",
    "lat": 34.555466,
    "lng": -112.38661,
@@ -3301,9 +3780,13 @@ window.LISTINGS_DATA = {
    "availableRaw": "Available 2026-11-13",
    "availFit": "early",
    "availNote": "Available 2026-11-13: ~18 days of rent before Dec 1 unless landlord holds it",
-   "deposit": null,
+   "deposit": 3525,
    "depositText": null,
-   "fees": [],
+   "fees": [
+    "admin $20",
+    "cleaning $250",
+    "pet rent $25"
+   ],
    "utilities": {
     "water": null,
     "sewer": null,
@@ -3317,11 +3800,11 @@ window.LISTINGS_DATA = {
    "utilitiesText": null,
    "pets": null,
    "furnished": null,
-   "lease": null,
+   "lease": "leaseTerm: Contact For Details",
    "parking": null,
    "lot": null,
-   "denSnippet": null,
-   "denStrong": false,
+   "denSnippet": "sunsets, or gathering with friends and family. The fenced dog run is a great bonus for your four-legged companions! Residents of Yavapai Hills enjoy fan",
+   "denStrong": true,
    "flexQuote": "A unique circular fireplace creates a cozy focal point between the living and family rooms.",
    "flexRoom": "family room",
    "midTerm": false,
@@ -3331,15 +3814,41 @@ window.LISTINGS_DATA = {
    "vacation": false,
    "perRoom": false,
    "smoking": null,
-   "listedDate": null,
-   "listedSource": null,
-   "sourcePriceHistory": [],
+   "listedDate": "2026-10-31",
+   "listedSource": "Zillow",
+   "sourcePriceHistory": [
+    {
+     "date": "2026-10-31",
+     "event": "Listed for rent",
+     "price": 2350
+    },
+    {
+     "date": "2026-09-21",
+     "event": "Listing removed",
+     "price": 2350
+    },
+    {
+     "date": "2026-09-12",
+     "event": "Listed for rent",
+     "price": 2350
+    },
+    {
+     "date": "2026-07-17",
+     "event": "Listing removed",
+     "price": 2350
+    },
+    {
+     "date": "2026-07-02",
+     "event": "Listed for rent",
+     "price": 2350
+    }
+   ],
    "undisclosed": false,
    "propertyType": "SINGLE_FAMILY",
-   "descExcerpt": "",
+   "descExcerpt": "Welcome home to this beautifully updated 3-bedroom, 2-bathroom home in the desirable Yavapai Hills subdivision! Featuring an open-concept floor plan, this home offers plenty of space for comfortable living and entertaining. A unique circular fireplace creates a cozy focal point between the living and family rooms. Fresh interior paint and new vinyl flooring throughout give the home a bright, clean, move-in-ready feel. Enjoy Arizona living from the spacious backyard deck, perfect for morning coffee or relaxing evenings. A fenced dog run is also included for your four-legged companions! Resident",
    "key": "642 sunrise",
    "bedsLabel": "3 BR + living and family rooms? (borderline)",
-   "lastVerified": "2026-11-03",
+   "lastVerified": "2026-11-04",
    "manualNotes": [
     "Nov 1 browser pass (Zillow): second living space only (living and family rooms); no den/office/bonus/loft. Available Nov 13 2026. Pets appear allowed (dog run).",
     "Nov 3 browser pass: HotPads and Zillow $2,350."
@@ -3357,13 +3866,13 @@ window.LISTINGS_DATA = {
    "studentFlagsSerious": [],
    "id": "642-sunrise",
    "status": "active",
-   "lastSeen": "2026-11-03",
+   "lastSeen": "2026-11-04",
    "firstSeen": "2026-11-01",
    "utilSummary": "Utilities: not listed",
    "far": false,
    "priceHistory": [],
-   "daysOnMarket": 2,
-   "domBasis": "since first seen by this tracker (2026-11-01)",
+   "daysOnMarket": 4,
+   "domBasis": "since listed 2026-10-31 (per Zillow)",
    "score": 5.75
   },
   {
@@ -3421,7 +3930,7 @@ window.LISTINGS_DATA = {
    "availableIso": "now",
    "availableRaw": "Available now",
    "availFit": "early",
-   "availNote": "Available now: ~28 days of rent before Dec 1 unless landlord holds it",
+   "availNote": "Available now: ~27 days of rent before Dec 1 unless landlord holds it",
    "deposit": 2100,
    "depositText": null,
    "fees": [
@@ -3441,7 +3950,7 @@ window.LISTINGS_DATA = {
    "utilitiesText": null,
    "pets": "Pet negotiable with Owner approval, additional deposit and $50 extra rent",
    "furnished": null,
-   "lease": null,
+   "lease": "leaseTerm: Contact For Details",
    "parking": null,
    "lot": null,
    "denSnippet": "8642 E Apache Dr This 3 bedroom, 2 bathroom home has a bonus room/family and new flooring throughout the home. Home has gas heat, A/C a",
@@ -3457,15 +3966,21 @@ window.LISTINGS_DATA = {
    "vacation": false,
    "perRoom": false,
    "smoking": "no smoking",
-   "listedDate": null,
-   "listedSource": null,
-   "sourcePriceHistory": [],
+   "listedDate": "2026-10-12",
+   "listedSource": "Zillow",
+   "sourcePriceHistory": [
+    {
+     "date": "2026-10-12",
+     "event": "Listed for rent",
+     "price": 2100
+    }
+   ],
    "undisclosed": false,
    "propertyType": "SINGLE_FAMILY",
    "descExcerpt": "This 3 bedroom, 2 bathroom home has a bonus room/family and new flooring throughout the home. Home has gas heat, A/C and ceiling fans. New kitchen appliances include refrigerator, dishwasher, electric stove and farmhouse sink with disposal. Laundry room has washer/dryer hookups. Back patio off kitchen. Fireplace not to be used - decorative use only. Pet negotiable with Owner approval, additional deposit and $50 extra rent per month. College students negotiable with guarantors. No smoking. Renter's insurance is required. Year lease preferred. Available for every property is a Resident Benefits ",
    "key": "8642 apache",
    "bedsLabel": "3 + bonus room (per listing)",
-   "lastVerified": "2026-11-03",
+   "lastVerified": "2026-11-04",
    "manualNotes": [
     "Oct 24 browser pass (3 BR + extra room search).",
     "Rent $2,100 from Zillow (Apartments.com shows no rent).",
@@ -3487,13 +4002,13 @@ window.LISTINGS_DATA = {
    "studentFlagsSerious": [],
    "id": "8642-apache",
    "status": "active",
-   "lastSeen": "2026-11-03",
+   "lastSeen": "2026-11-04",
    "firstSeen": "2026-10-24",
    "utilSummary": "Utilities: not listed",
    "far": false,
    "priceHistory": [],
-   "daysOnMarket": 10,
-   "domBasis": "since first seen by this tracker (2026-10-24)",
+   "daysOnMarket": 23,
+   "domBasis": "since listed 2026-10-12 (per Zillow)",
    "score": 5.0
   },
   {
@@ -3503,8 +4018,8 @@ window.LISTINGS_DATA = {
    "beds": 3,
    "baths": 2,
    "sqft": 1750,
-   "photo": "https://photos.zillowstatic.com/fp/983b0b19c85fb221ab544f97ea8ba4a9-p_e.jpg",
-   "manager": null,
+   "photo": "https://photos.zillowstatic.com/fp/983b0b19c85fb221ab544f97ea8ba4a9-p_h.jpg",
+   "manager": "Rosenbaum Realty Group - Prescott Valley",
    "contact": null,
    "contactPhone": null,
    "lat": 34.618813,
@@ -3552,27 +4067,29 @@ window.LISTINGS_DATA = {
    ],
    "url": "https://www.apartments.com/8983-e-volcano-dr-prescott-valley-az/2e87t1b/",
    "availableIso": "now",
-   "availableRaw": "Available Now",
+   "availableRaw": "Available now",
    "availFit": "early",
-   "availNote": "Available now: ~28 days of rent before Dec 1 unless landlord holds it",
-   "deposit": null,
+   "availNote": "Available now: ~27 days of rent before Dec 1 unless landlord holds it",
+   "deposit": 3599,
    "depositText": null,
-   "fees": [],
+   "fees": [
+    "application $3,599"
+   ],
    "utilities": {
-    "water": null,
-    "sewer": null,
-    "trash": null,
-    "gas": null,
-    "electric": null,
+    "water": "included",
+    "sewer": "included",
+    "trash": "included",
+    "gas": "included",
+    "electric": "included",
     "internet": null,
     "landscaping": null,
     "hoa": null
    },
-   "utilitiesText": null,
-   "pets": null,
+   "utilitiesText": "utilities (flat or RUBS-based billing), a Resident Benefits Program, and pet fees based on screening results",
+   "pets": "Pets Allowed",
    "furnished": null,
    "lease": "12 month",
-   "parking": null,
+   "parking": "two-car garage",
    "lot": null,
    "denSnippet": null,
    "denStrong": false,
@@ -3585,16 +4102,67 @@ window.LISTINGS_DATA = {
    "vacation": false,
    "perRoom": false,
    "smoking": null,
-   "listedDate": null,
-   "listedSource": null,
-   "sourcePriceHistory": [],
+   "listedDate": "2026-10-28",
+   "listedSource": "Zillow",
+   "sourcePriceHistory": [
+    {
+     "date": "2026-10-28",
+     "event": "Listed for rent",
+     "price": 2399
+    },
+    {
+     "date": "2026-10-20",
+     "event": "Listing removed",
+     "price": 2399
+    },
+    {
+     "date": "2026-09-25",
+     "event": "Price change",
+     "price": 2399
+    },
+    {
+     "date": "2026-09-21",
+     "event": "Price change",
+     "price": 2450
+    },
+    {
+     "date": "2026-08-27",
+     "event": "Listed for rent",
+     "price": 2500
+    },
+    {
+     "date": "2026-08-27",
+     "event": "Listing removed",
+     "price": 2500
+    },
+    {
+     "date": "2026-08-23",
+     "event": "Price change",
+     "price": 800
+    },
+    {
+     "date": "2026-08-20",
+     "event": "Price change",
+     "price": 2500
+    },
+    {
+     "date": "2026-08-07",
+     "event": "Price change",
+     "price": 800
+    },
+    {
+     "date": "2026-08-05",
+     "event": "Listed for rent",
+     "price": 2500
+    }
+   ],
    "undisclosed": false,
    "propertyType": "SINGLE_FAMILY",
-   "descExcerpt": "",
+   "descExcerpt": "Limited-Time Special: Get $1,199 off when you lease today! Welcome home to this beautifully maintained 3-beds, 2-baths ranch-style home nestled on a scenic hillside in Prescott Valley, where breathtaking mountain views and everyday comfort come together. From the moment you arrive, you'll be welcomed by a covered front porchthe perfect place to relax with your morning coffee or unwind while taking in the peaceful surroundings. Step inside to discover a bright, open-concept floor plan designed for comfortable living and effortless entertaining. The inviting living room features a cozy fireplace",
    "key": "8983 volcano",
    "bedsLabel": "3 + den / Arizona room (per listing)",
    "priceNote": "Limited-time special advertised $1,199 off; base rent $2,399. Casita occupied / not included in rental.",
-   "lastVerified": "2026-11-03",
+   "lastVerified": "2026-11-04",
    "manualNotes": [
     "Oct 28 browser pass: NEW plus3. Apartments.com highlights include Den. Zumper datePosted 2026-10-28, name '8983 8983 E. Volcano Dr. Main House'. Quote: Arizona room providing additional living space. Casita: 'the casita on the property is occupied by an existing resident and is not included in the rental.' Same $2,399 on Zillow, HotPads, Trulia.",
     "Nov 3 browser pass: Zillow $2,399."
@@ -3616,13 +4184,13 @@ window.LISTINGS_DATA = {
    "studentFlagsSerious": [],
    "id": "8983-volcano",
    "status": "active",
-   "lastSeen": "2026-11-03",
+   "lastSeen": "2026-11-04",
    "firstSeen": "2026-10-28",
-   "utilSummary": "Utilities: not listed",
+   "utilSummary": "Included: water, sewer, trash, gas, electric; not listed: internet, landscaping",
    "far": false,
    "priceHistory": [],
-   "daysOnMarket": 6,
-   "domBasis": "since first seen by this tracker (2026-10-28)",
+   "daysOnMarket": 7,
+   "domBasis": "since listed 2026-10-28 (per Zillow)",
    "score": 5.0
   },
   {
@@ -3674,8 +4242,8 @@ window.LISTINGS_DATA = {
    "availableIso": "now",
    "availableRaw": "Available now",
    "availFit": "early",
-   "availNote": "Available now: ~28 days of rent before Dec 1 unless landlord holds it",
-   "deposit": null,
+   "availNote": "Available now: ~27 days of rent before Dec 1 unless landlord holds it",
+   "deposit": 2300,
    "depositText": null,
    "fees": [],
    "utilities": {
@@ -3691,7 +4259,7 @@ window.LISTINGS_DATA = {
    "utilitiesText": "Usage-based utilities (per listing)",
    "pets": "Pets OK (per listing)",
    "furnished": null,
-   "lease": null,
+   "lease": "leaseTerm: Contact For Details",
    "parking": null,
    "lot": null,
    "denSnippet": "nd tile flooring, and a gas log fireplace creates a cozy focal point. A dedicated den provides flexible space for a home office or hobby area. The HOA offe",
@@ -3707,15 +4275,21 @@ window.LISTINGS_DATA = {
    "vacation": false,
    "perRoom": false,
    "smoking": null,
-   "listedDate": null,
-   "listedSource": null,
-   "sourcePriceHistory": [],
+   "listedDate": "2026-08-26",
+   "listedSource": "Zillow",
+   "sourcePriceHistory": [
+    {
+     "date": "2026-08-26",
+     "event": "Listed for rent",
+     "price": 2300
+    }
+   ],
    "undisclosed": false,
    "propertyType": "SINGLE_FAMILY",
    "descExcerpt": "Discover Home in Stone Ridge HOA in Prescott Valley, AZ — a well-appointed 3-bedroom, 2-bath residence featuring a thoughtful split floor plan that enhances privacy. The primary bath includes a garden tub and separate shower for added comfort. Interior finishes include a mix of carpet, laminate, and tile flooring, and a gas log fireplace creates a cozy focal point. A dedicated den provides flexible space for a home office or hobby area. The HOA offers access to community facilities for all your indoor and outdoor fun! Includes New Interior Paint! You can schedule a showing either way: 1. Self-",
    "key": "7025 lynx wagon",
    "bedsLabel": "3 + den (per listing)",
-   "lastVerified": "2026-11-03",
+   "lastVerified": "2026-11-04",
    "manualNotes": [
     "Oct 24 browser pass (3 BR + extra room search).",
     "Oct 25 3BR browser pass: still listed (search card only; detail not opened).",
@@ -3735,13 +4309,13 @@ window.LISTINGS_DATA = {
    "studentFlagsSerious": [],
    "id": "7025-lynx-wagon",
    "status": "active",
-   "lastSeen": "2026-11-03",
+   "lastSeen": "2026-11-04",
    "firstSeen": "2026-10-24",
    "utilSummary": "Utilities: not listed",
    "far": false,
    "priceHistory": [],
-   "daysOnMarket": 10,
-   "domBasis": "since first seen by this tracker (2026-10-24)",
+   "daysOnMarket": 70,
+   "domBasis": "since listed 2026-08-26 (per Zillow)",
    "score": 5.0
   },
   {
@@ -3783,7 +4357,7 @@ window.LISTINGS_DATA = {
    "availableIso": "now",
    "availableRaw": "Available now",
    "availFit": "early",
-   "availNote": "Available now: ~28 days of rent before Dec 1 unless landlord holds it",
+   "availNote": "Available now: ~27 days of rent before Dec 1 unless landlord holds it",
    "deposit": null,
    "depositText": null,
    "fees": [
@@ -3847,317 +4421,12 @@ window.LISTINGS_DATA = {
    "studentFlagsSerious": [],
    "id": "4558-miner",
    "status": "active",
-   "lastSeen": "2026-11-03",
+   "lastSeen": "2026-11-04",
    "firstSeen": "2026-10-24",
    "utilSummary": "Included: internet; not listed: water, sewer, trash, gas, electric, landscaping",
    "far": false,
    "priceHistory": [],
-   "daysOnMarket": 10,
-   "domBasis": "since first seen by this tracker (2026-10-24)",
-   "score": 5.0
-  },
-  {
-   "address": "1267 Deadwood Ln",
-   "city": "Prescott",
-   "zip": "86305",
-   "beds": 3,
-   "baths": 3,
-   "sqft": 1569,
-   "photo": "https://photos.zillowstatic.com/fp/cad8cb741662dab887c3d9224b064e94-p_e.jpg",
-   "manager": null,
-   "contact": null,
-   "contactPhone": null,
-   "lat": 34.636196,
-   "lng": -112.44133,
-   "coordSource": "zillow",
-   "rent": 2700,
-   "rentSource": "zillow",
-   "rentNote": null,
-   "sources": [
-    {
-     "name": "Zillow",
-     "key": "browser",
-     "url": "https://www.zillow.com/homedetails/1267-Deadwood-Ln-Prescott-AZ-86305/448599183_zpid/",
-     "kind": "listing"
-    }
-   ],
-   "url": "https://www.zillow.com/homedetails/1267-Deadwood-Ln-Prescott-AZ-86305/448599183_zpid/",
-   "availableIso": null,
-   "availableRaw": null,
-   "availFit": "unknown",
-   "availNote": "Availability not listed",
-   "deposit": null,
-   "depositText": null,
-   "fees": [],
-   "utilities": {
-    "water": null,
-    "sewer": null,
-    "trash": null,
-    "gas": null,
-    "electric": null,
-    "internet": null,
-    "landscaping": null,
-    "hoa": null
-   },
-   "utilitiesText": null,
-   "pets": null,
-   "furnished": null,
-   "lease": null,
-   "parking": null,
-   "lot": null,
-   "denSnippet": null,
-   "denStrong": false,
-   "flexQuote": "a spacious den ideal for home office or flex space",
-   "flexRoom": "den",
-   "midTerm": false,
-   "studentRefusal": null,
-   "studentFlags": [],
-   "studentPositive": null,
-   "vacation": false,
-   "perRoom": false,
-   "smoking": null,
-   "listedDate": "2026-09-14",
-   "listedSource": "Zillow (days on Zillow, browser pass)",
-   "sourcePriceHistory": [],
-   "undisclosed": false,
-   "propertyType": "SINGLE_FAMILY",
-   "descExcerpt": "",
-   "key": "1267 deadwood",
-   "bedsLabel": "3 + den (per listing)",
-   "lastVerified": "2026-11-02",
-   "manualNotes": [
-    "Oct 24 browser pass (3 BR + extra room search).",
-    "Oct 25 3BR browser pass: rent $2,700 (was $2750).",
-    "Oct 26 3BR browser pass: still listed at $2700."
-   ],
-   "manual": true,
-   "pending": false,
-   "manualFirstSeen": "2026-10-24",
-   "viaBrowser": [
-    "Zillow"
-   ],
-   "driveMin": 5.7,
-   "driveMi": 2.0,
-   "driveVia": "https://router.project-osrm.org",
-   "bedCategory": "3flex",
-   "studentFlagsSerious": [],
-   "id": "1267-deadwood",
-   "status": "active",
-   "lastSeen": "2026-11-03",
-   "firstSeen": "2026-10-24",
-   "utilSummary": "Utilities: not listed",
-   "far": false,
-   "priceHistory": [
-    {
-     "date": "2026-10-25",
-     "from": 2750,
-     "to": 2700
-    }
-   ],
-   "daysOnMarket": 50,
-   "domBasis": "since listed 2026-09-14 (per Zillow (days on Zillow, browser pass))",
-   "score": 5.0
-  },
-  {
-   "address": "6103 Old Mountain Way",
-   "city": "Prescott",
-   "zip": "86305",
-   "beds": 3,
-   "baths": 3,
-   "sqft": 1569,
-   "photo": "https://photos.zillowstatic.com/fp/0b68bd43ba71320e1ea4ca38b6ae238b-p_e.jpg",
-   "manager": null,
-   "contact": null,
-   "contactPhone": null,
-   "lat": 34.637547,
-   "lng": -112.44014,
-   "coordSource": "zillow",
-   "rent": 2800,
-   "rentSource": "zillow",
-   "rentNote": null,
-   "sources": [
-    {
-     "name": "Zillow",
-     "key": "browser",
-     "url": "https://www.zillow.com/homedetails/6103-Old-Mountain-Way-Prescott-AZ-86305/453585620_zpid/",
-     "kind": "listing"
-    }
-   ],
-   "url": "https://www.zillow.com/homedetails/6103-Old-Mountain-Way-Prescott-AZ-86305/453585620_zpid/",
-   "availableIso": null,
-   "availableRaw": null,
-   "availFit": "unknown",
-   "availNote": "Availability not listed",
-   "deposit": null,
-   "depositText": null,
-   "fees": [],
-   "utilities": {
-    "water": null,
-    "sewer": null,
-    "trash": null,
-    "gas": null,
-    "electric": null,
-    "internet": null,
-    "landscaping": null,
-    "hoa": null
-   },
-   "utilitiesText": null,
-   "pets": null,
-   "furnished": null,
-   "lease": null,
-   "parking": null,
-   "lot": null,
-   "denSnippet": null,
-   "denStrong": false,
-   "flexQuote": "The main level offers a dedicated study",
-   "flexRoom": "study",
-   "midTerm": false,
-   "studentRefusal": null,
-   "studentFlags": [],
-   "studentPositive": null,
-   "vacation": false,
-   "perRoom": false,
-   "smoking": null,
-   "listedDate": "2026-08-01",
-   "listedSource": "Zillow (days on Zillow, browser pass)",
-   "sourcePriceHistory": [],
-   "undisclosed": false,
-   "propertyType": "SINGLE_FAMILY",
-   "descExcerpt": "",
-   "key": "6103 old mountain",
-   "bedsLabel": "3 + study (per listing)",
-   "lastVerified": "2026-11-01",
-   "manualNotes": [
-    "Oct 24 browser pass (3 BR + extra room search).",
-    "Oct 25 3BR browser pass: rent $2,800 total monthly (was $2850); Zillow includes required monthly fees.",
-    "Oct 26 3BR browser pass: still listed at $2800."
-   ],
-   "manual": true,
-   "pending": false,
-   "manualFirstSeen": "2026-10-24",
-   "viaBrowser": [
-    "Zillow"
-   ],
-   "driveMin": 6.1,
-   "driveMi": 2.2,
-   "driveVia": "https://router.project-osrm.org",
-   "bedCategory": "3flex",
-   "studentFlagsSerious": [],
-   "id": "6103-old-mountain",
-   "status": "active",
-   "lastSeen": "2026-11-03",
-   "firstSeen": "2026-10-24",
-   "utilSummary": "Utilities: not listed",
-   "far": false,
-   "priceHistory": [
-    {
-     "date": "2026-10-25",
-     "from": 2850,
-     "to": 2800
-    }
-   ],
-   "daysOnMarket": 94,
-   "domBasis": "since listed 2026-08-01 (per Zillow (days on Zillow, browser pass))",
-   "score": 5.0
-  },
-  {
-   "address": "6234 N Little Papoose Dr",
-   "city": "Prescott Valley",
-   "zip": "86314",
-   "beds": 3,
-   "baths": 2,
-   "sqft": 1257,
-   "photo": "https://photos.zillowstatic.com/fp/da5fdc45523c7cccabf4166de47a2c9a-p_e.jpg",
-   "manager": null,
-   "contact": null,
-   "contactPhone": null,
-   "lat": 34.632034,
-   "lng": -112.3328,
-   "coordSource": "zillow",
-   "rent": 2100,
-   "rentSource": "zillow",
-   "rentNote": null,
-   "sources": [
-    {
-     "name": "Zillow",
-     "key": "browser",
-     "url": "https://www.zillow.com/homedetails/6234-N-Little-Papoose-Dr-Prescott-Valley-AZ-86314/8731875_zpid/",
-     "kind": "listing"
-    }
-   ],
-   "url": "https://www.zillow.com/homedetails/6234-N-Little-Papoose-Dr-Prescott-Valley-AZ-86314/8731875_zpid/",
-   "availableIso": null,
-   "availableRaw": null,
-   "availFit": "unknown",
-   "availNote": "Availability not listed",
-   "deposit": null,
-   "depositText": null,
-   "fees": [],
-   "utilities": {
-    "water": "tenant",
-    "sewer": "tenant",
-    "trash": "tenant",
-    "gas": "tenant",
-    "electric": "tenant",
-    "internet": null,
-    "landscaping": null,
-    "hoa": null
-   },
-   "utilitiesText": "Tenant pays: water, sewer, trash, gas, electric; not listed: internet, landscaping",
-   "pets": null,
-   "furnished": null,
-   "lease": null,
-   "parking": null,
-   "lot": null,
-   "denSnippet": null,
-   "denStrong": false,
-   "flexQuote": "Additional Bonus: An approximately 800-square-foot building is also located on the property and may be available to rent for an additional fee, offering extra space for your needs",
-   "flexRoom": "bonus",
-   "midTerm": false,
-   "studentRefusal": null,
-   "studentFlags": [],
-   "studentPositive": null,
-   "vacation": false,
-   "perRoom": false,
-   "smoking": null,
-   "listedDate": null,
-   "listedSource": null,
-   "sourcePriceHistory": [],
-   "undisclosed": false,
-   "propertyType": "SINGLE_FAMILY",
-   "descExcerpt": "",
-   "key": "6234 little papoose",
-   "bedsLabel": "3 + bonus (per listing)",
-   "lastVerified": "2026-11-03",
-   "manualNotes": [
-    "Nov 1 browser pass: still on Zillow exact-3 house search cards at $2,100. Detail fetch was blocked earlier; kept active from browser search sighting (not gone).",
-    "Nov 3 browser pass: HotPads and Zillow $2,100."
-   ],
-   "manual": true,
-   "pending": false,
-   "manualFirstSeen": "2026-10-24",
-   "viaBrowser": [
-    "Zillow"
-   ],
-   "driveMin": 13.4,
-   "driveMi": 8.0,
-   "driveVia": "https://router.project-osrm.org",
-   "bedCategory": "3flex",
-   "studentFlagsSerious": [],
-   "id": "6234-little-papoose",
-   "status": "active",
-   "lastSeen": "2026-11-03",
-   "firstSeen": "2026-10-24",
-   "utilSummary": "Tenant pays: water, sewer, trash, gas, electric; not listed: internet, landscaping",
-   "far": false,
-   "priceHistory": [
-    {
-     "date": "2026-10-25",
-     "from": 1800,
-     "to": 2100
-    }
-   ],
-   "daysOnMarket": 10,
+   "daysOnMarket": 11,
    "domBasis": "since first seen by this tracker (2026-10-24)",
    "score": 5.0
   },
@@ -4168,8 +4437,8 @@ window.LISTINGS_DATA = {
    "beds": 3,
    "baths": 2,
    "sqft": 1358,
-   "photo": "https://photos.zillowstatic.com/fp/d30f1690f81f0ba3be55c8ada306470b-p_e.jpg",
-   "manager": null,
+   "photo": "https://photos.zillowstatic.com/fp/d30f1690f81f0ba3be55c8ada306470b-p_h.jpg",
+   "manager": "Rosenbaum Realty Group - Prescott Valley",
    "contact": null,
    "contactPhone": null,
    "lat": 34.627876,
@@ -4195,10 +4464,12 @@ window.LISTINGS_DATA = {
    "availableIso": "2026-10-30",
    "availableRaw": "Available Oct 30 (date has passed, so presumably available now)",
    "availFit": "early",
-   "availNote": "Available now: ~28 days of rent before Dec 1 unless landlord holds it",
-   "deposit": null,
+   "availNote": "Available now: ~27 days of rent before Dec 1 unless landlord holds it",
+   "deposit": 3150,
    "depositText": null,
-   "fees": [],
+   "fees": [
+    "application $3,150"
+   ],
    "utilities": {
     "water": null,
     "sewer": null,
@@ -4209,11 +4480,11 @@ window.LISTINGS_DATA = {
     "landscaping": null,
     "hoa": null
    },
-   "utilitiesText": null,
-   "pets": null,
+   "utilitiesText": "utilities (flat or RUBS-based billing), a Resident Benefits Program, and pet fees based on screening results",
+   "pets": "Pets Allowed",
    "furnished": null,
    "lease": "12 months",
-   "parking": null,
+   "parking": "2-Car Garage",
    "lot": null,
    "denSnippet": null,
    "denStrong": false,
@@ -4226,16 +4497,37 @@ window.LISTINGS_DATA = {
    "vacation": false,
    "perRoom": false,
    "smoking": null,
-   "listedDate": null,
-   "listedSource": null,
-   "sourcePriceHistory": [],
+   "listedDate": "2026-08-27",
+   "listedSource": "Zillow",
+   "sourcePriceHistory": [
+    {
+     "date": "2026-10-14",
+     "event": "Price change",
+     "price": 2100
+    },
+    {
+     "date": "2026-08-27",
+     "event": "Listed for rent",
+     "price": 2200
+    },
+    {
+     "date": "2026-08-27",
+     "event": "Listing removed",
+     "price": 2200
+    },
+    {
+     "date": "2026-08-11",
+     "event": "Listed for rent",
+     "price": 2200
+    }
+   ],
    "undisclosed": false,
    "propertyType": "SINGLE_FAMILY",
-   "descExcerpt": "",
+   "descExcerpt": "Welcome to this beautiful 3-bedroom, 2-bath home offering a comfortable and functional layout in a desirable Prescott Valley neighborhood. The home features a combination of durable tile flooring in the main living areas and cozy carpeting in the bedrooms, along with blinds and ceiling fans for added comfort. The bright and inviting kitchen is fully equipped and designed for both everyday cooking and entertaining. It features a convenient kitchen island, laminate countertops, ample cabinetry, and a pantry providing plenty of storage space for all your kitchen essentials. A sliding glass door p",
    "key": "5935 talbot",
    "bedsLabel": "3 BR + den? (borderline)",
    "flexWeak": true,
-   "lastVerified": "2026-11-03",
+   "lastVerified": "2026-11-04",
    "manualNotes": [
     "Oct 24 browser pass (3 BR + extra room search).",
     "Rent $2,100 from Realtor.com.",
@@ -4258,13 +4550,13 @@ window.LISTINGS_DATA = {
    "studentFlagsSerious": [],
    "id": "5935-talbot",
    "status": "active",
-   "lastSeen": "2026-11-03",
+   "lastSeen": "2026-11-04",
    "firstSeen": "2026-10-24",
    "utilSummary": "Utilities: not listed",
    "far": false,
    "priceHistory": [],
-   "daysOnMarket": 10,
-   "domBasis": "since first seen by this tracker (2026-10-24)",
+   "daysOnMarket": 69,
+   "domBasis": "since listed 2026-08-27 (per Zillow)",
    "score": 4.5
   },
   {
@@ -4274,8 +4566,8 @@ window.LISTINGS_DATA = {
    "beds": 3,
    "baths": 2,
    "sqft": 2007,
-   "photo": "https://photos.zillowstatic.com/fp/c63ecc6f6bb7a0e9ba5c81c11166707c-p_e.jpg",
-   "manager": null,
+   "photo": "https://photos.zillowstatic.com/fp/c63ecc6f6bb7a0e9ba5c81c11166707c-p_h.jpg",
+   "manager": "Rosenbaum Realty Group - Prescott Valley",
    "contact": null,
    "contactPhone": null,
    "lat": 34.623142,
@@ -4301,10 +4593,12 @@ window.LISTINGS_DATA = {
    "availableIso": "2026-10-30",
    "availableRaw": "Available Oct 30 (date has passed, so presumably available now)",
    "availFit": "early",
-   "availNote": "Available now: ~28 days of rent before Dec 1 unless landlord holds it",
-   "deposit": null,
+   "availNote": "Available now: ~27 days of rent before Dec 1 unless landlord holds it",
+   "deposit": 3599,
    "depositText": null,
-   "fees": [],
+   "fees": [
+    "application $3,599"
+   ],
    "utilities": {
     "water": null,
     "sewer": null,
@@ -4315,11 +4609,11 @@ window.LISTINGS_DATA = {
     "landscaping": null,
     "hoa": null
    },
-   "utilitiesText": null,
-   "pets": null,
+   "utilitiesText": "utilities (flat or RUBS-based billing), a Resident Benefits Program, and pet fees based on screening results",
+   "pets": "NO PETS allowed",
    "furnished": null,
-   "lease": null,
-   "parking": null,
+   "lease": "leaseTerm: 1 Year",
+   "parking": "3-Car Garage",
    "lot": null,
    "denSnippet": null,
    "denStrong": false,
@@ -4332,16 +4626,32 @@ window.LISTINGS_DATA = {
    "vacation": false,
    "perRoom": false,
    "smoking": null,
-   "listedDate": null,
-   "listedSource": null,
-   "sourcePriceHistory": [],
+   "listedDate": "2026-08-27",
+   "listedSource": "Zillow",
+   "sourcePriceHistory": [
+    {
+     "date": "2026-08-27",
+     "event": "Listed for rent",
+     "price": 2399
+    },
+    {
+     "date": "2026-08-27",
+     "event": "Listing removed",
+     "price": 2399
+    },
+    {
+     "date": "2026-08-12",
+     "event": "Listed for rent",
+     "price": 2399
+    }
+   ],
    "undisclosed": false,
    "propertyType": "SINGLE_FAMILY",
-   "descExcerpt": "",
+   "descExcerpt": "Welcome to this beautiful 3-bedroom, 2-bath home offering a comfortable and functional layout in a desirable Prescott Valley neighborhood. The home features durable vinyl plank flooring throughout, along with blinds and ceiling fans for added comfort. The bright and inviting kitchen is fully equipped with a refrigerator, gas stove/oven, dishwasher, and garbage disposal. It also features a convenient kitchen island, eat-in dining area, ample cabinetry, and a pantry, providing plenty of storage and workspace for everyday cooking and entertaining. The spacious primary bedroom offers plenty of roo",
    "key": "6543 brighton",
    "bedsLabel": "3 BR + den? (borderline)",
    "flexWeak": true,
-   "lastVerified": "2026-11-03",
+   "lastVerified": "2026-11-04",
    "manualNotes": [
     "Oct 24 browser pass (3 BR + extra room search).",
     "Den appears only as an amenity tag, not in the description.",
@@ -4361,13 +4671,13 @@ window.LISTINGS_DATA = {
    "studentFlagsSerious": [],
    "id": "6543-brighton",
    "status": "active",
-   "lastSeen": "2026-11-03",
+   "lastSeen": "2026-11-04",
    "firstSeen": "2026-10-24",
    "utilSummary": "Utilities: not listed",
    "far": false,
    "priceHistory": [],
-   "daysOnMarket": 10,
-   "domBasis": "since first seen by this tracker (2026-10-24)",
+   "daysOnMarket": 69,
+   "domBasis": "since listed 2026-08-27 (per Zillow)",
    "score": 4.5
   },
   {
@@ -4377,9 +4687,9 @@ window.LISTINGS_DATA = {
    "beds": 3,
    "baths": 2.0,
    "sqft": 2902,
-   "photo": "https://images.rentable.co/122492/124796521/large.jpeg",
+   "photo": "https://images.rentable.co/122492/124797433/large.jpeg",
    "manager": "Desert Wide Properties",
-   "contact": null,
+   "contact": "Lisa Hugus",
    "contactPhone": "(928) 597-8953",
    "lat": 34.5583537,
    "lng": -112.3392406,
@@ -4419,7 +4729,7 @@ window.LISTINGS_DATA = {
    "availableIso": "now",
    "availableRaw": "Available now",
    "availFit": "early",
-   "availNote": "Available now: ~28 days of rent before Dec 1 unless landlord holds it",
+   "availNote": "Available now: ~27 days of rent before Dec 1 unless landlord holds it",
    "deposit": null,
    "depositText": null,
    "fees": [],
@@ -4434,12 +4744,12 @@ window.LISTINGS_DATA = {
     "hoa": null
    },
    "utilitiesText": "utilities",
-   "pets": "Pet Friendly",
+   "pets": "No Pets",
    "furnished": null,
-   "lease": null,
+   "lease": "leaseTerm: Contact For Details",
    "parking": "2 car garage",
    "lot": null,
-   "denSnippet": "l Amenities & Features About You will love this 2-story 3 bedrooms + a loft home on corner lot. Home features open family room w/gas fireplace, k",
+   "denSnippet": "has been sent to your inbox. You will love this 2-story 3 bedrooms + a loft home on corner lot. Home features open family room w/gas fireplace, k",
    "denStrong": true,
    "flexQuote": "3 bedrooms + a loft home... Upstairs is a large loft with 2 additional bedrooms",
    "flexRoom": "loft",
@@ -4450,9 +4760,20 @@ window.LISTINGS_DATA = {
    "vacation": false,
    "perRoom": false,
    "smoking": null,
-   "listedDate": null,
-   "listedSource": null,
-   "sourcePriceHistory": [],
+   "listedDate": "2026-07-01",
+   "listedSource": "Zillow",
+   "sourcePriceHistory": [
+    {
+     "date": "2026-07-22",
+     "event": "Price change",
+     "price": 3044
+    },
+    {
+     "date": "2026-07-01",
+     "event": "Listed for rent",
+     "price": 3144
+    }
+   ],
    "undisclosed": false,
    "propertyType": "SINGLE_FAMILY",
    "descExcerpt": "Property details Additional Details Total Unit Count: 1 Last Updated: Updated 15 hours ago Contact Number: (928) 597-8953 Message Sent. A confirmation email has been sent to your inbox. ",
@@ -4479,13 +4800,13 @@ window.LISTINGS_DATA = {
    "studentFlagsSerious": [],
    "id": "7239-barefoot",
    "status": "active",
-   "lastSeen": "2026-11-03",
+   "lastSeen": "2026-11-04",
    "firstSeen": "2026-10-24",
    "utilSummary": "Utilities: not listed",
    "far": false,
    "priceHistory": [],
-   "daysOnMarket": 10,
-   "domBasis": "since first seen by this tracker (2026-10-24)",
+   "daysOnMarket": 126,
+   "domBasis": "since listed 2026-07-01 (per Zillow)",
    "score": 4.0
   },
   {
@@ -4528,7 +4849,7 @@ window.LISTINGS_DATA = {
    "availableIso": "2026-08-15",
    "availableRaw": "Available 8/15/2026 (date has passed, so presumably available now)",
    "availFit": "early",
-   "availNote": "Available now: ~28 days of rent before Dec 1 unless landlord holds it",
+   "availNote": "Available now: ~27 days of rent before Dec 1 unless landlord holds it",
    "deposit": 2900,
    "depositText": "same as first month's rent",
    "fees": [
@@ -4593,12 +4914,12 @@ window.LISTINGS_DATA = {
    "studentFlagsSerious": [],
    "id": "11545-manzanita",
    "status": "active",
-   "lastSeen": "2026-11-03",
+   "lastSeen": "2026-11-04",
    "firstSeen": "2026-10-24",
    "utilSummary": "Utilities: not listed",
    "far": false,
    "priceHistory": [],
-   "daysOnMarket": 10,
+   "daysOnMarket": 11,
    "domBasis": "since first seen by this tracker (2026-10-24)",
    "score": 3.5
   },
@@ -4609,8 +4930,8 @@ window.LISTINGS_DATA = {
    "beds": 3,
    "baths": 2,
    "sqft": 1732,
-   "photo": "https://photos.zillowstatic.com/fp/b3c9a0d9a133926a652a71313cf76ec4-p_e.jpg",
-   "manager": null,
+   "photo": "https://photos.zillowstatic.com/fp/b3c9a0d9a133926a652a71313cf76ec4-p_h.jpg",
+   "manager": "First Team Real Estate",
    "contact": null,
    "contactPhone": null,
    "lat": 34.61277,
@@ -4634,27 +4955,27 @@ window.LISTINGS_DATA = {
    ],
    "url": "https://www.zillow.com/homedetails/4850-N-Edgemont-Rd-Prescott-Valley-AZ-86314/71342086_zpid/",
    "availableIso": "now",
-   "availableRaw": "available now",
+   "availableRaw": "Available now",
    "availFit": "early",
-   "availNote": "Available now: ~28 days of rent before Dec 1 unless landlord holds it",
-   "deposit": null,
+   "availNote": "Available now: ~27 days of rent before Dec 1 unless landlord holds it",
+   "deposit": 2500,
    "depositText": null,
    "fees": [],
    "utilities": {
-    "water": null,
-    "sewer": null,
-    "trash": null,
-    "gas": null,
-    "electric": null,
+    "water": "tenant",
+    "sewer": "tenant",
+    "trash": "tenant",
+    "gas": "tenant",
+    "electric": "tenant",
     "internet": null,
     "landscaping": null,
     "hoa": null
    },
-   "utilitiesText": null,
+   "utilitiesText": "utilities",
    "pets": null,
    "furnished": null,
-   "lease": null,
-   "parking": "attached garage",
+   "lease": "leaseTerm: 1 Year",
+   "parking": "Parking: Attached Garage",
    "lot": null,
    "denSnippet": null,
    "denStrong": false,
@@ -4667,12 +4988,18 @@ window.LISTINGS_DATA = {
    "vacation": false,
    "perRoom": false,
    "smoking": "no smoking",
-   "listedDate": "2026-10-26",
-   "listedSource": "Craigslist",
-   "sourcePriceHistory": [],
+   "listedDate": "2026-10-24",
+   "listedSource": "Zillow",
+   "sourcePriceHistory": [
+    {
+     "date": "2026-10-24",
+     "event": "Listed for rent",
+     "price": 2500
+    }
+   ],
    "undisclosed": false,
    "propertyType": "SINGLE_FAMILY",
-   "descExcerpt": "This lovely Granville home has 3 bedrooms & 2 bathrooms. It also includes an inside laundry room, an extra large garage with extensive built in cabinets and shelving, and an extra large backyard with a gazebo. The family room and kitchen combine for a marvelous \"Great Room\" effect. There is also a separate living room with brand new flooring. There are several windows that offer lots of natural light. The windows have mini blinds to control the incoming light and heavy drapes that will allow you to keep things nice & cool. Renters are allowed to use any of the Granville Clubhouses at no charge",
+   "descExcerpt": "This lovely Granville home has 3 bedrooms & 2 bathrooms. It also includes an inside laundry room, an extra large garage, and an extra large backyard with a gazebo. The family room & kitchen combine for the \"great room\" effect. There is also a separate living room with new flooring. Several windows that offer lots of natural light. And heavy drapes to keep things nice & cool. Renters are allowed to use any of the Granville Clubhouses at no charge. Owners pays for HOA clubs. Tenants pay for their utilities.",
    "key": "4850 edgemont",
    "bedsLabel": "3 BR + separate living room? (borderline)",
    "flexWeak": true,
@@ -4695,13 +5022,13 @@ window.LISTINGS_DATA = {
    "studentFlagsSerious": [],
    "id": "4850-edgemont",
    "status": "active",
-   "lastSeen": "2026-11-03",
+   "lastSeen": "2026-11-04",
    "firstSeen": "2026-10-24",
-   "utilSummary": "Utilities: not listed",
+   "utilSummary": "Tenant pays: water, sewer, trash, gas, electric; not listed: internet, landscaping",
    "far": false,
    "priceHistory": [],
-   "daysOnMarket": 8,
-   "domBasis": "since listed 2026-10-26 (per Craigslist)",
+   "daysOnMarket": 11,
+   "domBasis": "since listed 2026-10-24 (per Zillow)",
    "score": 3.5
   },
   {
@@ -4711,8 +5038,8 @@ window.LISTINGS_DATA = {
    "beds": 3,
    "baths": 2,
    "sqft": 1430,
-   "photo": "https://photos.zillowstatic.com/fp/4234c133f455b71085358f7b7a11c653-p_e.jpg",
-   "manager": null,
+   "photo": "https://photos.zillowstatic.com/fp/4234c133f455b71085358f7b7a11c653-p_h.jpg",
+   "manager": "Rosenbaum Realty Group - Prescott Valley",
    "contact": null,
    "contactPhone": null,
    "lat": 34.613113,
@@ -4738,10 +5065,12 @@ window.LISTINGS_DATA = {
    "availableIso": "now",
    "availableRaw": "Available now",
    "availFit": "early",
-   "availNote": "Available now: ~28 days of rent before Dec 1 unless landlord holds it",
-   "deposit": null,
+   "availNote": "Available now: ~27 days of rent before Dec 1 unless landlord holds it",
+   "deposit": 3525,
    "depositText": null,
-   "fees": [],
+   "fees": [
+    "application $3,525"
+   ],
    "utilities": {
     "water": null,
     "sewer": null,
@@ -4752,11 +5081,11 @@ window.LISTINGS_DATA = {
     "landscaping": null,
     "hoa": null
    },
-   "utilitiesText": null,
+   "utilitiesText": "utilities (flat or RUBS-based billing), a Resident Benefits Program, and pet fees based on screening results",
    "pets": "Pets OK (per listing)",
    "furnished": null,
-   "lease": null,
-   "parking": null,
+   "lease": "leaseTerm: 1 Year",
+   "parking": "two-car garage",
    "lot": null,
    "denSnippet": null,
    "denStrong": false,
@@ -4769,16 +5098,32 @@ window.LISTINGS_DATA = {
    "vacation": false,
    "perRoom": false,
    "smoking": null,
-   "listedDate": null,
-   "listedSource": null,
-   "sourcePriceHistory": [],
+   "listedDate": "2026-08-27",
+   "listedSource": "Zillow",
+   "sourcePriceHistory": [
+    {
+     "date": "2026-08-27",
+     "event": "Listed for rent",
+     "price": 2350
+    },
+    {
+     "date": "2026-08-27",
+     "event": "Listing removed",
+     "price": 2350
+    },
+    {
+     "date": "2026-08-04",
+     "event": "Listed for rent",
+     "price": 2350
+    }
+   ],
    "undisclosed": false,
    "propertyType": "SINGLE_FAMILY",
-   "descExcerpt": "",
+   "descExcerpt": "Limited-Time Offer: Get $250 off when you lease today! Welcome to this beautiful 3-bedroom, 2-bathroom home designed for effortless single-level living. Step inside to find an inviting interior featuring central air conditioning and ceiling fans to keep you cool year-round. The functional layout features a blend of low-maintenance tile and vinyl plank flooring throughout the main common spaces, paired with warm, cozy carpeting in the bedrooms. The heart of the home is a well-appointed kitchen outfitted with functional laminate countertops, a generous central kitchen island, and ample cabinetry",
    "key": "8049 jacque",
    "bedsLabel": "3 BR + den? (borderline)",
    "flexWeak": true,
-   "lastVerified": "2026-11-03",
+   "lastVerified": "2026-11-04",
    "manualNotes": [
     "Oct 24 browser pass (3 BR + extra room search).",
     "Den appears only as an amenity tag.",
@@ -4799,13 +5144,13 @@ window.LISTINGS_DATA = {
    "studentFlagsSerious": [],
    "id": "8049-jacque",
    "status": "active",
-   "lastSeen": "2026-11-03",
+   "lastSeen": "2026-11-04",
    "firstSeen": "2026-10-24",
    "utilSummary": "Utilities: not listed",
    "far": false,
    "priceHistory": [],
-   "daysOnMarket": 10,
-   "domBasis": "since first seen by this tracker (2026-10-24)",
+   "daysOnMarket": 69,
+   "domBasis": "since listed 2026-08-27 (per Zillow)",
    "score": 3.5
   },
   {
@@ -4815,8 +5160,8 @@ window.LISTINGS_DATA = {
    "beds": 3,
    "baths": 2,
    "sqft": 1591,
-   "photo": "https://photos.zillowstatic.com/fp/d34a1ee5916795ba2137ef8276e10f81-p_e.jpg",
-   "manager": null,
+   "photo": "https://photos.zillowstatic.com/fp/d34a1ee5916795ba2137ef8276e10f81-p_h.jpg",
+   "manager": "Rosenbaum Realty Group - Prescott Valley",
    "contact": null,
    "contactPhone": null,
    "lat": 34.64942,
@@ -4842,10 +5187,12 @@ window.LISTINGS_DATA = {
    "availableIso": "now",
    "availableRaw": "Available now",
    "availFit": "early",
-   "availNote": "Available now: ~28 days of rent before Dec 1 unless landlord holds it",
-   "deposit": null,
+   "availNote": "Available now: ~27 days of rent before Dec 1 unless landlord holds it",
+   "deposit": 3300,
    "depositText": null,
-   "fees": [],
+   "fees": [
+    "application $3,300"
+   ],
    "utilities": {
     "water": null,
     "sewer": null,
@@ -4859,8 +5206,8 @@ window.LISTINGS_DATA = {
    "utilitiesText": "Flat / RUBS utilities (per listing)",
    "pets": "Pets OK (per listing)",
    "furnished": null,
-   "lease": null,
-   "parking": null,
+   "lease": "leaseTerm: 1 Year",
+   "parking": "2-car garage",
    "lot": null,
    "denSnippet": null,
    "denStrong": false,
@@ -4873,16 +5220,32 @@ window.LISTINGS_DATA = {
    "vacation": false,
    "perRoom": false,
    "smoking": null,
-   "listedDate": null,
-   "listedSource": null,
-   "sourcePriceHistory": [],
+   "listedDate": "2026-08-27",
+   "listedSource": "Zillow",
+   "sourcePriceHistory": [
+    {
+     "date": "2026-08-27",
+     "event": "Listed for rent",
+     "price": 2200
+    },
+    {
+     "date": "2026-08-27",
+     "event": "Listing removed",
+     "price": 2200
+    },
+    {
+     "date": "2026-07-15",
+     "event": "Listed for rent",
+     "price": 2200
+    }
+   ],
    "undisclosed": false,
    "propertyType": "SINGLE_FAMILY",
-   "descExcerpt": "",
+   "descExcerpt": "Welcome to this gorgeous 3-bedrooms, 2-baths home nestled in the highly sought-after Pronghorn Ranch Community! Tucked away on a spacious cul-de-sac lot, this charming residence offers a bright and airy open floor plan with soaring vaulted ceilings that create a sense of space and comfort. Enjoy a blend of tile and carpet flooring throughout, perfect for both style and practicality. The well-appointed kitchen features a high-rise island, a generous pantry, and rich wood cabinetry ideal for cooking, gathering, and entertaining. Just off the living room, sliding glass doors lead to a covered pat",
    "key": "7551 dusty boot",
    "bedsLabel": "3 BR + den? (borderline)",
    "flexWeak": true,
-   "lastVerified": "2026-11-03",
+   "lastVerified": "2026-11-04",
    "manualNotes": [
     "Oct 24 browser pass (3 BR + extra room search).",
     "Den appears only as an amenity tag, not in the description.",
@@ -4902,13 +5265,13 @@ window.LISTINGS_DATA = {
    "studentFlagsSerious": [],
    "id": "7551-dusty-boot",
    "status": "active",
-   "lastSeen": "2026-11-03",
+   "lastSeen": "2026-11-04",
    "firstSeen": "2026-10-24",
    "utilSummary": "Utilities: not listed",
    "far": false,
    "priceHistory": [],
-   "daysOnMarket": 10,
-   "domBasis": "since first seen by this tracker (2026-10-24)",
+   "daysOnMarket": 69,
+   "domBasis": "since listed 2026-08-27 (per Zillow)",
    "score": 3.5
   },
   {
@@ -4918,9 +5281,9 @@ window.LISTINGS_DATA = {
    "beds": 3,
    "baths": 2,
    "sqft": 1914,
-   "photo": "https://photos.zillowstatic.com/fp/3f238728a1a24326a6b1bdcf86e1008c-p_e.jpg",
-   "manager": "Garden Brook Realty Angela Christine Erceg",
-   "contact": null,
+   "photo": "https://photos.zillowstatic.com/fp/3f238728a1a24326a6b1bdcf86e1008c-p_h.jpg",
+   "manager": "Garden Brook Realty",
+   "contact": "Angela Christine Erceg",
    "contactPhone": "9287102432",
    "lat": 34.801968,
    "lng": -112.48951,
@@ -4947,9 +5310,9 @@ window.LISTINGS_DATA = {
    ],
    "url": "https://www.zillow.com/homedetails/2330-W-Gambels-Ridge-Dr-Chino-Valley-AZ-86323/71338061_zpid/",
    "availableIso": "now",
-   "availableRaw": "Available Now",
+   "availableRaw": "Available now",
    "availFit": "early",
-   "availNote": "Available now: ~28 days of rent before Dec 1 unless landlord holds it",
+   "availNote": "Available now: ~27 days of rent before Dec 1 unless landlord holds it",
    "deposit": null,
    "depositText": null,
    "fees": [
@@ -4969,7 +5332,7 @@ window.LISTINGS_DATA = {
    "utilitiesText": null,
    "pets": "NO PETS",
    "furnished": null,
-   "lease": null,
+   "lease": "leaseTerm: 12.00",
    "parking": "2-car garage",
    "lot": null,
    "denSnippet": "fering a center island and the living room featuring a cozy fireplace.A versatile bonus room provides additional space that can be used as an office, sunroom, pla",
@@ -4983,12 +5346,23 @@ window.LISTINGS_DATA = {
    "vacation": false,
    "perRoom": false,
    "smoking": null,
-   "listedDate": null,
-   "listedSource": null,
-   "sourcePriceHistory": [],
+   "listedDate": "2026-09-28",
+   "listedSource": "Zillow",
+   "sourcePriceHistory": [
+    {
+     "date": "2026-10-19",
+     "event": "Price change",
+     "price": 2400
+    },
+    {
+     "date": "2026-09-29",
+     "event": "Listed for rent",
+     "price": 2600
+    }
+   ],
    "undisclosed": false,
    "propertyType": "SINGLE_FAMILY",
-   "descExcerpt": "2330 W Gambels Ridge Drive # - Chino Valley, AZ | Rent. Skip to Content (Press Enter) Search Search for homes by location Search 0 List a Property Business Solutions Moving Center Log In Sign Up Arizona Chino Valley Houses 86323 2330 W Gambels Ridge Drive # Share Save 16 Photos Close Save Photos (16) Street View Map To: 2330 W Gambels Ridge Drive # (928) 710-0020 To: 2330 W Gambels Ridge Drive # (928) 710-0020 To: 2330 W Gambels Ridge Drive # (928) 710-0020 (928) 710-0020 Send Message $2,400 3 Beds 2 Baths 1,914 Sqft 2330 W Gambels Ridge Drive # Chino Valley, AZ 86323 (928) 710-0020 Send Messa",
+   "descExcerpt": "Spacious 3-bedroom, 2-bath home with a comfortable split floor plan and plenty of room to spread out. The oversized primary bedroom features a large walk-in closet and private walk-in shower. The open-concept kitchen, dining, and living areas create an inviting space for everyday living and entertaining, with the kitchen offering a center island and the living room featuring a cozy fireplace.A versatile bonus room provides additional space that can be used as an office, sunroom, playroom, game room, or whatever best fits your needs. Outside, the fenced backyard offers plenty of room to enjoy t",
    "key": "2330 gambels ridge",
    "driveMin": 25.4,
    "driveMi": 16.5,
@@ -4998,13 +5372,13 @@ window.LISTINGS_DATA = {
    "studentFlagsSerious": [],
    "id": "2330-gambels-ridge",
    "status": "active",
-   "lastSeen": "2026-11-03",
+   "lastSeen": "2026-11-04",
    "firstSeen": "2026-10-24",
    "utilSummary": "Utilities: not listed",
    "far": true,
    "priceHistory": [],
-   "daysOnMarket": 10,
-   "domBasis": "since first seen by this tracker (2026-10-24)",
+   "daysOnMarket": 37,
+   "domBasis": "since listed 2026-09-28 (per Zillow)",
    "score": 3.5
   },
   {
@@ -5014,7 +5388,7 @@ window.LISTINGS_DATA = {
    "beds": 3,
    "baths": 3,
    "sqft": 2794,
-   "photo": "https://photos.zillowstatic.com/fp/3351e36ab7947aa1b37ab377f6a9b29d-p_e.jpg",
+   "photo": "https://photos.zillowstatic.com/fp/3351e36ab7947aa1b37ab377f6a9b29d-p_h.jpg",
    "manager": null,
    "contact": null,
    "contactPhone": null,
@@ -5037,7 +5411,7 @@ window.LISTINGS_DATA = {
    "availableRaw": null,
    "availFit": "unknown",
    "availNote": "Availability not listed",
-   "deposit": null,
+   "deposit": 500,
    "depositText": null,
    "fees": [],
    "utilities": {
@@ -5051,10 +5425,10 @@ window.LISTINGS_DATA = {
     "hoa": null
    },
    "utilitiesText": "Tenant pays: gas, electric; not listed: water, sewer, trash, internet, landscaping",
-   "pets": null,
+   "pets": "Pet Policy adder",
    "furnished": null,
-   "lease": null,
-   "parking": null,
+   "lease": "leaseTerm: 1 Year",
+   "parking": "attached Garage",
    "lot": null,
    "denSnippet": null,
    "denStrong": false,
@@ -5067,15 +5441,21 @@ window.LISTINGS_DATA = {
    "vacation": false,
    "perRoom": false,
    "smoking": null,
-   "listedDate": null,
-   "listedSource": null,
-   "sourcePriceHistory": [],
+   "listedDate": "2026-10-26",
+   "listedSource": "Zillow",
+   "sourcePriceHistory": [
+    {
+     "date": "2026-10-26",
+     "event": "Listed for rent",
+     "price": 3200
+    }
+   ],
    "undisclosed": false,
    "propertyType": "SINGLE_FAMILY",
-   "descExcerpt": "",
+   "descExcerpt": "- 2,794 sq. ft. home, 3 Bedroom, 2.5 Bath. - All stainless steel kitchen appliances. Garbage disposal. Granite counters. - Two large pantries - Heated & Airconditioned & Ceiling Fans (New HVAC system 2024) - Great Room with gas fireplace. - Large loft area above garage carpeted and with heat and AC. - Laundry room with washer & dryer, folding area, and storage. - Two decks: side and back. - Two attached Garages: 2 car + 2 car with 220V 50 amp service and workbench. - Entire house painted October 2026 - Access to Hidden Valley Ranch pool, tennis courts and community activities. - Tiled flooring",
    "key": "350 hidden valley",
    "bedsLabel": "3 + loft (per listing)",
-   "lastVerified": "2026-11-03",
+   "lastVerified": "2026-11-04",
    "manualNotes": [
     "Nov 1 browser pass: still on Zillow exact-3 house search cards at $3,200. Detail fetch was blocked earlier; kept active from browser search sighting (not gone).",
     "Nov 3 browser pass: HotPads and Zillow $3,200."
@@ -5093,13 +5473,13 @@ window.LISTINGS_DATA = {
    "studentFlagsSerious": [],
    "id": "350-hidden-valley",
    "status": "active",
-   "lastSeen": "2026-11-03",
+   "lastSeen": "2026-11-04",
    "firstSeen": "2026-10-27",
    "utilSummary": "Tenant pays: gas, electric; not listed: water, sewer, trash, internet, landscaping",
    "far": false,
    "priceHistory": [],
-   "daysOnMarket": 7,
-   "domBasis": "since first seen by this tracker (2026-10-27)",
+   "daysOnMarket": 9,
+   "domBasis": "since listed 2026-10-26 (per Zillow)",
    "score": 3.0
   },
   {
@@ -5109,9 +5489,9 @@ window.LISTINGS_DATA = {
    "beds": 3,
    "baths": 3,
    "sqft": 2577,
-   "photo": "https://photos.zillowstatic.com/fp/6b844a28aa2532b9d7b1a9746b5cdfe7-p_e.jpg",
+   "photo": "https://photos.zillowstatic.com/fp/6b844a28aa2532b9d7b1a9746b5cdfe7-p_h.jpg",
    "manager": null,
-   "contact": null,
+   "contact": "Susan Neal",
    "contactPhone": null,
    "lat": 34.612328,
    "lng": -112.364334,
@@ -5131,10 +5511,12 @@ window.LISTINGS_DATA = {
    "availableIso": "now",
    "availableRaw": "Available now",
    "availFit": "early",
-   "availNote": "Available now: ~28 days of rent before Dec 1 unless landlord holds it",
-   "deposit": null,
+   "availNote": "Available now: ~27 days of rent before Dec 1 unless landlord holds it",
+   "deposit": 4000,
    "depositText": null,
-   "fees": [],
+   "fees": [
+    "application $4,000"
+   ],
    "utilities": {
     "water": null,
     "sewer": null,
@@ -5149,10 +5531,10 @@ window.LISTINGS_DATA = {
    "pets": "No pets; may approve an exception for a small dog over age two (pet interview, additional deposit and fee)",
    "furnished": "Unfurnished",
    "lease": "Minimum 6-month lease",
-   "parking": null,
-   "lot": null,
-   "denSnippet": null,
-   "denStrong": false,
+   "parking": "Parking: Attached Garage",
+   "lot": "9,583 sq ft lot",
+   "denSnippet": "open concept, perfect for entertaining! Solar panels! Split floorplan with additional den and dedicated office space. Perfect home for working remotely, floor",
+   "denStrong": true,
    "flexQuote": "Split floorplan with additional den and dedicated office space.",
    "flexRoom": "den",
    "midTerm": false,
@@ -5161,17 +5543,48 @@ window.LISTINGS_DATA = {
    "studentPositive": null,
    "vacation": false,
    "perRoom": false,
-   "smoking": null,
-   "listedDate": null,
-   "listedSource": "Zillow (listed ~16 hours before the Nov 2 browser pass)",
-   "sourcePriceHistory": [],
+   "smoking": "no smoking",
+   "listedDate": "2026-11-01",
+   "listedSource": "Zillow",
+   "sourcePriceHistory": [
+    {
+     "date": "2026-11-01",
+     "event": "Listed for rent",
+     "price": 3490
+    },
+    {
+     "date": "2026-10-22",
+     "event": "Listing removed",
+     "price": 3490
+    },
+    {
+     "date": "2026-10-06",
+     "event": "Price change",
+     "price": 3490
+    },
+    {
+     "date": "2026-09-08",
+     "event": "Listed for rent",
+     "price": 3590
+    },
+    {
+     "date": "2026-08-16",
+     "event": "Listing removed",
+     "price": 6495
+    },
+    {
+     "date": "2026-05-20",
+     "event": "Listed for rent",
+     "price": 6495
+    }
+   ],
    "undisclosed": false,
    "propertyType": "SINGLE_FAMILY",
-   "descExcerpt": "",
+   "descExcerpt": "Beautiful Jasper home for rent! 2577 square feet spacious home with high ceilings, kitchen with upgraded 42'' dark stained cabinets, giant waterfall kitchen island, open concept, perfect for entertaining! Solar panels! Split floorplan with additional den and dedicated office space. Perfect home for working remotely, floor to ceiling windows view of Glassford Hill. Modern linear gas fireplace! Enjoy resort-style living with the multi-million-dollar J Club; two pools, gym, hot tub, stellar restaurant and bar! Pickleball! Tennis, fire pits, bocce, game room, clubhouse. Close proximity to Iron Kin",
    "key": "5746 tyler",
    "bedsLabel": "3 + den and office (per listing)",
    "priceNote": "J Club membership required: +$165/mo on top of rent (per listing)",
-   "lastVerified": "2026-11-03",
+   "lastVerified": "2026-11-04",
    "manualNotes": [
     "Nov 2 browser pass: NEW on Zillow. Executive rental in the Jasper community. \"J CLUB tenant lease term membership is required and is an additional $165.00 per month.\" No smoking/vaping. Deposit not stated. No student wording.",
     "Nov 3 browser pass: HotPads and Zillow $3,490."
@@ -5189,13 +5602,13 @@ window.LISTINGS_DATA = {
    "studentFlagsSerious": [],
    "id": "5746-tyler",
    "status": "active",
-   "lastSeen": "2026-11-03",
+   "lastSeen": "2026-11-04",
    "firstSeen": "2026-11-02",
    "utilSummary": "Included: internet; not listed: water, sewer, trash, gas, electric, landscaping",
    "far": false,
    "priceHistory": [],
-   "daysOnMarket": 1,
-   "domBasis": "since first seen by this tracker (2026-11-02)",
+   "daysOnMarket": 3,
+   "domBasis": "since listed 2026-11-01 (per Zillow)",
    "score": 3.0
   },
   {
@@ -5284,12 +5697,12 @@ window.LISTINGS_DATA = {
    "studentFlagsSerious": [],
    "id": "1896-bluff-top",
    "status": "active",
-   "lastSeen": "2026-11-03",
+   "lastSeen": "2026-11-04",
    "firstSeen": "2026-10-24",
    "utilSummary": "Utilities: not listed",
    "far": false,
    "priceHistory": [],
-   "daysOnMarket": 10,
+   "daysOnMarket": 11,
    "domBasis": "since first seen by this tracker (2026-10-24)",
    "score": 3.0
   },
@@ -5300,7 +5713,7 @@ window.LISTINGS_DATA = {
    "beds": 3,
    "baths": 2,
    "sqft": 1441,
-   "photo": "https://photos.zillowstatic.com/fp/08eb1ab87f27beff076ae25ab5a3f3f3-p_e.jpg",
+   "photo": "https://photos.zillowstatic.com/fp/08eb1ab87f27beff076ae25ab5a3f3f3-p_h.jpg",
    "manager": null,
    "contact": null,
    "contactPhone": null,
@@ -5324,31 +5737,33 @@ window.LISTINGS_DATA = {
     }
    ],
    "url": "https://hotpads.com/2750-n-date-creek-dr-prescott-valley-az-86314-u091ym/pad",
-   "availableIso": "2027-01-11",
-   "availableRaw": "Available January 11",
+   "availableIso": "2027-01-20",
+   "availableRaw": "Available January 20",
    "availFit": "late",
-   "availNote": "Available 2027-01-11: after mid-Dec target",
-   "deposit": null,
+   "availNote": "Available 2027-01-20: after mid-Dec target",
+   "deposit": 2000,
    "depositText": null,
-   "fees": [],
+   "fees": [
+    "cleaning $200"
+   ],
    "utilities": {
-    "water": null,
+    "water": "included",
     "sewer": null,
-    "trash": null,
+    "trash": "included",
     "gas": null,
-    "electric": null,
-    "internet": null,
+    "electric": "tenant",
+    "internet": "tenant",
     "landscaping": null,
     "hoa": null
    },
-   "utilitiesText": null,
-   "pets": null,
+   "utilitiesText": "utilities: Garbage, Water",
+   "pets": "No cats",
    "furnished": null,
-   "lease": null,
-   "parking": null,
+   "lease": "12 month lease",
+   "parking": "Parking: Off Street",
    "lot": null,
-   "denSnippet": null,
-   "denStrong": false,
+   "denSnippet": "Available January 2027. 3 bedroom, 2 bathroom, (large den with double doors and closet is the 3rd bedroom). Water and trash ser",
+   "denStrong": true,
    "flexQuote": "den is the 3rd bedroom (per browser pass)",
    "flexRoom": "den",
    "midTerm": false,
@@ -5357,13 +5772,19 @@ window.LISTINGS_DATA = {
    "studentPositive": null,
    "vacation": false,
    "perRoom": false,
-   "smoking": null,
-   "listedDate": null,
-   "listedSource": null,
-   "sourcePriceHistory": [],
+   "smoking": "no smoking",
+   "listedDate": "2026-10-16",
+   "listedSource": "Zillow",
+   "sourcePriceHistory": [
+    {
+     "date": "2026-10-16",
+     "event": "Listed for rent",
+     "price": 2100
+    }
+   ],
    "undisclosed": false,
    "propertyType": "SINGLE_FAMILY",
-   "descExcerpt": "",
+   "descExcerpt": "Available January 2027. 3 bedroom, 2 bathroom, (large den with double doors and closet is the 3rd bedroom). Water and trash service included with rent. Tenant responsible for electric and internet, TV etc. Central heat and AC. Large fully fenced backyard, low maintenance yard, covered patio with storage room, backyard shop with AC, and front porch with large shade tree. Full kitchen and interior laundry room. Dog upon approval with extra deposit. Available for 12 month lease. Currently occupied. DO NOT DISTURB THE TENANTS. 12 month lease. Additional deposit, photo and description of dog requir",
    "key": "2750 date creek",
    "bedsLabel": "3 BR + den? (borderline)",
    "flexWeak": true,
@@ -5387,13 +5808,13 @@ window.LISTINGS_DATA = {
    "studentFlagsSerious": [],
    "id": "2750-date-creek",
    "status": "active",
-   "lastSeen": "2026-11-03",
+   "lastSeen": "2026-11-04",
    "firstSeen": "2026-10-24",
-   "utilSummary": "Utilities: not listed",
+   "utilSummary": "Included: water, trash; Tenant pays: electric, internet; not listed: sewer, gas, landscaping",
    "far": false,
    "priceHistory": [],
-   "daysOnMarket": 10,
-   "domBasis": "since first seen by this tracker (2026-10-24)",
+   "daysOnMarket": 19,
+   "domBasis": "since listed 2026-10-16 (per Zillow)",
    "score": 2.0
   },
   {
@@ -5403,9 +5824,9 @@ window.LISTINGS_DATA = {
    "beds": 3,
    "baths": 3,
    "sqft": 2173,
-   "photo": "https://photos.zillowstatic.com/fp/f4540e8e533f4843844b2c7fc4c944c5-p_e.jpg",
-   "manager": null,
-   "contact": null,
+   "photo": "https://photos.zillowstatic.com/fp/f4540e8e533f4843844b2c7fc4c944c5-p_h.jpg",
+   "manager": "Glow Realty",
+   "contact": "Property Manager",
    "contactPhone": "4805361969",
    "lat": 34.745396,
    "lng": -112.57746,
@@ -5438,10 +5859,10 @@ window.LISTINGS_DATA = {
    ],
    "url": "https://www.apartments.com/13912-grey-bears-trail-prescott-az/p0x9vst/",
    "availableIso": "now",
-   "availableRaw": "Available Now",
+   "availableRaw": "Available now",
    "availFit": "early",
-   "availNote": "Available now: ~28 days of rent before Dec 1 unless landlord holds it",
-   "deposit": null,
+   "availNote": "Available now: ~27 days of rent before Dec 1 unless landlord holds it",
+   "deposit": 3675,
    "depositText": null,
    "fees": [],
    "utilities": {
@@ -5455,10 +5876,10 @@ window.LISTINGS_DATA = {
     "hoa": null
    },
    "utilitiesText": null,
-   "pets": "No Pets",
+   "pets": "No pets",
    "furnished": "furnishing optional (per listing)",
-   "lease": null,
-   "parking": null,
+   "lease": "leaseTerm: Contact For Details",
+   "parking": "Parking: Garage",
    "lot": "2.11 acres",
    "denSnippet": null,
    "denStrong": false,
@@ -5471,16 +5892,42 @@ window.LISTINGS_DATA = {
    "vacation": false,
    "perRoom": false,
    "smoking": null,
-   "listedDate": null,
-   "listedSource": null,
-   "sourcePriceHistory": [],
+   "listedDate": "2026-08-19",
+   "listedSource": "Zillow",
+   "sourcePriceHistory": [
+    {
+     "date": "2026-09-15",
+     "event": "Price change",
+     "price": 3675
+    },
+    {
+     "date": "2026-08-20",
+     "event": "Listed for rent",
+     "price": 3875
+    },
+    {
+     "date": "2026-03-06",
+     "event": "Listing removed",
+     "price": 3875
+    },
+    {
+     "date": "2026-02-11",
+     "event": "Price change",
+     "price": 3875
+    },
+    {
+     "date": "2026-01-23",
+     "event": "Listed for rent",
+     "price": 4000
+    }
+   ],
    "undisclosed": false,
    "propertyType": "SINGLE_FAMILY",
-   "descExcerpt": "13912 Grey Bears Trail - Prescott, AZ | Rent. Skip to Content (Press Enter) Search Search for homes by location Search 0 Prescott, AZ Market Trends List a Property Business Solutions Moving Center Log In Sign Up Arizona Prescott Houses 86305 13912 Grey Bears Trail Share Save 42 Photos Close Save Photos (42) Street View Map To: 13912 Grey Bears Trail (480) 536-1969 To: 13912 Grey Bears Trail (480) 536-1969 To: 13912 Grey Bears Trail (480) 536-1969 (480) 536-1969 Send Message $3,675 3 Beds 3 Baths 2,173 Sqft 13912 Grey Bears Trail Prescott, AZ 86305 (480) 536-1969 Send Message 13912 Grey Bears T",
+   "descExcerpt": "Discover luxury country living in this custom-built Lindal cedar home in the highly desirable Inscription Canyon Ranch. Situated on 2.11 acres of horse property with no HOA, this beautiful rental offers privacy, space, and modern upgrades just minutes from town. The 2,173 sq ft home features soaring beamed ceilings, skylights, abundant natural light, and a fully renovated interior. Spa-inspired bathrooms include three walk-in showers, a stand-alone soaking tub, vanity area, and granite countertops. The chef's kitchen features custom white cabinetry, Cambria quartz countertops, an oversized isl",
    "key": "13912 grey bears",
    "bedsLabel": "3 BR + loft? (borderline)",
    "flexWeak": true,
-   "lastVerified": "2026-11-01",
+   "lastVerified": "2026-11-04",
    "manualNotes": [
     "Oct 24 browser pass (3 BR + extra room search).",
     "The loft is the 3rd bedroom, so probably no extra room.",
@@ -5499,13 +5946,13 @@ window.LISTINGS_DATA = {
    "studentFlagsSerious": [],
    "id": "13912-grey-bears",
    "status": "active",
-   "lastSeen": "2026-11-03",
+   "lastSeen": "2026-11-04",
    "firstSeen": "2026-10-24",
    "utilSummary": "Included: electric; not listed: water, sewer, trash, gas, internet, landscaping",
    "far": true,
    "priceHistory": [],
-   "daysOnMarket": 10,
-   "domBasis": "since first seen by this tracker (2026-10-24)",
+   "daysOnMarket": 77,
+   "domBasis": "since listed 2026-08-19 (per Zillow)",
    "score": 0.0
   },
   {
@@ -5542,7 +5989,7 @@ window.LISTINGS_DATA = {
    "availableIso": "now",
    "availableRaw": "Available Now",
    "availFit": "early",
-   "availNote": "Available now: ~28 days of rent before Dec 1 unless landlord holds it",
+   "availNote": "Available now: ~27 days of rent before Dec 1 unless landlord holds it",
    "deposit": null,
    "depositText": null,
    "fees": [],
@@ -5603,12 +6050,12 @@ window.LISTINGS_DATA = {
    "studentFlagsSerious": [],
    "id": "5790-three-forks",
    "status": "active",
-   "lastSeen": "2026-11-03",
+   "lastSeen": "2026-11-04",
    "firstSeen": "2026-10-24",
    "utilSummary": "Utilities: not listed",
    "far": true,
    "priceHistory": [],
-   "daysOnMarket": 10,
+   "daysOnMarket": 11,
    "domBasis": "since first seen by this tracker (2026-10-24)",
    "score": -0.5
   },

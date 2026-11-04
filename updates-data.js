@@ -1,6 +1,31 @@
 window.UPDATES_DATA = {
  "entries": [
   {
+   "date": "2026-11-04",
+   "title": "No changes — 8 houses fit",
+   "lede": "Nothing new, no price moves and nothing went off the market today. Top of the list is still 360 Chestnut Dr, Prescott at $2,350. The Nov 4 browser pass found no new houses and no rent or status changes on known listings.",
+   "browser": [],
+   "borderline": [],
+   "plus3": [],
+   "new": [],
+   "changed": [],
+   "gone": [],
+   "reclassified": [],
+   "top": [],
+   "market": "8 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,319–$4,895, median $3,425; 4 are at or under the $2,900 reference. 7 are within 25 min; 1 list a move-in date in the Dec 1 window.",
+   "counts": {
+    "active": 8,
+    "new": 0,
+    "changed": 0,
+    "gone": 0,
+    "reclassified": 0,
+    "pending": 0,
+    "plus3": 24,
+    "plus3Strong": 16,
+    "plus3New": 0
+   }
+  },
+  {
    "date": "2026-11-03",
    "title": "No changes — 8 houses fit",
    "lede": "Nothing new, no price moves and nothing went off the market today. Top of the list is still 360 Chestnut Dr, Prescott at $2,350. The Nov 3 browser pass found no new houses, and every known match is unchanged.",
