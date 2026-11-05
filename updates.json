@@ -1,6 +1,41 @@
 {
  "entries": [
   {
+   "date": "2026-11-05",
+   "title": "1 price change — 8 houses fit",
+   "lede": "Today's refresh found 1 price change. Top of the list is still 360 Chestnut Dr, Prescott at $2,350. The Nov 5 browser pass found no new houses and no confirmed rent or status changes on known listings.",
+   "browser": [],
+   "borderline": [],
+   "plus3": [],
+   "new": [],
+   "changed": [
+    {
+     "text": "8049 E Jacque Dr, Prescott Valley (3 + extra rooms, not counted): $2,350 → $2,299 (down $51)",
+     "href": "https://www.apartments.com/8049-e-jacque-dr-prescott-valley-az/5qsxk1p/"
+    }
+   ],
+   "gone": [
+    {
+     "text": "5707 Cilantro Ct, Prescott (3 + extra rooms, not counted) (3 + office/den (per listing), last $3,000) no longer shows on Apartments.com, Rent.com, Craigslist",
+     "href": "https://www.apartments.com/5707-cilantro-ct-prescott-az/eyp3d4q/"
+    }
+   ],
+   "reclassified": [],
+   "top": [],
+   "market": "8 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,319–$4,895, median $3,425; 4 are at or under the $2,900 reference. 7 are within 25 min; 1 list a move-in date in the Dec 1 window.",
+   "counts": {
+    "active": 8,
+    "new": 0,
+    "changed": 1,
+    "gone": 0,
+    "reclassified": 0,
+    "pending": 0,
+    "plus3": 24,
+    "plus3Strong": 16,
+    "plus3New": 0
+   }
+  },
+  {
    "date": "2026-11-04",
    "title": "No changes — 8 houses fit",
    "lede": "Nothing new, no price moves and nothing went off the market today. Top of the list is still 360 Chestnut Dr, Prescott at $2,350. The Nov 4 browser pass found no new houses and no rent or status changes on known listings.",
