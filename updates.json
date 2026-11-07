@@ -1,6 +1,55 @@
 {
  "entries": [
   {
+   "date": "2026-11-07",
+   "title": "1 new house — 8 houses fit",
+   "lede": "Today's refresh found 1 new house. Top of the list is still 360 Chestnut Dr, Prescott at $2,350. A separate browser pass of Zillow (Prescott/PV/Chino 4+ and 3BR house searches), Zumper (Prescott/PV/Chino 4+ and 3BR house searches), HotPads (Prescott/PV 4+ house searches), Trulia (Prescott/PV 4+ and Prescott/PV/Chino 3+ searches), Apartments.com PV 4+ and all three 3BR house searches; direct details, Realtor.com (Prescott 4+ search and detail), Peak availability (0 results), PPM availability (0 results), ERAU off-campus board (listing cards rendered) (sites that block automated fetching) added 1 more match and 1 borderline house (4 bedrooms plus a family room or casita, listed separately, not counted). Nov 7 browser pass: new match 125 Laurel Ct $6,000 5BR furnished; two excluded→borderline reclasses (Meixner, Prescott Heights); Bower Realtor pending vs Zumper active; Kaibab Zillow for-sale vs Apartments rental conflict; Apartments.com Prescott 4BR search blocked. The search now also covers 3-bedroom houses whose listing names an extra room (den, office, loft, bonus room, casita and similar): 2 new ones, listed separately and not counted in the 8.",
+   "browser": [
+    {
+     "text": "125 Laurel Ct, Prescott: 5 bedrooms, $6,000, 24 min to ERAU, availability not listed",
+     "href": "https://www.realtor.com/rentals/details/125-Laurel-Ct_Prescott_AZ_86303_M26456-81544"
+    }
+   ],
+   "borderline": [
+    {
+     "text": "616 Prescott Heights Dr, Prescott: 4 BR + great room, $5,000, 11 min to ERAU, Available 7/3/2026 (date has passed, so presumably available now)",
+     "href": "https://www.zillow.com/homedetails/616-Prescott-Heights-Dr-Prescott-AZ-86301/442730377_zpid/"
+    }
+   ],
+   "plus3": [
+    {
+     "text": "1263 Deadwood Ln, Prescott: 3 BR + bonus, $2,275, 6 min to ERAU; listing says: \"The fully fenced, low-maintenance backyard may be cozy in size, but it comes with a pretty spectacular bonus — beautiful views of the Granite Dells and surrounding mountains!\"",
+     "href": "https://www.rentable.co/prescott-az/spacious-3-bedroom-with-granite-dells-view"
+    },
+    {
+     "text": "140 Garden St, Prescott: 3 BR + office, $1,850, 14 min to ERAU; listing says: \"Step into timeless charm with this delightful 3-bedroom plus office, 1-bath home, originally built in 1930 and full of character\"",
+     "href": "https://www.zillow.com/homedetails/140-Garden-St-Prescott-AZ-86305/8746544_zpid/?altId=100066001_9ecf8b6d634132a3418b13647ffe3b0222fb7c2a99f2fcf4bcada1b9094c08d4"
+    }
+   ],
+   "new": [
+    {
+     "text": "125 Laurel Ct, Prescott — 5 bedrooms, $6,000, 24 min to ERAU, availability not listed",
+     "href": "https://www.realtor.com/rentals/details/125-Laurel-Ct_Prescott_AZ_86303_M26456-81544"
+    }
+   ],
+   "changed": [],
+   "gone": [],
+   "reclassified": [],
+   "top": [],
+   "market": "8 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,319–$6,000, median $4,250; 3 are at or under the $2,900 reference. 7 are within 25 min; 1 list a move-in date in the Dec 1 window.",
+   "counts": {
+    "active": 8,
+    "new": 1,
+    "changed": 0,
+    "gone": 0,
+    "reclassified": 0,
+    "pending": 0,
+    "plus3": 27,
+    "plus3Strong": 19,
+    "plus3New": 2
+   }
+  },
+  {
    "date": "2026-11-06",
    "title": "1 gone — 7 houses fit",
    "lede": "Today's refresh found 1 gone. Top of the list is still 360 Chestnut Dr, Prescott at $2,350. Nov 6 browser pass: new plus3 at 2980 Dillon Blvd Chino Valley $3,500 (3+loft), Carbon Ct gone off-market, Bower kept active despite Zillow/Zumper conflict; Apartments.com and Realtor.com blocked. The search now also covers 3-bedroom houses whose listing names an extra room (den, office, loft, bonus room, casita and similar): 1 new one, listed separately and not counted in the 7.",
