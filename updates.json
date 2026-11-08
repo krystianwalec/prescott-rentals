@@ -3,23 +3,13 @@
   {
    "date": "2026-11-08",
    "title": "No changes — 8 houses fit",
-   "lede": "No new matching houses, no price moves and nothing went off the market today. Top of the list is still 360 Chestnut Dr, Prescott at $2,350. A separate browser pass of Zillow (Prescott/PV/Chino house searches; bedroom UI filters would not open — unfiltered), Zumper (Prescott/PV/Chino 4+ and 3BR house searches), HotPads (Prescott/PV/Chino house searches; room UI filters would not open — unfiltered), Trulia (Prescott/PV/Chino 4+ and 3+ searches), Apartments.com (all six house searches: Prescott/PV/Chino 4BR and 3BR; Prescott 4BR worked today), Realtor.com (Prescott/PV/Chino 4+ and 3+ searches; Laurel detail), Peak availability (0 results), PPM availability (0 results) (sites that block automated fetching) found no new matches but 1 borderline house (4 bedrooms plus a family room or casita, listed separately, not counted). Nov 8 browser pass: no new or newly gone houses; Rosser already tracked at $2,100 (Zumper historical drop badge); Bower remains active (Zumper vs Realtor pending vs Zillow sold); Kaibab stays gone; Apartments.com Prescott 4BR search worked; Zillow/HotPads bedroom filters unavailable; ERAU College Pads blank.",
+   "lede": "Nothing new, no price moves and nothing went off the market today. Top of the list is still 360 Chestnut Dr, Prescott at $2,350. Nov 8 browser pass: no new or newly gone houses; Rosser already tracked at $2,100 (Zumper historical drop badge); Bower remains active (Zumper vs Realtor pending vs Zillow sold); Kaibab stays gone; Apartments.com Prescott 4BR search worked; Zillow/HotPads bedroom filters unavailable; ERAU College Pads blank.",
    "browser": [],
-   "borderline": [
-    {
-     "text": "616 Prescott Heights Dr, Prescott: 4 BR + great room, $5,000, 11 min to ERAU, Available 7/3/2026 (date has passed, so presumably available now)",
-     "href": "https://www.zillow.com/homedetails/616-Prescott-Heights-Dr-Prescott-AZ-86301/442730377_zpid/"
-    }
-   ],
+   "borderline": [],
    "plus3": [],
    "new": [],
    "changed": [],
-   "gone": [
-    {
-     "text": "140 Garden St, Prescott (3 + extra rooms, not counted) (3 + office (per listing), last $1,850) no longer shows on Zillow",
-     "href": "https://www.zillow.com/homedetails/140-Garden-St-Prescott-AZ-86305/8746544_zpid/?altId=100066001_9ecf8b6d634132a3418b13647ffe3b0222fb7c2a99f2fcf4bcada1b9094c08d4"
-    }
-   ],
+   "gone": [],
    "reclassified": [],
    "top": [],
    "market": "8 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,319–$6,000, median $4,250; 3 are at or under the $2,900 reference. 7 are within 25 min; 1 list a move-in date in the Dec 1 window.",
@@ -30,8 +20,8 @@
     "gone": 0,
     "reclassified": 0,
     "pending": 0,
-    "plus3": 26,
-    "plus3Strong": 18,
+    "plus3": 27,
+    "plus3Strong": 19,
     "plus3New": 0
    }
   },
