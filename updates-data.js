@@ -1,6 +1,36 @@
 window.UPDATES_DATA = {
  "entries": [
   {
+   "date": "2026-11-16",
+   "title": "1 reclassified — 8 houses fit",
+   "lede": "Today's refresh found 1 reclassified. Top of the list is still 360 Chestnut Dr, Prescott at $2,350.",
+   "browser": [],
+   "borderline": [],
+   "plus3": [],
+   "new": [],
+   "changed": [],
+   "gone": [],
+   "reclassified": [
+    {
+     "text": "1124 E Timber Ridge Rd, Prescott (4 + den (per listing), $3,300): now excluded: 4 BR with no den/office/bonus/loft mentioned in listing text",
+     "href": "https://www.zillow.com/homedetails/1124-E-Timber-Ridge-Rd-Prescott-AZ-86303/8742346_zpid/"
+    }
+   ],
+   "top": [],
+   "market": "8 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,319–$6,000, median $4,250; 3 are at or under the $2,900 reference. 7 are within 25 min; 1 list a move-in date in the Dec 1 window.",
+   "counts": {
+    "active": 8,
+    "new": 0,
+    "changed": 0,
+    "gone": 0,
+    "reclassified": 1,
+    "pending": 0,
+    "plus3": 31,
+    "plus3Strong": 22,
+    "plus3New": 0
+   }
+  },
+  {
    "date": "2026-11-15",
    "title": "No changes — 9 houses fit",
    "lede": "Nothing new, no price moves and nothing went off the market today. Top of the list is still 360 Chestnut Dr, Prescott at $2,350.",
