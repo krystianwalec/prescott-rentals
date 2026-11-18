@@ -1,6 +1,50 @@
 window.UPDATES_DATA = {
  "entries": [
   {
+   "date": "2026-11-18",
+   "title": "1 new house, 2 price changes — 9 houses fit",
+   "lede": "Today's refresh found 1 new house, 2 price changes. Top of the list is still 360 Chestnut Dr, Prescott at $2,350. Nov 18 browser pass: new plus3 5925 N Talbot Dr $1,885 with a Den amenity tag, available Dec 16; 1124 E Timber Ridge still $3,300, now Available Jan 1, with a downstairs den quote, back on the match list; 3840 W Dove $2,400→$2,200 (excluded); Bower remains active despite Realtor pending; Kaibab left gone (Apartments.com rental vs unchecked Zillow sale); Haisley stays excluded as a vacation rental; Zumper still shows 8539 N Pepperbox at $2,800; Peak/PPM 0 results; ERAU College Pads blank; Zillow/HotPads not opened. The search now also covers 3-bedroom houses whose listing names an extra room (den, office, loft, bonus room, casita and similar): 0 new ones plus 1 borderline (room only tagged, or it is the 3rd bedroom), listed separately and not counted in the 9.",
+   "browser": [],
+   "borderline": [],
+   "plus3": [
+    {
+     "text": "5925 N Talbot Dr, Prescott Valley (borderline): 3 BR + den, $1,885, 13 min to ERAU; listing says: \"Den (amenity tag only, listed under Highlights and House Features; no explanatory sentence)\"",
+     "href": "https://www.apartments.com/5925-n-talbot-dr-prescott-valley-az/x9er5fn/"
+    }
+   ],
+   "new": [
+    {
+     "text": "1124 E Timber Ridge Rd, Prescott — 4 + den (per listing), $3,300, 21 min to ERAU, available 2027-01-01: after mid-dec target",
+     "href": "https://www.trulia.com/home/1124-e-timber-ridge-rd-prescott-az-86303-8742346"
+    }
+   ],
+   "changed": [
+    {
+     "text": "5746 E Tyler Rd, Prescott Valley (3 + extra rooms, not counted): $3,490 → $3,995 (up $505)",
+     "href": "https://www.zillow.com/homedetails/5746-E-Tyler-Rd-Prescott-Valley-AZ-86314/331660218_zpid/"
+    },
+    {
+     "text": "8049 E Jacque Dr, Prescott Valley (3 + extra rooms, not counted): $2,199 → $2,299 (up $100)",
+     "href": "https://www.apartments.com/8049-e-jacque-dr-prescott-valley-az/5qsxk1p/"
+    }
+   ],
+   "gone": [],
+   "reclassified": [],
+   "top": [],
+   "market": "9 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,319–$6,000, median $4,000; 3 are at or under the $2,900 reference. 8 are within 25 min; 1 list a move-in date in the Dec 1 window.",
+   "counts": {
+    "active": 9,
+    "new": 1,
+    "changed": 2,
+    "gone": 0,
+    "reclassified": 0,
+    "pending": 0,
+    "plus3": 32,
+    "plus3Strong": 22,
+    "plus3New": 1
+   }
+  },
+  {
    "date": "2026-11-17",
    "title": "No changes — 8 houses fit",
    "lede": "Nothing new, no price moves and nothing went off the market today. Top of the list is still 360 Chestnut Dr, Prescott at $2,350. The search now also covers 3-bedroom houses whose listing names an extra room (den, office, loft, bonus room, casita and similar): 1 new one, listed separately and not counted in the 8.",
