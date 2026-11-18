@@ -1,9 +1,9 @@
-window.UPDATES_DATA = {
+window.UPDATES_DATA  = {
  "entries": [
   {
    "date": "2026-11-18",
    "title": "1 new house, 2 price changes — 9 houses fit",
-   "lede": "Today's refresh found 1 new house, 2 price changes. Top of the list is still 360 Chestnut Dr, Prescott at $2,350. Nov 18 browser pass: new plus3 5925 N Talbot Dr $1,885 with a Den amenity tag, available Dec 16; 1124 E Timber Ridge still $3,300, now Available Jan 1, with a downstairs den quote, back on the match list; 3840 W Dove $2,400→$2,200 (excluded); Bower remains active despite Realtor pending; Kaibab left gone (Apartments.com rental vs unchecked Zillow sale); Haisley stays excluded as a vacation rental; Zumper still shows 8539 N Pepperbox at $2,800; Peak/PPM 0 results; ERAU College Pads blank; Zillow/HotPads not opened. The search now also covers 3-bedroom houses whose listing names an extra room (den, office, loft, bonus room, casita and similar): 0 new ones plus 1 borderline (room only tagged, or it is the 3rd bedroom), listed separately and not counted in the 9.",
+   "lede": "Today's refresh found 1 house back on the match list and 2 price changes on the 3 + extra rooms list. Top of the list is still 360 Chestnut Dr, Prescott at $2,350. 1124 E Timber Ridge Rd is back as a 4 + den match at $3,300, about 21 min to campus, Available Jan 1 (year not shown on the listing; late for the Dec 1 window). It was on the list Nov 14–15 and dropped when the description went missing. The separate 3-bedroom + extra room list (not counted in the 9) has a new borderline entry: 5925 N Talbot Dr, Prescott Valley, $1,885, available Dec 16, with “Den” only as an amenity tag.",
    "browser": [],
    "borderline": [],
    "plus3": [
@@ -14,7 +14,7 @@ window.UPDATES_DATA = {
    ],
    "new": [
     {
-     "text": "1124 E Timber Ridge Rd, Prescott — 4 + den (per listing), $3,300, 21 min to ERAU, available 2027-01-01: after mid-dec target",
+     "text": "1124 E Timber Ridge Rd, Prescott — 4 + den (per listing), $3,300, 21 min to ERAU, Available Jan 1 (year not shown; late for the Dec 1 window). Back on the match list after dropping Nov 16–17 when the description was missing.",
      "href": "https://www.trulia.com/home/1124-e-timber-ridge-rd-prescott-az-86303-8742346"
     }
    ],
