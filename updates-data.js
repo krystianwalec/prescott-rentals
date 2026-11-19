@@ -1,5 +1,35 @@
-window.UPDATES_DATA  = {
+window.UPDATES_DATA = {
  "entries": [
+  {
+   "date": "2026-11-19",
+   "title": "No changes — 9 houses fit",
+   "lede": "Nothing new, no price moves and nothing went off the market today. Top of the list is still 360 Chestnut Dr, Prescott at $2,350.",
+   "browser": [],
+   "borderline": [],
+   "plus3": [],
+   "new": [],
+   "changed": [],
+   "gone": [
+    {
+     "text": "1263 Deadwood Ln, Prescott (3 + extra rooms, not counted) (3 + bonus (per listing), last $2,275) no longer shows on Rentable, Redfin, Rent.com",
+     "href": "https://www.rentable.co/prescott-az/spacious-3-bedroom-with-granite-dells-view"
+    }
+   ],
+   "reclassified": [],
+   "top": [],
+   "market": "9 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,319–$6,000, median $4,000; 3 are at or under the $2,900 reference. 8 are within 25 min; 1 list a move-in date in the Dec 1 window.",
+   "counts": {
+    "active": 9,
+    "new": 0,
+    "changed": 0,
+    "gone": 0,
+    "reclassified": 0,
+    "pending": 0,
+    "plus3": 31,
+    "plus3Strong": 21,
+    "plus3New": 0
+   }
+  },
   {
    "date": "2026-11-18",
    "title": "1 new house, 2 price changes — 9 houses fit",
