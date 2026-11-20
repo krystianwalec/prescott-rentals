@@ -1,6 +1,36 @@
 {
  "entries": [
   {
+   "date": "2026-11-20",
+   "title": "1 price change — 9 houses fit",
+   "lede": "Today's refresh found 1 price change. Top of the list is still 360 Chestnut Dr, Prescott at $2,350. Nov 20 browser pass: 125 Laurel Ct $6,000→$5,500 (Realtor.com alone shows $8,500); 8642 E Apache Dr $2,100→$2,000; three new 4 BR houses without den wording excluded (3330 Charla Dr, 4801 N Towago Cir, 6190 N Moonlight Way); Zillow 3BR not captured and 3BR flex wording not checked.",
+   "browser": [],
+   "borderline": [],
+   "plus3": [],
+   "new": [],
+   "changed": [
+    {
+     "text": "125 Laurel Ct, Prescott: $6,000 → $5,500 (down $500)",
+     "href": "https://www.realtor.com/rentals/details/125-Laurel-Ct_Prescott_AZ_86303_M26456-81544"
+    }
+   ],
+   "gone": [],
+   "reclassified": [],
+   "top": [],
+   "market": "9 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,319–$5,500, median $4,000; 3 are at or under the $2,900 reference. 8 are within 25 min; 1 list a move-in date in the Dec 1 window.",
+   "counts": {
+    "active": 9,
+    "new": 0,
+    "changed": 1,
+    "gone": 0,
+    "reclassified": 0,
+    "pending": 0,
+    "plus3": 31,
+    "plus3Strong": 21,
+    "plus3New": 0
+   }
+  },
+  {
    "date": "2026-11-19",
    "title": "No changes — 9 houses fit",
    "lede": "Nothing new, no price moves and nothing went off the market today. Top of the list is still 360 Chestnut Dr, Prescott at $2,350.",
