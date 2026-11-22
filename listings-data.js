@@ -1,6 +1,6 @@
 window.LISTINGS_DATA = {
  "asOf": "2026-11-22",
- "generatedAt": "2026-11-22 11:56 PT",
+ "generatedAt": "2026-11-22 12:06 PT",
  "target": {
   "name": "Embry-Riddle Aeronautical University (Prescott campus)",
   "address": "3700 Willow Creek Rd, Prescott, AZ 86301",
