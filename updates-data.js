@@ -9,7 +9,12 @@ window.UPDATES_DATA = {
    "plus3": [],
    "new": [],
    "changed": [],
-   "gone": [],
+   "gone": [
+    {
+     "text": "4696 N Kirkwood Ave, Prescott Valley (3 + extra rooms, not counted) (3 + office (per listing), last $2,700) no longer shows on Zillow, Redfin, Rent.com",
+     "href": "https://www.zillow.com/homedetails/4696-N-Kirkwood-Ave-Prescott-Valley-AZ-86314/112344307_zpid/"
+    }
+   ],
    "reclassified": [],
    "top": [],
    "market": "9 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,319–$5,500, median $4,000; 3 are at or under the $2,900 reference. 8 are within 25 min; 1 list a move-in date in the Dec 1 window.",
@@ -20,8 +25,8 @@ window.UPDATES_DATA = {
     "gone": 0,
     "reclassified": 0,
     "pending": 0,
-    "plus3": 32,
-    "plus3Strong": 22,
+    "plus3": 31,
+    "plus3Strong": 21,
     "plus3New": 0
    }
   },
