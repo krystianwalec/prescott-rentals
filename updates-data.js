@@ -1,6 +1,40 @@
 window.UPDATES_DATA = {
  "entries": [
   {
+   "date": "2026-11-24",
+   "title": "2 price changes — 9 houses fit",
+   "lede": "Today's refresh found 2 price changes. Top of the list is still 360 Chestnut Dr, Prescott at $2,350.",
+   "browser": [],
+   "borderline": [],
+   "plus3": [],
+   "new": [],
+   "changed": [
+    {
+     "text": "1267 Deadwood Ln, Prescott (3 + extra rooms, not counted): $2,700 → $2,600 (down $100)",
+     "href": "https://www.zillow.com/homedetails/1267-Deadwood-Ln-Prescott-AZ-86305/448599183_zpid/"
+    },
+    {
+     "text": "6103 Old Mountain Way, Prescott (3 + extra rooms, not counted): $2,800 → $2,650 (down $150)",
+     "href": "https://www.zillow.com/homedetails/6103-Old-Mountain-Way-Prescott-AZ-86305/453585620_zpid/"
+    }
+   ],
+   "gone": [],
+   "reclassified": [],
+   "top": [],
+   "market": "9 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,319–$5,500, median $4,000; 3 are at or under the $2,900 reference. 8 are within 25 min; 5 list a move-in date in the Dec 1 window.",
+   "counts": {
+    "active": 9,
+    "new": 0,
+    "changed": 2,
+    "gone": 0,
+    "reclassified": 0,
+    "pending": 0,
+    "plus3": 32,
+    "plus3Strong": 22,
+    "plus3New": 0
+   }
+  },
+  {
    "date": "2026-11-23",
    "title": "No changes — 9 houses fit",
    "lede": "Nothing new, no price moves and nothing went off the market today. Top of the list is still 360 Chestnut Dr, Prescott at $2,350.",
