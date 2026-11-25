@@ -4,13 +4,14 @@
   const esc = (s) => String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
   const money = (n) => (n == null || n === "" ? null : "$" + Number(n).toLocaleString("en-US"));
   const NL = '<span class="nl">not listed</span>';
-  const COLORS = { "6plus": "#6a3d9a", "5": "#1f6f6a", "4den": "#d4a017", border: "#8a94a6", "3flex": "#e8743b" };
-  const BCLASS = { "6plus": "b6", "5": "b5", "4den": "b4", border: "bb", "3flex": "b3" };
+  const COLORS = { "6plus": "#6a3d9a", "5": "#1f6f6a", "4den": "#d4a017", border: "#8a94a6", "3flex": "#e8743b", "2gar": "#2b6cb0" };
+  const BCLASS = { "6plus": "b6", "5": "b5", "4den": "b4", border: "bb", "3flex": "b3", "2gar": "b2" };
   const P3_STROKE = "#7a2e0e"; // 3 + extra rooms: orange dot with a dark ring
+  const P2_STROKE = "#1a365d"; // 2 BR + garage: blue dot with a dark ring
   const FIT = { ideal: "Move-in fits (~Dec 1)", early: "Available early (overlap)", late: "Available after mid-Dec", unknown: "Move-in date not listed" };
   const UTIL_ORDER = ["water", "sewer", "trash", "gas", "electric", "internet", "landscaping", "hoa"];
 
-  let DATA = null, ALL = [], BORDER = [], PLUS3 = [], map, layer, markers = {};
+  let DATA = null, ALL = [], BORDER = [], PLUS3 = [], PLUS2 = [], PLUS2CP = [], map, layer, markers = {};
 
   function loadJSON(url, fallback) {
     return fetch(url, { cache: "no-store" }).then((r) => { if (!r.ok) throw 0; return r.json(); }).catch(() => fallback);
@@ -45,6 +46,7 @@
       [newToday, `new on ${today}`],
       [gone, "gone (kept below, flagged)"],
       [PLUS3.filter((l) => l.status === "active" && !l.flexWeak).length, "3 BR + extra room (separate list, not counted; plus borderline)"],
+      [PLUS2.filter((l) => l.status === "active").length, "2 BR with garage or carport + outlet (separate list, not counted)"],
     ];
     $("#summary").innerHTML = stats.map(([b, s]) => `<div class="stat"><b>${b}</b><span>${esc(s)}</span></div>`).join("");
     $("#as-of").innerHTML = `Data as of <strong>${esc(DATA.asOf)}</strong> (refreshed ${esc(DATA.generatedAt || "")}). ` +
@@ -71,6 +73,7 @@
         ${sec("Added from the browser pass (sites that block automated fetching)", e.browser)}
         ${sec("Borderline: 4 BR + family room / casita (not counted)", e.borderline)}
         ${sec("New: 3 bedrooms + extra room (separate list, not counted)", e.plus3)}
+        ${sec("New: 2 bedrooms with garage (separate list, not counted)", e.plus2)}
         ${sec("Price changes", e.changed)}
         ${sec("Gone", e.gone)}
         ${sec("Corrections: no longer counted (still listed by the source)", e.reclassified)}
@@ -119,6 +122,9 @@
       l.weakDen ? '<span class="badge warn">Den wording weak</span>' : "",
       cat === "3flex" ? '<span class="badge b3">Not counted · 3 BR + extra room</span>' : "",
       cat === "3flex" && l.flexWeak ? '<span class="badge warn">Borderline: extra room only tagged, or it may be the 3rd bedroom</span>' : "",
+      cat === "2gar" ? `<span class="badge b2">Not counted · 2 BR · ${l.parkKind === "carport+outlet" ? "carport + outlet" : "garage"}</span>` : "",
+      cat === "2gar" && l.parkFlag ? '<span class="badge warn">Garage may be a fee / waitlist / shared — confirm</span>' : "",
+      cat === "2gar" && l.propertyType ? `<span class="badge via">${esc(String(l.propertyType).replace(/_/g, " "))}</span>` : "",
       l.staleAvail ? '<span class="badge warn">Date may be stale</span>' : "",
       l.manual ? `<span class="badge via">Browser pass${l.lastVerified ? " " + esc(l.lastVerified) : ""}</span>` : "",
     ].join("");
@@ -153,13 +159,13 @@
       <dl class="facts">
         <dt>Beds / baths</dt><dd>${l.beds || "?"} bd / ${l.baths || "?"} ba</dd>
         <dt>Size / lot</dt><dd>${l.sqft ? Number(l.sqft).toLocaleString() + " sq ft" : "sq ft " + NL} · ${l.lot ? esc(l.lot) : "lot " + NL}</dd>
-        <dt>${cat === "3flex" ? "Extra room" : "Den / office"}</dt><dd>${den}</dd>
+        <dt>${cat === "2gar" ? "Parking" : cat === "3flex" ? "Extra room" : "Den / office"}</dt><dd>${cat === "2gar" ? (l.parkQuote ? `<span class="quote">“${esc(l.parkQuote)}”</span>${l.parkFlag ? `<div class="meta">${esc(l.parkFlag)}</div>` : ""}` : (l.parking ? esc(l.parking) : NL)) : den}</dd>
         <dt>Available</dt><dd>${avail}</dd>
         <dt>Drive to ERAU</dt><dd>${drive ? `${drive} <span class="meta">(estimated, OSRM, no traffic)</span>` : NL}</dd>
         <dt>Deposit</dt><dd>${deposit}</dd>
         <dt>Fees</dt><dd>${(l.fees || []).length ? l.fees.map(esc).join(", ") : NL}</dd>
         <dt>Utilities</dt><dd>${utilHtml(l.utilities)}${l.utilitiesText ? `<div class="meta quote">“${esc(l.utilitiesText)}”</div>` : ""}</dd>
-        <dt>Parking</dt><dd>${l.parking ? esc(l.parking) : NL}</dd>
+        ${cat === "2gar" ? "" : `<dt>Parking</dt><dd>${l.parking ? esc(l.parking) : NL}</dd>`}
         <dt>Pets</dt><dd>${l.pets ? esc(l.pets) : NL}</dd>
         <dt>Furnished</dt><dd>${l.furnished ? esc(l.furnished) : NL}</dd>
         <dt>Lease</dt><dd>${l.lease ? esc(String(l.lease).replace(/^leaseTerm:\s*/i, "")) : NL}</dd>
@@ -251,12 +257,14 @@
     const pts = [[DATA.target.lat, DATA.target.lng]];
     const showB = !$("#f-border") || $("#f-border").checked;
     const showP3 = !$("#f-plus3") || $("#f-plus3").checked;
+    const showP2 = !$("#f-plus2") || $("#f-plus2").checked;
     const hideGone = $("#f-gone") && $("#f-gone").checked;
-    list.concat(showB ? BORDER : [], showP3 ? PLUS3.filter((l) => !(hideGone && l.status === "gone")) : []).forEach((l) => {
+    list.concat(showB ? BORDER : [], showP3 ? PLUS3.filter((l) => !(hideGone && l.status === "gone")) : [], showP2 ? PLUS2.filter((l) => !(hideGone && l.status === "gone")) : []).forEach((l) => {
       if (l.lat == null || l.lng == null) return;
       const gone = l.status === "gone";
       const p3 = l.bedCategory === "3flex";
-      const stroke = gone ? "#9a9a9a" : p3 ? P3_STROKE : "#fff", sw = gone ? 2 : p3 ? 2.5 : 1.5;
+      const p2 = l.bedCategory === "2gar";
+      const stroke = gone ? "#9a9a9a" : p3 ? P3_STROKE : p2 ? P2_STROKE : "#fff", sw = gone ? 2 : (p3 || p2) ? 2.5 : 1.5;
       const m = L.circleMarker([l.lat, l.lng], {
         radius: radius(l.rent), color: stroke, weight: sw,
         fillColor: gone ? "#fff" : COLORS[l.bedCategory], fillOpacity: gone ? 0.6 : l.bedCategory === "border" ? 0.55 : (l.rent ? 0.85 : 0.35),
@@ -289,7 +297,7 @@
   }
 
   function flyTo(id) {
-    const l = ALL.concat(BORDER, PLUS3).find((x) => x.id === id);
+    const l = ALL.concat(BORDER, PLUS3, PLUS2).find((x) => x.id === id);
     if (!l || l.lat == null) return;
     map.flyTo([l.lat, l.lng], 14, { duration: 0.8 });
     if (markers[id]) markers[id].openPopup();
@@ -312,6 +320,28 @@
       $("#plus3-count").textContent = `${p3a.length - weak} with clear extra-room wording, ${weak} borderline${PLUS3.length > p3a.length ? `, ${PLUS3.length - p3a.length} gone` : ""}.`;
       $("#plus3-cards").innerHTML = PLUS3.map(cardHtml).join("") || "<p class='meta'>None found yet.</p>";
     }
+    if ($("#plus2-cards")) {
+      const p2a = PLUS2.filter((l) => l.status === "active");
+      const ng = p2a.filter((l) => l.parkKind === "garage").length;
+      const nc = p2a.filter((l) => l.parkKind === "carport+outlet").length;
+      const nf = p2a.filter((l) => l.parkFlag).length;
+      const goneN = PLUS2.length - p2a.length;
+      $("#plus2-count").textContent = `${p2a.length} listed (${ng} garage, ${nc} carport + outlet)${nf ? `, ${nf} flagged to confirm fee/assignment` : ""}${goneN ? `, ${goneN} gone` : ""}.`;
+      $("#plus2-cards").innerHTML = PLUS2.map(cardHtml).join("") || "<p class='meta'>None found yet.</p>";
+      const cp = PLUS2CP || [];
+      const wrap = $("#plus2-carport-wrap");
+      if (wrap) {
+        wrap.hidden = !cp.length;
+        if ($("#plus2-carport-count")) $("#plus2-carport-count").textContent = cp.length ? `(${cp.length})` : "";
+        if ($("#plus2-carport")) {
+          $("#plus2-carport").innerHTML = cp.length ? ("<ul>" + cp.map((x) => {
+            const d = x.driveMin != null ? `~${Math.round(x.driveMin)} min` : "drive n/a";
+            const q = x.parkQuote ? ` Listing says: “${esc(x.parkQuote)}”.` : "";
+            return `<li><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.address)}, ${esc(x.city)}</a> — ${money(x.rent) || "rent n/a"}, ${d}.${q}</li>`;
+          }).join("") + "</ul>") : "";
+        }
+      }
+    }
     const rs = DATA.roomShares || [];
     $("#roomshares").innerHTML = rs.length ? "<strong>Room shares (not whole-house, so not counted):</strong> " + rs.map((r) =>
       `<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.address)}, ${esc(r.city)}</a>: ${esc(r.note || "")}${r.contactPhone ? " " + esc(r.contactPhone) : ""}`).join("; ") : "";
@@ -326,15 +356,18 @@
     ALL = DATA.listings || [];
     BORDER = DATA.borderline || [];
     PLUS3 = DATA.plus3 || [];
+    PLUS2 = DATA.plus2 || [];
+    PLUS2CP = DATA.plus2carport || [];
     renderSummary();
     renderLog((upd && upd.entries) || []);
     renderSources();
     initMap();
     apply();
-    ["#f-beds", "#f-drive", "#f-sort", "#f-gone", "#f-vac", "#f-avail", "#f-border", "#f-plus3"].forEach((s) => $(s).addEventListener("change", apply));
+    ["#f-beds", "#f-drive", "#f-sort", "#f-gone", "#f-vac", "#f-avail", "#f-border", "#f-plus3", "#f-plus2"].forEach((s) => $(s).addEventListener("change", apply));
     ["#f-rent", "#q"].forEach((s) => $(s).addEventListener("input", apply));
     $("#border-cards").addEventListener("click", (e) => { const b = e.target.closest("[data-fly]"); if (b) flyTo(b.dataset.fly); });
     if ($("#plus3-cards")) $("#plus3-cards").addEventListener("click", (e) => { const b = e.target.closest("[data-fly]"); if (b) flyTo(b.dataset.fly); });
+    if ($("#plus2-cards")) $("#plus2-cards").addEventListener("click", (e) => { const b = e.target.closest("[data-fly]"); if (b) flyTo(b.dataset.fly); });
     $("#cards").addEventListener("click", (e) => { const b = e.target.closest("[data-fly]"); if (b) flyTo(b.dataset.fly); });
   });
 })();

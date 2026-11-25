@@ -3,7 +3,7 @@ window.UPDATES_DATA = {
   {
    "date": "2026-11-25",
    "title": "1 price change, 1 back on the market — 10 houses fit",
-   "lede": "Today's refresh found 1 price change, 1 back on the market. Top of the list is still 360 Chestnut Dr, Prescott at $2,350. A separate browser pass of Zumper (4+ BR and 3 BR house searches; 3BR lists virtualised, not guaranteed complete), HotPads (4-5 BR all three cities; 3 BR Prescott and Chino), Trulia (4+ BR single-family; 6190 N Moonlight Way and 4801 N Towago Cir details), Zillow (UI, 4+ BR houses, 18 results), Realtor.com (Prescott 4+ SFH search), Apartments.com (/houses/prescott-az/4-bedrooms/; 3330 Charla Dr detail), Peak availability (0 results), PPM availability (0 results), ERAU College Pads (loaded on 2nd try; card data only) (sites that block automated fetching) found no new matches but 1 borderline house (4 bedrooms plus a family room or casita, listed separately, not counted). Nov 25 browser pass: 1635 Kaibab Loop back for rent at $3,499 (Apartments.com, by owner); new borderline 1280 Majestic Vw Dr $3,895; Zumper/Zillow not readable; 3BR flex wording not checked.",
+   "lede": "Today's refresh found 1 price change, 1 back on the market. Top of the list is still 360 Chestnut Dr, Prescott at $2,350. A separate browser pass of Zumper (4+ BR and 3 BR house searches; 3BR lists virtualised, not guaranteed complete), HotPads (4-5 BR all three cities; 3 BR Prescott and Chino), Trulia (4+ BR single-family; 6190 N Moonlight Way and 4801 N Towago Cir details), Zillow (UI, 4+ BR houses, 18 results), Realtor.com (Prescott 4+ SFH search), Apartments.com (/houses/prescott-az/4-bedrooms/; 3330 Charla Dr detail), Peak availability (0 results), PPM availability (0 results), ERAU College Pads (loaded on 2nd try; card data only) (sites that block automated fetching) found no new matches but 1 borderline house (4 bedrooms plus a family room or casita, listed separately, not counted). Nov 25 browser pass: 1635 Kaibab Loop back for rent at $3,499 (Apartments.com, by owner); new borderline 1280 Majestic Vw Dr $3,895; Zumper/Zillow not readable; 3BR flex wording not checked. The search now also covers 2-bedroom rentals (houses, apartments, condos, townhomes, duplexes) with a garage, or a carport the listing says has an electrical outlet or EV charger: 48 with a garage, listed separately and not counted in the 10.",
    "browser": [],
    "borderline": [
     {
@@ -12,6 +12,200 @@ window.UPDATES_DATA = {
     }
    ],
    "plus3": [],
+   "plus2": [
+    {
+     "text": "6162 Harvest Moon Ave, Prescott, SINGLE FAMILY: 2 BR + garage, $2,150, 6 min to ERAU; listing says: \"Enjoy central A/C, natural gas heating, a private fenced backyard, covered patio, low-maintenance landscaping, and a 2-car garage\"",
+     "href": "https://www.zillow.com/homedetails/6162-Harvest-Moon-Ave-Prescott-AZ-86305/319962155_zpid/"
+    },
+    {
+     "text": "1296 Deadwood Lane, Prescott: 2 BR + garage, $2,100, 6 min to ERAU; listing says: \"Attached 1-Car Garage with Additional Storage Space\"",
+     "href": "https://rentrightms.appfolio.com/listings/detail/86b48697-1eb3-4403-87b2-aa94675cab14"
+    },
+    {
+     "text": "6128 Antelope Villas Circle - 116, Prescott: 2 BR + garage, $1,550, 7 min to ERAU; listing says: \"Garage parking\" [confirm: Listing only says generic “garage parking” — confirm a garage is assigned to this unit, not just a parking garage or lot.]",
+     "href": "https://bearcreekpmg.managebuilding.com/Resident/public/rentals/71657"
+    },
+    {
+     "text": "6341 Harvest Moon Ave, Prescott, SINGLE FAMILY: 2 BR + garage, $3,000, 7 min to ERAU; listing says: \"Two car garage with storage space\"",
+     "href": "https://www.zillow.com/homedetails/6341-Harvest-Moon-Ave-Prescott-AZ-86305/339767474_zpid/"
+    },
+    {
+     "text": "5395 Granite Dells Pkwy # P4, Prescott: 2 BR + garage, $1,749, 10 min to ERAU; listing says: \"…two- and three-bedroom homes, one-bedroom/one-bath carriage homes (with attached garage below), and two and three-bedroom two-story loft homes, all designed to accommodate your lifestyle and space…\" [confirm: Garage is mentioned as a floor-plan option at this complex — confirm this unit includes one.]",
+     "href": "https://www.zillow.com/apartments/prescott-az/havenly-prescott/Cvg8QM/"
+    },
+    {
+     "text": "2301 Nolte Dr Unit Upstairs, Prescott: 2 BR + garage, $2,100, 10 min to ERAU; listing says: \"Prescott 2BR2BA with Private 2 Car Garage Mountain Views amp 2 Decks\"",
+     "href": "https://www.redfin.com/AZ/Prescott/2301-Nolte-Dr-86301/unit-Upstairs/home/202280766"
+    },
+    {
+     "text": "615 W Rosser St, Prescott, SINGLE FAMILY: 2 BR + garage, $2,600, 11 min to ERAU; listing says: \"There is a shed for storage, as well as a small one car garage and room for one car in the driveway and two directly in front of the home\"",
+     "href": "https://www.zillow.com/homedetails/615-W-Rosser-St-Prescott-AZ-86301/8749395_zpid/"
+    },
+    {
+     "text": "935 Gail Gardner Way, Prescott, SINGLE FAMILY: 2 BR + garage, $1,450, 12 min to ERAU; listing says: \"Special Features: 1 Car Garage Information provided is deemed reliable but not guaranteed\"",
+     "href": "https://www.rentable.co/prescott-az/apply-now-935-gail-gardner"
+    },
+    {
+     "text": "830 1st St #A, Prescott, TOWNHOUSE: 2 BR + garage, $1,795, 12 min to ERAU; listing says: \"This property has an Attached garage\"",
+     "href": "https://www.zillow.com/homedetails/830-1st-St-A-Prescott-AZ-86301/439652198_zpid/"
+    },
+    {
+     "text": "1518 Shoup St Unit C, Prescott, APARTMENT: 2 BR + garage, $2,000, 13 min to ERAU; listing says: \"Parking: 3 Attached Garage spaces\"",
+     "href": "https://www.zillow.com/homedetails/1518-Shoup-St-UNIT-C-Prescott-AZ-86305/2058246356_zpid/"
+    },
+    {
+     "text": "7729 E Addis Ave APT 1, Prescott Valley, APARTMENT: 2 BR + garage, $1,725, 14 min to ERAU; listing says: \"Additional conveniences include washer and dryer hookups, an attached 2-car garage, and a covered patio where you can enjoy Prescott Valley's beautiful weather throughout the year\"",
+     "href": "https://www.zillow.com/homedetails/7729-E-Addis-Ave-APT-1-Prescott-Valley-AZ-86314/2094324695_zpid/"
+    },
+    {
+     "text": "7250 E Spouse Dr APT A, Prescott Valley, APARTMENT: 2 BR + garage, $1,650, 14 min to ERAU; listing says: \"Other thoughtful touches include an interior laundry area (with gas and electric hookups), an attached garage, and a private fenced backyard with fruit trees, a covered patio, and a raised garden box\"",
+     "href": "https://www.zillow.com/homedetails/7250-E-Spouse-Dr-APT-A-Prescott-Valley-AZ-86314/2108879449_zpid/"
+    },
+    {
+     "text": "610 Glenwood Ave, Prescott, SINGLE FAMILY: 2 BR + garage, $5,800, 14 min to ERAU; listing says: \"Parking: Attached Garage\"",
+     "href": "https://www.zillow.com/homedetails/610-Glenwood-Ave-Prescott-AZ-86303/8742813_zpid/"
+    },
+    {
+     "text": "7701 E Spouse Dr #1, Prescott Valley, APARTMENT: 2 BR + garage, $1,500, 14 min to ERAU; listing says: \"Full guest bathroom One bedroom Two closets One car garage Roomy second bedroom\"",
+     "href": "https://www.zillow.com/apartments/prescott-valley-az/pm16-00063kb-7701-spouse/9TrCtK/"
+    },
+    {
+     "text": "7665 E Spouse Dr, Prescott Valley, APARTMENT: 2 BR + garage, $1,450, 14 min to ERAU; listing says: \"There are laundry hook-ups inside the one car garage and room for a second vehicle to park off the street\"",
+     "href": "https://www.rentable.co/prescott-valley-az/7665-e-spouse-dr"
+    },
+    {
+     "text": "7733 E Spouse Dr APT A, Prescott Valley, APARTMENT: 2 BR + garage, $1,500, 15 min to ERAU; listing says: \"Parking: Attached Garage\"",
+     "href": "https://www.zillow.com/homedetails/7733-E-Spouse-Dr-APT-A-Prescott-Valley-AZ-86314/460823573_zpid/"
+    },
+    {
+     "text": "7800 E Spouse Dr APT B, Prescott Valley, APARTMENT: 2 BR + garage, $1,575, 15 min to ERAU; listing says: \"parkingFeatures: Detached, Garage\"",
+     "href": "https://www.zillow.com/homedetails/7800-E-Spouse-Dr-APT-B-Prescott-Valley-AZ-86314/2102296190_zpid/"
+    },
+    {
+     "text": "7776 E Spouse Dr APT B, Prescott Valley, SINGLE FAMILY: 2 BR + garage, $1,469, 15 min to ERAU; listing says: \"…& dishwasher, ceiling fans, covered patio off of master bedroom, & 1 car garage\"",
+     "href": "https://www.zillow.com/homedetails/7776-E-Spouse-Dr-APT-B-Prescott-Valley-AZ-86314/455248595_zpid/"
+    },
+    {
+     "text": "4801 N Viewpoint Dr #A, Prescott Valley, SINGLE FAMILY: 2 BR + garage, $1,575, 15 min to ERAU; listing says: \"2 bedroom, 2 bath, 1 car garage\"",
+     "href": "https://www.zillow.com/homedetails/4801-N-Viewpoint-Dr-A-Prescott-Valley-AZ-86314/2078891644_zpid/"
+    },
+    {
+     "text": "4701 N Norman Rd, Prescott Valley, APARTMENT: 2 BR + garage, $1,400, 16 min to ERAU; listing says: \"Attached 1 car garage with laundry hookups\"",
+     "href": "https://www.rentable.co/prescott-valley-az/4701-n-norman-rd"
+    },
+    {
+     "text": "315 E Carleton St, Prescott, APARTMENT: 2 BR + garage, $1,300, 16 min to ERAU; listing says: \"Covered Garage Parking\" [confirm: Listing only says generic “garage parking” — confirm a garage is assigned to this unit, not just a parking garage or lot.]",
+     "href": "https://www.zillow.com/apartments/prescott-az/carleton-terrace-apartments/5ZbKb4/"
+    },
+    {
+     "text": "1232 Stetson Rd Unit 16, Prescott, TOWNHOUSE: 2 BR + garage, $1,575, 16 min to ERAU; listing says: \"parkingFeatures: Driveway, Garage, Open\"",
+     "href": "https://www.zillow.com/homedetails/1232-Stetson-Rd-UNIT-16-Prescott-AZ-86303/8747055_zpid/"
+    },
+    {
+     "text": "485 Serenity Ct, Chino Valley: 2 BR + garage, $1,595, 16 min to ERAU; listing says: \"Enjoy a private, fully fenced backyard, perfect for relaxing or entertaining, one car garage\"",
+     "href": "https://www.rentable.co/chino-valley-az/485-a"
+    },
+    {
+     "text": "4761 N Norman Rd #2, Prescott Valley, APARTMENT: 2 BR + garage, $1,423, 16 min to ERAU; listing says: \"The extended 2-car garage provides secure parking and plenty of extra storage space\"",
+     "href": "https://www.zillow.com/homedetails/4761-N-Norman-Rd-2-Prescott-Valley-AZ-86314/2055717473_zpid/"
+    },
+    {
+     "text": "4372 N Katie Cir, Prescott Valley, SINGLE FAMILY: 2 BR + garage, $2,000, 17 min to ERAU; listing says: \"Large detached 2-car garage with plenty of room for a workbench or hobby studio\"",
+     "href": "https://www.zillow.com/homedetails/4372-N-Katie-Cir-Prescott-Valley-AZ-86314/2067069394_zpid/"
+    },
+    {
+     "text": "4601 N Carla Vista Dr, Prescott Valley, APARTMENT: 2 BR + garage, $1,575, 17 min to ERAU; listing says: \"…Washer/Dryer Hookups ~ Electric Heat ~ Central Air ~ Ceiling Fans ~ 1 Car Garage ~ (12 Month Lease Only) NO SHOWINGS until 07/10/2020 No Pets Allowed\"",
+     "href": "https://www.rentable.co/prescott-valley-az/4601-n-carla-vista-dr"
+    },
+    {
+     "text": "4550 N Carla Vista Dr, Prescott Valley, SINGLE FAMILY: 2 BR + garage, $1,694, 17 min to ERAU; listing says: \"Parking is a breeze with a one-car garage plus additional exterior parking\"",
+     "href": "https://www.rentable.co/prescott-valley-az/4550-n-carla-vista-dr"
+    },
+    {
+     "text": "3818 N Vickie Ct #A, Prescott Valley, APARTMENT: 2 BR + garage, $1,295, 18 min to ERAU; listing says: \"Highlighted by a private, detached 1-car garage providing secure parking and additional storage, this property delivers comfort and convenience in a prime location just moments from Mountain Valley…\"",
+     "href": "https://www.zillow.com/apartments/prescott-valley-az/0150/Btzfh8/"
+    },
+    {
+     "text": "8396 E Stevens Dr APT A, Prescott Valley, APARTMENT: 2 BR + garage, $1,895, 18 min to ERAU; listing says: \"…super clean, 2 bedrooms + 2 bathrooms, 975 sq ft unit in duplex with 1 car attached garage and fenced in yard in Prescott Valley, AZ\"",
+     "href": "https://www.zillow.com/homedetails/8396-E-Stevens-Dr-APT-A-Prescott-Valley-AZ-86314/2108195366_zpid/"
+    },
+    {
+     "text": "8424 E Stevens Dr #1-2, Prescott Valley, APARTMENT: 2 BR + garage, $1,699, 18 min to ERAU; listing says: \"Large 2 bedroom, 2 Bath, 2 car garage, covered patio, perfect for enjoying the outdoors with fully fenced private back yard\"",
+     "href": "https://www.zillow.com/homedetails/8424-E-Stevens-Dr-1-2-Prescott-Valley-AZ-86314/463961754_zpid/"
+    },
+    {
+     "text": "1257 White Spar Rd, Prescott: 2 BR + garage, $2,100, 18 min to ERAU; listing says: \"…steel appliances, granite countertops, farmhouse sinks, and a one-car garage with additional parking\"",
+     "href": "https://www.rentable.co/prescott-az/1257-white-spar-rd"
+    },
+    {
+     "text": "6221 E Copper Hill Dr, Prescott Valley, SINGLE FAMILY: 2 BR + garage, $3,200, 18 min to ERAU; listing says: \"Parking: Attached Garage\"",
+     "href": "https://www.zillow.com/homedetails/6221-E-Copper-Hill-Dr-Prescott-Valley-AZ-86314/82228640_zpid/"
+    },
+    {
+     "text": "4960 Summit Cir, Prescott, APARTMENT: 2 BR + garage, $1,695, 18 min to ERAU; listing says: \"Attached 2-car garage\"",
+     "href": "https://www.zillow.com/homedetails/4960-Summit-Cir-Prescott-AZ-86301/82014681_zpid/"
+    },
+    {
+     "text": "4964 Summit Circle, Prescott: 2 BR + garage, $1,695, 18 min to ERAU; listing says: \"Attached 2-car garage\"",
+     "href": "https://rentrightms.appfolio.com/listings/detail/3e95093a-2779-4a6f-b1e9-9739e5bbaba4"
+    },
+    {
+     "text": "314 Buckingham Pl, Prescott, SINGLE FAMILY: 2 BR + garage, $2,600, 19 min to ERAU; listing says: \"2 car garage\"",
+     "href": "https://www.zillow.com/homedetails/314-Buckingham-Pl-Prescott-AZ-86303/8744232_zpid/"
+    },
+    {
+     "text": "2809 North Superstition Lane - B, Prescott Valley: 2 BR + garage, $1,675, 19 min to ERAU; listing says: \"Carpet, Dishwasher, Garage parking, Laundry hookup, Microwave, Refrigerator, Stove and oven\" [confirm: Listing only says generic “garage parking” — confirm a garage is assigned to this unit, not just a parking garage or lot.]",
+     "href": "https://bearcreekpmg.managebuilding.com/Resident/public/rentals/95332"
+    },
+    {
+     "text": "9324 E Whipsaw Ln APT A, Prescott Valley, TOWNHOUSE: 2 BR + garage, $1,550, 19 min to ERAU; listing says: \"Two bedroom, two bath, 2 car garage, w/d hookups in unit\"",
+     "href": "https://www.zillow.com/homedetails/9324-E-Whipsaw-Ln-APT-A-Prescott-Valley-AZ-86314/466463345_zpid/"
+    },
+    {
+     "text": "5083 N Jeffers Ave, Prescott Valley, SINGLE FAMILY: 2 BR + garage, $2,950, 19 min to ERAU; listing says: \"'Energy Efficient'' home means owned ''Solar Panels'' for the EV charging outlet in the 3 car garage accommodating couple of cars and golf cart\"",
+     "href": "https://www.rentable.co/prescott-valley-az/move-in-for-thanksgiving"
+    },
+    {
+     "text": "3284 N Greg Dr APT A, Prescott Valley, APARTMENT: 2 BR + garage, $1,400, 19 min to ERAU; listing says: \"2 bedroom 1 bath 810 sq ft duplex with 1 car garage in Prescott Valley\"",
+     "href": "https://www.zillow.com/homedetails/3284-N-Greg-Dr-APT-A-Prescott-Valley-AZ-86314/2117075541_zpid/"
+    },
+    {
+     "text": "8401 East Greg Court - 4, Prescott Valley: 2 BR + garage, $1,050, 19 min to ERAU; listing says: \"Carpet, Dishwasher, Garage parking, Laundry hookup, Microwave, Refrigerator, Stove and oven\" [confirm: Listing only says generic “garage parking” — confirm a garage is assigned to this unit, not just a parking garage or lot.]",
+     "href": "https://bearcreekpmg.managebuilding.com/Resident/public/rentals/94885"
+    },
+    {
+     "text": "9476 E Lakeshore Dr #1, Prescott Valley, APARTMENT: 2 BR + garage, $1,600, 19 min to ERAU; listing says: \"A dedicated laundry room with washer and dryer hookups adds everyday convenience, while the single-car garage provides secure parking and additional storage options\"",
+     "href": "https://www.zillow.com/homedetails/9476-E-Lakeshore-Dr-1-Prescott-Valley-AZ-86314/2061875980_zpid/"
+    },
+    {
+     "text": "3085 N Majesty Dr, Prescott Valley: 2 BR + garage, $1,100, 20 min to ERAU; listing says: \"2 Bedroom duplex with garage\"",
+     "href": "https://www.rentable.co/prescott-valley-az/3085-n-majesty-dr"
+    },
+    {
+     "text": "8683 E  Commons Cir # A233, Prescott Valley: 2 BR + garage, rent not listed, 20 min to ERAU; listing says: \"Detached garage\"",
+     "href": "https://www.zillow.com/apartments/prescott-valley-az/granite-mountain-apartments/ChpNtq/"
+    },
+    {
+     "text": "3301 N Corrine Dr APT B, Prescott Valley, APARTMENT: 2 BR + garage, $1,500, 21 min to ERAU; listing says: \"The property also includes a 1-car garage for secure parking\"",
+     "href": "https://www.zillow.com/homedetails/3301-N-Corrine-Dr-APT-B-Prescott-Valley-AZ-86314/2098037179_zpid/"
+    },
+    {
+     "text": "4700 E Julie Dr, Prescott, SINGLE FAMILY: 2 BR + garage, $1,750, 21 min to ERAU; listing says: \"Garage available for an additional monthly fee\" [confirm: Listing mentions garage parking as available / for a fee / waitlist / shared — confirm it comes with the unit. Quoted: \"Garage available for an additional monthly fee\"]",
+     "href": "https://www.zillow.com/homedetails/4700-E-Julie-Dr-Prescott-AZ-86301/8726877_zpid/"
+    },
+    {
+     "text": "9520 E Catalina Dr, Prescott Valley: 2 BR + garage, $1,600, 21 min to ERAU; listing says: \"Spacious 2 bedroom 2 bath duplex with garage, gas heat and central air\"",
+     "href": "https://www.rentable.co/prescott-valley-az/pv-duplex-with-deck"
+    },
+    {
+     "text": "1085 N Hobble Strap Street, Prescott Valley, SINGLE FAMILY: 2 BR + garage, $2,150, 24 min to ERAU; listing says: \"Parking: Attached Garage\"",
+     "href": "https://www.rentable.co/prescott-valley-az/1085-n-hobble-strap-street"
+    },
+    {
+     "text": "4660 E Amber Rd, Prescott, SINGLE FAMILY: 2 BR + garage, $2,100, 25 min (far) to ERAU; listing says: \"This 1428 sq ft home with 2 car garage w/opener has 2 bedrooms, 2 bathrooms plus an office/den\"",
+     "href": "https://www.rentable.co/prescott-az/diamond-valley-home"
+    }
+   ],
    "new": [],
    "changed": [
     {
@@ -36,7 +230,9 @@ window.UPDATES_DATA = {
     "pending": 0,
     "plus3": 32,
     "plus3Strong": 22,
-    "plus3New": 0
+    "plus3New": 0,
+    "plus2": 48,
+    "plus2New": 48
    }
   },
   {

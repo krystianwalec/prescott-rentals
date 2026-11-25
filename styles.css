@@ -269,3 +269,9 @@ details summary { cursor: pointer; font-size: 18px; }
 .dot.p3 { background: #e8743b; border: 2px solid #7a2e0e; }
 .badge.b3 { background: #fbe1d2; color: #7a2e0e; }
 #plus3 .cards { margin-top: 1rem; }
+
+/* 2 BR with garage (separate list) */
+.dot.p2 { background: #2b6cb0; border: 2px solid #1a365d; }
+.badge.b2 { background: #dbeafe; color: #1a365d; }
+#plus2 .cards { margin-top: 1rem; }
+#plus2-carport-wrap { margin-top: 1.25rem; }
