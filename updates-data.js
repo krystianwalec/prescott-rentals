@@ -2,21 +2,35 @@ window.UPDATES_DATA = {
  "entries": [
   {
    "date": "2026-11-25",
-   "title": "No changes — 9 houses fit",
-   "lede": "Nothing new, no price moves and nothing went off the market today. Top of the list is still 360 Chestnut Dr, Prescott at $2,350.",
+   "title": "1 price change, 1 back on the market — 10 houses fit",
+   "lede": "Today's refresh found 1 price change, 1 back on the market. Top of the list is still 360 Chestnut Dr, Prescott at $2,350. A separate browser pass of Zumper (4+ BR and 3 BR house searches; 3BR lists virtualised, not guaranteed complete), HotPads (4-5 BR all three cities; 3 BR Prescott and Chino), Trulia (4+ BR single-family; 6190 N Moonlight Way and 4801 N Towago Cir details), Zillow (UI, 4+ BR houses, 18 results), Realtor.com (Prescott 4+ SFH search), Apartments.com (/houses/prescott-az/4-bedrooms/; 3330 Charla Dr detail), Peak availability (0 results), PPM availability (0 results), ERAU College Pads (loaded on 2nd try; card data only) (sites that block automated fetching) found no new matches but 1 borderline house (4 bedrooms plus a family room or casita, listed separately, not counted). Nov 25 browser pass: 1635 Kaibab Loop back for rent at $3,499 (Apartments.com, by owner); new borderline 1280 Majestic Vw Dr $3,895; Zumper/Zillow not readable; 3BR flex wording not checked.",
    "browser": [],
-   "borderline": [],
+   "borderline": [
+    {
+     "text": "1280 Majestic Vw Dr, Prescott: 4 BR + media room / family room (per listing), $3,895, 22 min to ERAU, Available Dec 1",
+     "href": "https://www.apartments.com/1280-majestic-vw-dr-prescott-az/208vqf8/"
+    }
+   ],
    "plus3": [],
    "new": [],
-   "changed": [],
+   "changed": [
+    {
+     "text": "1635 Kaibab Loop, Prescott: $3,999 → $3,499 (down $500)",
+     "href": "https://www.apartments.com/1635-kaibab-loop-prescott-az/v9ndn9f/"
+    },
+    {
+     "text": "1635 Kaibab Loop, Prescott is listed again ($3,499)",
+     "href": "https://www.apartments.com/1635-kaibab-loop-prescott-az/v9ndn9f/"
+    }
+   ],
    "gone": [],
    "reclassified": [],
    "top": [],
-   "market": "9 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,319–$5,500, median $4,000; 3 are at or under the $2,900 reference. 8 are within 25 min; 5 list a move-in date in the Dec 1 window.",
+   "market": "10 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,319–$5,500, median $3,749; 3 are at or under the $2,900 reference. 9 are within 25 min; 6 list a move-in date in the Dec 1 window.",
    "counts": {
-    "active": 9,
+    "active": 10,
     "new": 0,
-    "changed": 0,
+    "changed": 1,
     "gone": 0,
     "reclassified": 0,
     "pending": 0,
