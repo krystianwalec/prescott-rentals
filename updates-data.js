@@ -1,6 +1,91 @@
 window.UPDATES_DATA = {
  "entries": [
   {
+   "date": "2026-11-26",
+   "title": "1 new house, 2 price changes, 2 gone — 9 houses fit",
+   "lede": "Today's refresh found 1 new house, 2 price changes, 2 gone. Top of the list is now 7612 E Dusty Boot Rd, Prescott Valley at $2,319. Nov 26 browser pass: 360 Chestnut Dr and the undisclosed Prescott 5BR ($4,500) are off-market; new 3BR + den (highlights only) at 3547 N Valorie Dr, $1,975; new 2BR + garage unit at 1257 White Spar Rd D16, $1,750; 6548 E Bay Point Way is for rent again at $2,800 (Jan 1); Realtor.com marks 6227 E Bower Ln pending while Zumper still lists $2,450. The search now also covers 3-bedroom houses whose listing names an extra room (den, office, loft, bonus room, casita and similar): 0 new ones plus 1 borderline (room only tagged, or it is the 3rd bedroom), listed separately and not counted in the 9. The search now also covers 2-bedroom rentals (houses, apartments, condos, townhomes, duplexes) with a garage, or a carport the listing says has an electrical outlet or EV charger: 3 with a garage, listed separately and not counted in the 9.",
+   "browser": [],
+   "borderline": [],
+   "plus3": [
+    {
+     "text": "3547 N Valorie Dr, Prescott Valley (borderline): 3 BR + den, $1,975, 18 min to ERAU; listing says: \"Den (amenity tag only, listed under Highlights and House Features; the narrative description does not use the word den)\"",
+     "href": "https://www.apartments.com/3547-n-valorie-dr-prescott-valley-az/v5zddwe/"
+    }
+   ],
+   "plus2": [
+    {
+     "text": "3131 N  Main St # J107, Prescott Valley: 2 BR + garage, rent not listed, 16 min to ERAU; listing says: \"Pinto with Detached Garage · 1 unit Unit Available Base rent Contact Unit D201\"",
+     "href": "https://www.zillow.com/apartments/prescott-valley-az/homestead-talking-glass/CghmrY/"
+    },
+    {
+     "text": "8507 E Leigh Dr, Prescott Valley, APARTMENT: 2 BR + garage, $1,450, 18 min to ERAU; listing says: \"1 Car Garage\"",
+     "href": "https://www.rentable.co/prescott-valley-az/8507-e-leigh-dr"
+    },
+    {
+     "text": "Superstition Lane, Prescott Valley: 2 BR + garage, $1,600, 19 min to ERAU; listing says: \"Carpet, Dishwasher, Garage parking, Laundry hookup, Microwave, Refrigerator, Stove and oven\" [confirm: Listing only says generic “garage parking” — confirm a garage is assigned to this unit, not just a parking garage or lot.]",
+     "href": "https://www.craigslist.org/view/d/prescott-valley-superstition-lane-bear/n7XEgvxmSwhrXe2ELZ5oGY"
+    }
+   ],
+   "new": [
+    {
+     "text": "1280 Majestic View Dr, Prescott — 4 + den (per listing), $3,895, 22 min to ERAU, available around dec 1 (ideal)",
+     "href": "https://www.redfin.com/AZ/Prescott/1280-Majestic-View-Dr-86303/home/123081840"
+    }
+   ],
+   "changed": [
+    {
+     "text": "5395 Granite Dells Pkwy # N8, Prescott (2 BR with garage, not counted): $1,749 → $1,699 (down $50)",
+     "href": "https://www.zillow.com/apartments/prescott-az/havenly-prescott/Cvg8QM/"
+    },
+    {
+     "text": "1257 White Spar Rd - D16, Prescott (2 BR with garage, not counted): $2,100 → $1,750 (down $350)",
+     "href": "https://www.peakprescott.com/listings/detail/a892c6ae-c3ef-444d-add0-d2cfd2358011"
+    }
+   ],
+   "gone": [
+    {
+     "text": "360 Chestnut Dr, Prescott (4 + bonus / home office (per listing), last $2,350) no longer shows on Zillow, Trulia, HotPads, Zumper, Realtor.com, Redfin, Peak Prescott (search link)",
+     "href": "https://www.zillow.com/homedetails/360-Chestnut-Dr-Prescott-AZ-86301/8748930_zpid/"
+    },
+    {
+     "text": "(Undisclosed Address), Prescott (5 BR, last $4,500) no longer shows on Zillow, Trulia",
+     "href": "https://www.zillow.com/homedetails/Prescott-AZ-86303/8739895_zpid/"
+    },
+    {
+     "text": "830 1st St #A, Prescott (2 BR with garage, not counted) (2 BR · garage, last $1,795) no longer shows on Zillow",
+     "href": "https://www.zillow.com/homedetails/830-1st-St-A-Prescott-AZ-86301/439652198_zpid/"
+    },
+    {
+     "text": "7800 E Spouse Dr APT B, Prescott Valley (2 BR with garage, not counted) (2 BR · garage, last $1,575) no longer shows on Zillow",
+     "href": "https://www.zillow.com/homedetails/7800-E-Spouse-Dr-APT-B-Prescott-Valley-AZ-86314/2102296190_zpid/"
+    },
+    {
+     "text": "4550 N Carla Vista Dr, Prescott Valley (2 BR with garage, not counted) (2 BR · garage, last $1,694) no longer shows on Rentable, Zillow, Redfin, Redfin",
+     "href": "https://www.rentable.co/prescott-valley-az/4550-n-carla-vista-dr"
+    },
+    {
+     "text": "1085 N Hobble Strap Street, Prescott Valley (2 BR with garage, not counted) (2 BR · garage, last $2,150) no longer shows on Rentable, Zillow, Redfin",
+     "href": "https://www.rentable.co/prescott-valley-az/1085-n-hobble-strap-street"
+    }
+   ],
+   "reclassified": [],
+   "top": [],
+   "market": "9 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,319–$5,500, median $3,895; 2 are at or under the $2,900 reference. 9 are within 25 min; 5 list a move-in date in the Dec 1 window.",
+   "counts": {
+    "active": 9,
+    "new": 1,
+    "changed": 2,
+    "gone": 2,
+    "reclassified": 0,
+    "pending": 0,
+    "plus3": 33,
+    "plus3Strong": 22,
+    "plus3New": 1,
+    "plus2": 47,
+    "plus2New": 3
+   }
+  },
+  {
    "date": "2026-11-25",
    "title": "1 price change, 1 back on the market — 10 houses fit",
    "lede": "Today's refresh found 1 price change, 1 back on the market. Top of the list is still 360 Chestnut Dr, Prescott at $2,350. A separate browser pass of Zumper (4+ BR and 3 BR house searches; 3BR lists virtualised, not guaranteed complete), HotPads (4-5 BR all three cities; 3 BR Prescott and Chino), Trulia (4+ BR single-family; 6190 N Moonlight Way and 4801 N Towago Cir details), Zillow (UI, 4+ BR houses, 18 results), Realtor.com (Prescott 4+ SFH search), Apartments.com (/houses/prescott-az/4-bedrooms/; 3330 Charla Dr detail), Peak availability (0 results), PPM availability (0 results), ERAU College Pads (loaded on 2nd try; card data only) (sites that block automated fetching) found no new matches but 1 borderline house (4 bedrooms plus a family room or casita, listed separately, not counted). Nov 25 browser pass: 1635 Kaibab Loop back for rent at $3,499 (Apartments.com, by owner); new borderline 1280 Majestic Vw Dr $3,895; Zumper/Zillow not readable; 3BR flex wording not checked. The search now also covers 2-bedroom rentals (houses, apartments, condos, townhomes, duplexes) with a garage, or a carport the listing says has an electrical outlet or EV charger: 48 with a garage, listed separately and not counted in the 10.",
