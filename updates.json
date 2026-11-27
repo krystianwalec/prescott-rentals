@@ -1,6 +1,52 @@
 {
  "entries": [
   {
+   "date": "2026-11-27",
+   "title": "No changes — 9 houses fit",
+   "lede": "Nothing new, no price moves and nothing went off the market today. Top of the list is still 7612 E Dusty Boot Rd, Prescott Valley at $2,319. Nov 27 browser pass: no new 4+ BR or 4 BR + den listings on any portal. 1567 Rycosa Ln (4 BR + family room, $3,200) is no longer on any portal and is marked gone. 1635 Kaibab Loop is still on Apartments.com for rent at $3,499, but Zillow lists the same address for sale at $825,000. 6227 E Bower Ln is still Pending on Realtor.com while Zumper lists $2,450. No new 3 BR + flex room or 2 BR garage listings turned up that the daily refresh does not already carry. The search now also covers 2-bedroom rentals (houses, apartments, condos, townhomes, duplexes) with a garage, or a carport the listing says has an electrical outlet or EV charger: 1 with a garage, listed separately and not counted in the 9.",
+   "browser": [],
+   "borderline": [],
+   "plus3": [],
+   "plus2": [
+    {
+     "text": "830 1st St #1, Prescott, TOWNHOUSE: 2 BR + garage, $1,795, 12 min to ERAU; listing says: \"This property has an attached garage and Small fenced backyard\"",
+     "href": "https://www.zillow.com/homedetails/830-1st-St-1-Prescott-AZ-86301/465825293_zpid/"
+    }
+   ],
+   "new": [],
+   "changed": [],
+   "gone": [
+    {
+     "text": "7250 E Spouse Dr APT A, Prescott Valley (2 BR with garage, not counted) (2 BR · garage, last $1,650) no longer shows on Zillow",
+     "href": "https://www.zillow.com/homedetails/7250-E-Spouse-Dr-APT-A-Prescott-Valley-AZ-86314/2108879449_zpid/"
+    },
+    {
+     "text": "6221 E Copper Hill Dr, Prescott Valley (2 BR with garage, not counted) (2 BR · garage, last $3,200) no longer shows on Zillow",
+     "href": "https://www.zillow.com/homedetails/6221-E-Copper-Hill-Dr-Prescott-Valley-AZ-86314/82228640_zpid/"
+    },
+    {
+     "text": "1567 Rycosa Ln, Prescott (borderline, not counted) (4 BR + family room / upstairs living, last $3,200) is gone (no longer listed per the 2026-11-27 browser pass)",
+     "href": "https://www.apartments.com/1567-rycosa-ln-prescott-az/09lz4g2/"
+    }
+   ],
+   "reclassified": [],
+   "top": [],
+   "market": "9 houses currently match (5+ BR or 4 + den, within ~35 min of campus). Asking rents run $2,319–$5,500, median $3,895; 2 are at or under the $2,900 reference. 9 are within 25 min; 5 list a move-in date in the Dec 1 window.",
+   "counts": {
+    "active": 9,
+    "new": 0,
+    "changed": 0,
+    "gone": 0,
+    "reclassified": 0,
+    "pending": 0,
+    "plus3": 33,
+    "plus3Strong": 22,
+    "plus3New": 0,
+    "plus2": 48,
+    "plus2New": 1
+   }
+  },
+  {
    "date": "2026-11-26",
    "title": "1 new house, 2 price changes, 2 gone — 9 houses fit",
    "lede": "Today's refresh found 1 new house, 2 price changes, 2 gone. Top of the list is now 7612 E Dusty Boot Rd, Prescott Valley at $2,319. Nov 26 browser pass: 360 Chestnut Dr and the undisclosed Prescott 5BR ($4,500) are off-market; new 3BR + den (highlights only) at 3547 N Valorie Dr, $1,975; new 2BR + garage unit at 1257 White Spar Rd D16, $1,750; 6548 E Bay Point Way is for rent again at $2,800 (Jan 1); Realtor.com marks 6227 E Bower Ln pending while Zumper still lists $2,450. The search now also covers 3-bedroom houses whose listing names an extra room (den, office, loft, bonus room, casita and similar): 0 new ones plus 1 borderline (room only tagged, or it is the 3rd bedroom), listed separately and not counted in the 9. The search now also covers 2-bedroom rentals (houses, apartments, condos, townhomes, duplexes) with a garage, or a carport the listing says has an electrical outlet or EV charger: 3 with a garage, listed separately and not counted in the 9.",
